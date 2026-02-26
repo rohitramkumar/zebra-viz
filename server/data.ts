@@ -1,6 +1,8 @@
-import { Referee } from "./types";
+import type { Referee } from "./types";
 
-export const referees: Referee[] = [
+type RefereeRaw = Omit<Referee, 'totalMilesTravelled' | 'mostCommonTeams' | 'daysWorkedStreak'>;
+
+export const referees: RefereeRaw[] = [
   {
     id: 'ref-001',
     name: 'James Mitchell',

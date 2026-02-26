@@ -12,10 +12,18 @@ export interface Game {
   awayTeam: Team;
 }
 
+export interface TeamCount {
+  name: string;
+  count: number;
+}
+
 export interface Referee {
   id: string;
   name: string;
   games: Game[];
+  totalMilesTravelled: number;
+  mostCommonTeams: TeamCount[];
+  daysWorkedStreak: number;
 }
 
 export interface RefereeListItem {

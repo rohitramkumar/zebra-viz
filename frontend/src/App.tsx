@@ -4,6 +4,7 @@ import { Referee, RefereeListItem } from './types';
 import RefereeSidebar from './components/RefereeSidebar';
 import MapVisualization from './components/MapVisualization';
 import RefereeTravelCard from './components/RefereeTravelCard';
+import RefereeStatsCard from './components/RefereeStatsCard';
 
 function App() {
   const [referees, setReferees] = useState<RefereeListItem[]>([]);
@@ -55,7 +56,12 @@ function App() {
           ) : selectedReferee ? (
             <>
               <MapVisualization referee={selectedReferee} />
-              <RefereeTravelCard referee={selectedReferee} />
+              <div style={{ display: 'flex', gap: '16px', alignItems: 'flex-start' }}>
+                <div style={{ flex: 1, minWidth: 0 }}>
+                  <RefereeTravelCard referee={selectedReferee} />
+                </div>
+                <RefereeStatsCard referee={selectedReferee} />
+              </div>
             </>
           ) : (
             <div className="welcome-message">
