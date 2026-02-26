@@ -84,6 +84,8 @@ const styles: Record<string, React.CSSProperties> = {
     flexDirection: 'column',
     gap: '8px',
     padding: '12px',
+    overflowY: 'auto',
+    maxHeight: '300px',
   },
   gameItem: {
     display: 'flex',
