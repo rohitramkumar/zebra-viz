@@ -1,39 +1,21 @@
-import { useEffect } from 'react';
-import { MapContainer, TileLayer, Marker, Popup, Polyline } from 'react-leaflet';
-import L from 'leaflet';
-import 'leaflet/dist/leaflet.css';
+import { useState, useMemo, useRef } from 'react';
+import { geoAlbersUsa, geoPath } from 'd3-geo';
+import { feature } from 'topojson-client';
+import type { Topology, Objects } from 'topojson-specification';
+import statesData from 'us-atlas/states-10m.json';
 import { Referee, Game } from '../types';
 
-// Fix Leaflet default icon URLs
-delete (L.Icon.Default.prototype as unknown as Record<string, unknown>)._getIconUrl;
-L.Icon.Default.mergeOptions({
-  iconRetinaUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png',
-  iconUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png',
-  shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
-});
+// SVG viewport dimensions
+const W = 960;
+const H = 600;
 
-function createNumberedIcon(number: number): L.DivIcon {
-  return L.divIcon({
-    className: '',
-    html: `<div style="
-      background-color: #3b82f6;
-      color: white;
-      width: 28px;
-      height: 28px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 12px;
-      font-weight: 700;
-      border: 2px solid white;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.3);
-    ">${number}</div>`,
-    iconSize: [28, 28],
-    iconAnchor: [14, 14],
-    popupAnchor: [0, -16],
-  });
-}
+// Build projection and path generator once at module level
+const projection = geoAlbersUsa().scale(1300).translate([W / 2, H / 2]);
+const pathGen = geoPath(projection);
+
+// Convert TopoJSON → GeoJSON once at module level
+type UsTopology = Topology<Objects<Record<string, unknown>>>;
+const statesGeo = feature(statesData as unknown as UsTopology, (statesData as unknown as UsTopology).objects['states']);
 
 function formatDate(dateStr: string): string {
   return new Date(dateStr + 'T12:00:00').toLocaleDateString('en-US', {
@@ -48,61 +30,150 @@ interface MapVisualizationProps {
   referee: Referee;
 }
 
+interface TooltipState {
+  x: number;
+  y: number;
+  game: Game;
+  index: number;
+}
+
 export default function MapVisualization({ referee }: MapVisualizationProps) {
-  // Force map to re-render when referee changes by using key
-  useEffect(() => {}, [referee.id]);
+  const [tooltip, setTooltip] = useState<TooltipState | null>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
 
-  const sortedGames: Game[] = [...referee.games].sort(
-    (a, b) => new Date(a.date).getTime() - new Date(b.date).getTime()
+  const sortedGames: Game[] = useMemo(
+    () => [...referee.games].sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime()),
+    [referee.games]
   );
 
-  const polylinePositions: [number, number][] = sortedGames.map(
-    game => game.coordinates
+  // Project [lat, lng] → [svgX, svgY]
+  const projected: ([number, number] | null)[] = useMemo(
+    () => sortedGames.map(g => projection([g.coordinates[1], g.coordinates[0]])),
+    [sortedGames]
   );
+
+  const polylinePoints = projected
+    .filter((p): p is [number, number] => p !== null)
+    .map(p => p.join(','))
+    .join(' ');
 
   return (
-    <div style={{ flex: 1, borderRadius: '8px', overflow: 'hidden', boxShadow: '0 1px 3px rgba(0,0,0,0.1)', minHeight: '300px' }}>
-      <MapContainer
-        key={referee.id}
-        center={[39.5, -98.35]}
-        zoom={4}
-        style={{ height: '100%', width: '100%' }}
+    <div ref={containerRef} style={{ flex: 1, borderRadius: '8px', overflow: 'hidden', boxShadow: '0 1px 3px rgba(0,0,0,0.1)', minHeight: '300px', background: '#d4e9f7', position: 'relative' }}>
+      <svg
+        viewBox={`0 0 ${W} ${H}`}
+        preserveAspectRatio="xMidYMid meet"
+        style={{ width: '100%', height: '100%', display: 'block' }}
+        aria-label={`Travel map for ${referee.name}`}
+        role="img"
       >
-        <TileLayer
-          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        />
-        <Polyline
-          positions={polylinePositions}
-          pathOptions={{ color: '#3b82f6', weight: 2, dashArray: '6, 4', opacity: 0.7 }}
-        />
-        {sortedGames.map((game, index) => (
-          <Marker
-            key={game.id}
-            position={game.coordinates}
-            icon={createNumberedIcon(index + 1)}
-          >
-            <Popup>
-              <div style={{ minWidth: '180px' }}>
-                <strong style={{ fontSize: '0.9rem' }}>Game {index + 1}</strong>
-                <p style={{ margin: '4px 0', fontSize: '0.8rem', color: '#6b7280' }}>
-                  {formatDate(game.date)}
-                </p>
-                <p style={{ margin: '4px 0', fontSize: '0.85rem' }}>
-                  <strong>{game.homeTeam.location} {game.homeTeam.name}</strong>
-                </p>
-                <p style={{ margin: '2px 0', fontSize: '0.8rem', color: '#6b7280' }}>vs</p>
-                <p style={{ margin: '4px 0', fontSize: '0.85rem' }}>
-                  <strong>{game.awayTeam.location} {game.awayTeam.name}</strong>
-                </p>
-                <p style={{ margin: '4px 0', fontSize: '0.8rem', color: '#374151' }}>
-                  📍 {game.location}
-                </p>
-              </div>
-            </Popup>
-          </Marker>
+        {/* US states */}
+        {'features' in statesGeo && statesGeo.features.map((feat, i) => (
+          <path
+            key={i}
+            d={pathGen(feat) ?? ''}
+            fill="#e8f0e0"
+            stroke="#9ab07a"
+            strokeWidth={0.5}
+          />
         ))}
-      </MapContainer>
+
+        {/* Travel route */}
+        {polylinePoints && (
+          <polyline
+            points={polylinePoints}
+            fill="none"
+            stroke="#3b82f6"
+            strokeWidth={2}
+            strokeDasharray="8,5"
+            opacity={0.75}
+            aria-hidden="true"
+          />
+        )}
+
+        {/* Game markers */}
+        {sortedGames.map((game, index) => {
+          const pt = projected[index];
+          if (!pt) return null;
+          const [x, y] = pt;
+          const label = `Game ${index + 1}: ${game.homeTeam.location} ${game.homeTeam.name} vs ${game.awayTeam.location} ${game.awayTeam.name}, ${formatDate(game.date)}, ${game.location}`;
+          const showTooltip = (e: React.SyntheticEvent) => {
+            const svgEl = (e.currentTarget as SVGGElement).ownerSVGElement!;
+            const svgRect = svgEl.getBoundingClientRect();
+            const containerRect = containerRef.current!.getBoundingClientRect();
+            const scaleX = svgRect.width / W;
+            const scaleY = svgRect.height / H;
+            setTooltip({
+              x: x * scaleX + (svgRect.left - containerRect.left),
+              y: y * scaleY + (svgRect.top - containerRect.top),
+              game,
+              index,
+            });
+          };
+          return (
+            <g
+              key={game.id}
+              transform={`translate(${x},${y})`}
+              style={{ cursor: 'pointer' }}
+              role="button"
+              tabIndex={0}
+              aria-label={label}
+              onMouseEnter={showTooltip}
+              onFocus={showTooltip}
+              onMouseLeave={() => setTooltip(null)}
+              onBlur={() => setTooltip(null)}
+              onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') showTooltip(e); }}
+            >
+              <title>{label}</title>
+              <circle r={14} fill="#3b82f6" stroke="white" strokeWidth={2} filter="url(#shadow)" />
+              <text
+                textAnchor="middle"
+                dominantBaseline="central"
+                fill="white"
+                fontSize={11}
+                fontWeight={700}
+                style={{ pointerEvents: 'none', userSelect: 'none' }}
+                aria-hidden="true"
+              >
+                {index + 1}
+              </text>
+            </g>
+          );
+        })}
+
+        <defs>
+          <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+            <feDropShadow dx={0} dy={2} stdDeviation={2} floodOpacity={0.3} />
+          </filter>
+        </defs>
+      </svg>
+
+      {/* Tooltip overlay — positioned absolutely within the container */}
+      {tooltip && (
+        <div
+          style={{
+            position: 'absolute',
+            left: tooltip.x + 12,
+            top: tooltip.y - 10,
+            background: 'white',
+            border: '1px solid #e5e7eb',
+            borderRadius: '8px',
+            padding: '10px 14px',
+            boxShadow: '0 4px 12px rgba(0,0,0,0.15)',
+            zIndex: 1000,
+            pointerEvents: 'none',
+            minWidth: '180px',
+            fontSize: '0.85rem',
+          }}
+          role="tooltip"
+        >
+          <strong>Game {tooltip.index + 1}</strong>
+          <p style={{ margin: '4px 0', color: '#6b7280', fontSize: '0.8rem' }}>{formatDate(tooltip.game.date)}</p>
+          <p style={{ margin: '4px 0' }}><strong>{tooltip.game.homeTeam.location} {tooltip.game.homeTeam.name}</strong></p>
+          <p style={{ margin: '2px 0', color: '#6b7280', fontSize: '0.8rem' }}>vs</p>
+          <p style={{ margin: '4px 0' }}><strong>{tooltip.game.awayTeam.location} {tooltip.game.awayTeam.name}</strong></p>
+          <p style={{ margin: '4px 0', color: '#374151' }}>📍 {tooltip.game.location}</p>
+        </div>
+      )}
     </div>
   );
 }
