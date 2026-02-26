@@ -81,8 +81,7 @@ const styles: Record<string, React.CSSProperties> = {
   },
   gameList: {
     display: 'flex',
-    flexDirection: 'row',
-    flexWrap: 'wrap',
+    flexDirection: 'column',
     gap: '8px',
     padding: '12px',
   },
@@ -94,8 +93,6 @@ const styles: Record<string, React.CSSProperties> = {
     backgroundColor: '#f9fafb',
     borderRadius: '6px',
     border: '1px solid #e5e7eb',
-    minWidth: '280px',
-    flex: '1 1 280px',
   },
   gameNumber: {
     width: '24px',
