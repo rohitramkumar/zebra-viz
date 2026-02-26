@@ -1,4 +1,4 @@
-import { Referee } from './types';
+import { Referee } from "./types";
 
 export const referees: Referee[] = [
   {
