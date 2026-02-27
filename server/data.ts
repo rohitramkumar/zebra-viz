@@ -142,3 +142,137 @@ export const referees: RefereeRaw[] = [
     ],
   },
 ];
+
+type GameTemplate = {
+  location: string;
+  coordinates: [number, number];
+  homeTeam: { name: string; location: string };
+  awayTeam: { name: string; location: string };
+};
+
+const generatedGameTemplates: GameTemplate[] = [
+  {
+    location: 'Seattle, WA',
+    coordinates: [47.6062, -122.3321],
+    homeTeam: { name: 'Huskies', location: 'Washington' },
+    awayTeam: { name: 'Cougars', location: 'Washington State' },
+  },
+  {
+    location: 'Phoenix, AZ',
+    coordinates: [33.4484, -112.0740],
+    homeTeam: { name: 'Sun Devils', location: 'Arizona State' },
+    awayTeam: { name: 'Wildcats', location: 'Arizona' },
+  },
+  {
+    location: 'Denver, CO',
+    coordinates: [39.7392, -104.9903],
+    homeTeam: { name: 'Pioneers', location: 'Denver' },
+    awayTeam: { name: 'Rams', location: 'Colorado State' },
+  },
+  {
+    location: 'Minneapolis, MN',
+    coordinates: [44.9778, -93.2650],
+    homeTeam: { name: 'Golden Gophers', location: 'Minnesota' },
+    awayTeam: { name: 'Hawkeyes', location: 'Iowa' },
+  },
+  {
+    location: 'Madison, WI',
+    coordinates: [43.0731, -89.4012],
+    homeTeam: { name: 'Badgers', location: 'Wisconsin' },
+    awayTeam: { name: 'Spartans', location: 'Michigan State' },
+  },
+  {
+    location: 'Columbus, OH',
+    coordinates: [39.9612, -82.9988],
+    homeTeam: { name: 'Buckeyes', location: 'Ohio State' },
+    awayTeam: { name: 'Nittany Lions', location: 'Penn State' },
+  },
+  {
+    location: 'Nashville, TN',
+    coordinates: [36.1627, -86.7816],
+    homeTeam: { name: 'Commodores', location: 'Vanderbilt' },
+    awayTeam: { name: 'Volunteers', location: 'Tennessee' },
+  },
+  {
+    location: 'Miami, FL',
+    coordinates: [25.7617, -80.1918],
+    homeTeam: { name: 'Hurricanes', location: 'Miami' },
+    awayTeam: { name: 'Seminoles', location: 'Florida State' },
+  },
+  {
+    location: 'New Orleans, LA',
+    coordinates: [29.9511, -90.0715],
+    homeTeam: { name: 'Green Wave', location: 'Tulane' },
+    awayTeam: { name: 'Ragin Cajuns', location: 'Louisiana' },
+  },
+  {
+    location: 'Salt Lake City, UT',
+    coordinates: [40.7608, -111.8910],
+    homeTeam: { name: 'Utes', location: 'Utah' },
+    awayTeam: { name: 'Cougars', location: 'BYU' },
+  },
+  {
+    location: 'Kansas City, MO',
+    coordinates: [39.0997, -94.5786],
+    homeTeam: { name: 'Jayhawks', location: 'Kansas' },
+    awayTeam: { name: 'Tigers', location: 'Missouri' },
+  },
+  {
+    location: 'Indianapolis, IN',
+    coordinates: [39.7684, -86.1581],
+    homeTeam: { name: 'Boilermakers', location: 'Purdue' },
+    awayTeam: { name: 'Hoosiers', location: 'Indiana' },
+  },
+];
+
+const additionalRefereeNames = [
+  'Avery Thompson',
+  'Maya Patel',
+  'Ethan Brooks',
+  'Naomi Chen',
+  'Liam O\'Connor',
+  'Zoe Martinez',
+  'Jordan Kim',
+  'Priya Singh',
+  'Noah Bennett',
+  'Elena Garcia',
+  'Marcus Lee',
+  'Hannah Foster',
+  'Victor Alvarez',
+  'Olivia Turner',
+  'Caleb Morgan',
+];
+
+let generatedGameId = 16;
+
+function makeGeneratedGames(refIndex: number, gameCount: number): RefereeRaw['games'] {
+  const start = new Date(Date.UTC(2024, 2, 1 + refIndex));
+  return Array.from({ length: gameCount }, (_, gameIndex) => {
+    const template = generatedGameTemplates[(refIndex + gameIndex) % generatedGameTemplates.length];
+    const gameDate = new Date(start);
+    gameDate.setUTCDate(start.getUTCDate() + gameIndex * 3);
+
+    return {
+      id: `game-${String(generatedGameId++).padStart(3, '0')}`,
+      date: gameDate.toISOString().slice(0, 10),
+      location: template.location,
+      coordinates: template.coordinates,
+      homeTeam: template.homeTeam,
+      awayTeam: template.awayTeam,
+    };
+  });
+}
+
+const additionalReferees: RefereeRaw[] = additionalRefereeNames.map((name, index) => {
+  const refereeNumber = index + 4;
+  const id = `ref-${String(refereeNumber).padStart(3, '0')}`;
+  const gameCount = refereeNumber <= 8 ? 55 : 12;
+
+  return {
+    id,
+    name,
+    games: makeGeneratedGames(index, gameCount),
+  };
+});
+
+referees.push(...additionalReferees);

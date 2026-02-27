@@ -26,7 +26,7 @@ export default function RefereeSidebar({
         <h2 style={styles.sidebarTitle}>Referees</h2>
         <input
           type="search"
-          placeholder="Search referees…"
+          placeholder="Search..."
           value={search}
           onChange={e => setSearch(e.target.value)}
           style={styles.searchInput}
@@ -53,14 +53,6 @@ export default function RefereeSidebar({
                 onClick={() => onSelectReferee(ref.id)}
               >
                 <span style={styles.refName}>{ref.name}</span>
-                <span
-                  style={{
-                    ...styles.badge,
-                    ...(selectedRefereeId === ref.id ? styles.badgeSelected : {}),
-                  }}
-                >
-                  {ref.gameCount} games
-                </span>
               </li>
             ))
           )}
@@ -72,7 +64,7 @@ export default function RefereeSidebar({
 
 const styles: Record<string, React.CSSProperties> = {
   sidebar: {
-    width: '280px',
+    width: '240px',
     flexShrink: 0,
     backgroundColor: '#ffffff',
     borderRight: '1px solid #e5e7eb',
@@ -81,7 +73,7 @@ const styles: Record<string, React.CSSProperties> = {
     overflowY: 'auto',
   },
   sidebarHeader: {
-    padding: '16px',
+    padding: '12px',
     borderBottom: '1px solid #e5e7eb',
     backgroundColor: '#f9fafb',
     display: 'flex',
@@ -89,7 +81,7 @@ const styles: Record<string, React.CSSProperties> = {
     gap: '10px',
   },
   sidebarTitle: {
-    fontSize: '1rem',
+    fontSize: '0.9rem',
     fontWeight: 600,
     color: '#374151',
     textTransform: 'uppercase',
@@ -97,8 +89,8 @@ const styles: Record<string, React.CSSProperties> = {
   },
   searchInput: {
     width: '100%',
-    padding: '6px 10px',
-    fontSize: '0.875rem',
+    padding: '5px 8px',
+    fontSize: '0.8rem',
     border: '1px solid #d1d5db',
     borderRadius: '6px',
     outline: 'none',
@@ -130,19 +122,19 @@ const styles: Record<string, React.CSSProperties> = {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-between',
-    padding: '14px 16px',
+    padding: '10px 12px 10px 13px',
     cursor: 'pointer',
     borderBottom: '1px solid #f3f4f6',
+    borderLeft: '3px solid transparent',
     transition: 'background-color 0.15s',
     backgroundColor: 'transparent',
   },
   listItemSelected: {
     backgroundColor: '#eff6ff',
-    borderLeft: '3px solid #3b82f6',
-    paddingLeft: '13px',
+    borderLeftColor: '#3b82f6',
   },
   refName: {
-    fontSize: '0.95rem',
+    fontSize: '0.85rem',
     fontWeight: 500,
     color: '#111827',
   },

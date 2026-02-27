@@ -38,7 +38,7 @@ function App() {
   return (
     <div className="app">
       <header className="app-header">
-        <h1>🦓 Zebra Air - NCAA Referee Tracker</h1>
+        <h1>🦓 Zebra Viz - NCAA Mens Basketball Referee Tracker</h1>
       </header>
       <div className="app-content">
         <RefereeSidebar
@@ -54,17 +54,19 @@ function App() {
               <h2>Loading referee data...</h2>
             </div>
           ) : selectedReferee ? (
-            <>
-              <MapVisualization referee={selectedReferee} />
-              <div style={{ display: 'flex', gap: '16px', alignItems: 'stretch' }}>
-                <div style={{ flex: 1, minWidth: 0, display: 'flex', flexDirection: 'column' }}>
+            <div className="dashboard-layout">
+              <div className="map-column">
+                <MapVisualization referee={selectedReferee} />
+              </div>
+              <div className="details-column">
+                <div className="details-card-wrap">
                   <RefereeTravelCard referee={selectedReferee} />
                 </div>
-                <div style={{ flex: 1, minWidth: 0, display: 'flex', flexDirection: 'column' }}>
+                <div className="details-card-wrap">
                   <RefereeStatsCard referee={selectedReferee} />
                 </div>
               </div>
-            </>
+            </div>
           ) : (
             <div className="welcome-message">
               <div className="welcome-icon">🏀</div>
