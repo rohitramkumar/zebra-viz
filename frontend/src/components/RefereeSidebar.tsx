@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { RefereeListItem } from '../types';
 
 interface RefereeSidebarProps {
@@ -13,10 +14,24 @@ export default function RefereeSidebar({
   onSelectReferee,
   loading,
 }: RefereeSidebarProps) {
+  const [search, setSearch] = useState('');
+
+  const filtered = referees.filter(ref =>
+    ref.name.toLowerCase().includes(search.toLowerCase())
+  );
+
   return (
     <aside style={styles.sidebar}>
       <div style={styles.sidebarHeader}>
         <h2 style={styles.sidebarTitle}>Referees</h2>
+        <input
+          type="search"
+          placeholder="Search referees…"
+          value={search}
+          onChange={e => setSearch(e.target.value)}
+          style={styles.searchInput}
+          aria-label="Search referees"
+        />
       </div>
       {loading ? (
         <div style={styles.loadingContainer}>
@@ -25,26 +40,30 @@ export default function RefereeSidebar({
         </div>
       ) : (
         <ul style={styles.list}>
-          {referees.map(ref => (
-            <li
-              key={ref.id}
-              style={{
-                ...styles.listItem,
-                ...(selectedRefereeId === ref.id ? styles.listItemSelected : {}),
-              }}
-              onClick={() => onSelectReferee(ref.id)}
-            >
-              <span style={styles.refName}>{ref.name}</span>
-              <span
+          {filtered.length === 0 ? (
+            <li style={styles.noResults}>No referees found</li>
+          ) : (
+            filtered.map(ref => (
+              <li
+                key={ref.id}
                 style={{
-                  ...styles.badge,
-                  ...(selectedRefereeId === ref.id ? styles.badgeSelected : {}),
+                  ...styles.listItem,
+                  ...(selectedRefereeId === ref.id ? styles.listItemSelected : {}),
                 }}
+                onClick={() => onSelectReferee(ref.id)}
               >
-                {ref.gameCount} games
-              </span>
-            </li>
-          ))}
+                <span style={styles.refName}>{ref.name}</span>
+                <span
+                  style={{
+                    ...styles.badge,
+                    ...(selectedRefereeId === ref.id ? styles.badgeSelected : {}),
+                  }}
+                >
+                  {ref.gameCount} games
+                </span>
+              </li>
+            ))
+          )}
         </ul>
       )}
     </aside>
@@ -65,6 +84,9 @@ const styles: Record<string, React.CSSProperties> = {
     padding: '16px',
     borderBottom: '1px solid #e5e7eb',
     backgroundColor: '#f9fafb',
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '10px',
   },
   sidebarTitle: {
     fontSize: '1rem',
@@ -72,6 +94,17 @@ const styles: Record<string, React.CSSProperties> = {
     color: '#374151',
     textTransform: 'uppercase',
     letterSpacing: '0.05em',
+  },
+  searchInput: {
+    width: '100%',
+    padding: '6px 10px',
+    fontSize: '0.875rem',
+    border: '1px solid #d1d5db',
+    borderRadius: '6px',
+    outline: 'none',
+    boxSizing: 'border-box',
+    color: '#111827',
+    backgroundColor: '#ffffff',
   },
   loadingContainer: {
     display: 'flex',
@@ -124,5 +157,12 @@ const styles: Record<string, React.CSSProperties> = {
   badgeSelected: {
     backgroundColor: '#bfdbfe',
     color: '#1d4ed8',
+  },
+  noResults: {
+    padding: '16px',
+    color: '#6b7280',
+    fontSize: '0.875rem',
+    textAlign: 'center',
+    listStyle: 'none',
   },
 };

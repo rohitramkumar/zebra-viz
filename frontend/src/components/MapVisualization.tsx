@@ -87,7 +87,7 @@ export default function MapVisualization({ referee }: MapVisualizationProps) {
   }, [sortedGames]);
 
   return (
-    <div ref={containerRef} style={{ borderRadius: '8px', overflow: 'hidden', boxShadow: '0 1px 3px rgba(0,0,0,0.1)', minHeight: '300px', height: '450px', resize: 'vertical', background: '#d4e9f7', position: 'relative' }}>
+    <div ref={containerRef} style={{ borderRadius: '8px', overflow: 'hidden', boxShadow: '0 1px 3px rgba(0,0,0,0.1)', minHeight: '300px', height: '600px', resize: 'vertical', background: '#d4e9f7', position: 'relative' }}>
       <svg
         viewBox={`0 0 ${W} ${H}`}
         preserveAspectRatio="xMidYMid meet"
@@ -95,6 +95,12 @@ export default function MapVisualization({ referee }: MapVisualizationProps) {
         aria-label={`Travel map for ${referee.name}`}
         role="img"
       >
+        <defs>
+          <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+            <feDropShadow dx={0} dy={2} stdDeviation={2} floodOpacity={0.3} />
+          </filter>
+        </defs>
+
         {/* US states */}
         {'features' in statesGeo && statesGeo.features.map((feat, i) => (
           <path
@@ -172,12 +178,6 @@ export default function MapVisualization({ referee }: MapVisualizationProps) {
             </g>
           );
         })}
-
-        <defs>
-          <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
-            <feDropShadow dx={0} dy={2} stdDeviation={2} floodOpacity={0.3} />
-          </filter>
-        </defs>
       </svg>
 
       {/* Tooltip overlay — positioned absolutely within the container */}

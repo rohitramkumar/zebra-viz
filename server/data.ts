@@ -131,6 +131,14 @@ export const referees: RefereeRaw[] = [
         homeTeam: { name: 'Bruins', location: 'UCLA' },
         awayTeam: { name: 'Waves', location: 'Pepperdine' },
       },
+      {
+        id: 'game-015',
+        date: '2024-03-05',
+        location: 'Chicago, IL',
+        coordinates: [41.8781, -87.6298],
+        homeTeam: { name: 'Wildcats', location: 'Northwestern' },
+        awayTeam: { name: 'Fighting Illini', location: 'Illinois' },
+      },
     ],
   },
 ];

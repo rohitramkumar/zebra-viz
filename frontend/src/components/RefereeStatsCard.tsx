@@ -46,9 +46,9 @@ const styles: Record<string, React.CSSProperties> = {
     borderRadius: '8px',
     boxShadow: '0 1px 3px rgba(0,0,0,0.1)',
     overflow: 'hidden',
-    flexShrink: 0,
-    minWidth: '200px',
-    width: '240px',
+    flex: 1,
+    display: 'flex',
+    flexDirection: 'column',
   },
   cardHeader: {
     padding: '12px 16px',

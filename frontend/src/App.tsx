@@ -56,11 +56,13 @@ function App() {
           ) : selectedReferee ? (
             <>
               <MapVisualization referee={selectedReferee} />
-              <div style={{ display: 'flex', gap: '16px', alignItems: 'flex-start' }}>
-                <div style={{ flex: 1, minWidth: 0 }}>
+              <div style={{ display: 'flex', gap: '16px', alignItems: 'stretch' }}>
+                <div style={{ flex: 1, minWidth: 0, display: 'flex', flexDirection: 'column' }}>
                   <RefereeTravelCard referee={selectedReferee} />
                 </div>
-                <RefereeStatsCard referee={selectedReferee} />
+                <div style={{ flex: 1, minWidth: 0, display: 'flex', flexDirection: 'column' }}>
+                  <RefereeStatsCard referee={selectedReferee} />
+                </div>
               </div>
             </>
           ) : (

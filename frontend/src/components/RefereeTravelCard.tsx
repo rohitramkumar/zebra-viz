@@ -56,7 +56,9 @@ const styles: Record<string, React.CSSProperties> = {
     borderRadius: '8px',
     boxShadow: '0 1px 3px rgba(0,0,0,0.1)',
     overflow: 'hidden',
-    flexShrink: 0,
+    flex: 1,
+    display: 'flex',
+    flexDirection: 'column',
   },
   cardHeader: {
     padding: '12px 16px',
@@ -85,7 +87,7 @@ const styles: Record<string, React.CSSProperties> = {
     gap: '8px',
     padding: '12px',
     overflowY: 'auto',
-    maxHeight: '300px',
+    flex: 1,
   },
   gameItem: {
     display: 'flex',
