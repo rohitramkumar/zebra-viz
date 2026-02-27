@@ -56,7 +56,9 @@ const styles: Record<string, React.CSSProperties> = {
     borderRadius: '8px',
     boxShadow: '0 1px 3px rgba(0,0,0,0.1)',
     overflow: 'hidden',
-    flexShrink: 0,
+    flex: 1,
+    display: 'flex',
+    flexDirection: 'column',
   },
   cardHeader: {
     padding: '12px 16px',
@@ -81,10 +83,11 @@ const styles: Record<string, React.CSSProperties> = {
   },
   gameList: {
     display: 'flex',
-    flexDirection: 'row',
-    flexWrap: 'wrap',
+    flexDirection: 'column',
     gap: '8px',
     padding: '12px',
+    overflowY: 'auto',
+    flex: 1,
   },
   gameItem: {
     display: 'flex',
@@ -94,8 +97,6 @@ const styles: Record<string, React.CSSProperties> = {
     backgroundColor: '#f9fafb',
     borderRadius: '6px',
     border: '1px solid #e5e7eb',
-    minWidth: '280px',
-    flex: '1 1 280px',
   },
   gameNumber: {
     width: '24px',

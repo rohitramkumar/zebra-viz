@@ -1,6 +1,8 @@
-import { Referee } from "./types";
+import type { Referee } from "./types";
 
-export const referees: Referee[] = [
+type RefereeRaw = Omit<Referee, 'totalMilesTravelled' | 'mostCommonTeams' | 'daysWorkedStreak'>;
+
+export const referees: RefereeRaw[] = [
   {
     id: 'ref-001',
     name: 'James Mitchell',
@@ -128,6 +130,14 @@ export const referees: Referee[] = [
         coordinates: [34.0522, -118.2437],
         homeTeam: { name: 'Bruins', location: 'UCLA' },
         awayTeam: { name: 'Waves', location: 'Pepperdine' },
+      },
+      {
+        id: 'game-015',
+        date: '2024-03-05',
+        location: 'Chicago, IL',
+        coordinates: [41.8781, -87.6298],
+        homeTeam: { name: 'Wildcats', location: 'Northwestern' },
+        awayTeam: { name: 'Fighting Illini', location: 'Illinois' },
       },
     ],
   },

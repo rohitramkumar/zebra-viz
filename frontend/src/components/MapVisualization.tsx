@@ -30,11 +30,19 @@ interface MapVisualizationProps {
   referee: Referee;
 }
 
+interface CityGroup {
+  location: string;
+  coordinates: [number, number];
+  games: Game[];
+  indices: number[];
+}
+
 interface TooltipState {
   x: number;
   y: number;
-  game: Game;
-  index: number;
+  games: Game[];
+  indices: number[];
+  location: string;
 }
 
 export default function MapVisualization({ referee }: MapVisualizationProps) {
@@ -57,8 +65,29 @@ export default function MapVisualization({ referee }: MapVisualizationProps) {
     .map(p => p.join(','))
     .join(' ');
 
+  // Group games by city coordinates so multiple games in same city share one bubble
+  const cityGroups: CityGroup[] = useMemo(() => {
+    const map = new Map<string, CityGroup>();
+    sortedGames.forEach((game, index) => {
+      const key = `${game.coordinates[0]},${game.coordinates[1]}`;
+      if (map.has(key)) {
+        const group = map.get(key)!;
+        group.games.push(game);
+        group.indices.push(index);
+      } else {
+        map.set(key, {
+          location: game.location,
+          coordinates: game.coordinates,
+          games: [game],
+          indices: [index],
+        });
+      }
+    });
+    return Array.from(map.values());
+  }, [sortedGames]);
+
   return (
-    <div ref={containerRef} style={{ flex: 1, borderRadius: '8px', overflow: 'hidden', boxShadow: '0 1px 3px rgba(0,0,0,0.1)', minHeight: '300px', background: '#d4e9f7', position: 'relative' }}>
+    <div ref={containerRef} style={{ borderRadius: '8px', overflow: 'hidden', boxShadow: '0 1px 3px rgba(0,0,0,0.1)', minHeight: '300px', height: '600px', resize: 'vertical', background: '#d4e9f7', position: 'relative' }}>
       <svg
         viewBox={`0 0 ${W} ${H}`}
         preserveAspectRatio="xMidYMid meet"
@@ -66,6 +95,12 @@ export default function MapVisualization({ referee }: MapVisualizationProps) {
         aria-label={`Travel map for ${referee.name}`}
         role="img"
       >
+        <defs>
+          <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+            <feDropShadow dx={0} dy={2} stdDeviation={2} floodOpacity={0.3} />
+          </filter>
+        </defs>
+
         {/* US states */}
         {'features' in statesGeo && statesGeo.features.map((feat, i) => (
           <path
@@ -90,12 +125,15 @@ export default function MapVisualization({ referee }: MapVisualizationProps) {
           />
         )}
 
-        {/* Game markers */}
-        {sortedGames.map((game, index) => {
-          const pt = projected[index];
+        {/* Game markers — one bubble per city, collapsed if multiple games */}
+        {cityGroups.map((group) => {
+          const pt = projection([group.coordinates[1], group.coordinates[0]]);
           if (!pt) return null;
           const [x, y] = pt;
-          const label = `Game ${index + 1}: ${game.homeTeam.location} ${game.homeTeam.name} vs ${game.awayTeam.location} ${game.awayTeam.name}, ${formatDate(game.date)}, ${game.location}`;
+          const count = group.games.length;
+          const label = count === 1
+            ? `Game ${group.indices[0] + 1}: ${group.games[0].homeTeam.location} ${group.games[0].homeTeam.name} vs ${group.games[0].awayTeam.location} ${group.games[0].awayTeam.name}, ${formatDate(group.games[0].date)}, ${group.location}`
+            : `${count} games in ${group.location}: ${group.games.map((_g, i) => `Game ${group.indices[i] + 1}`).join(', ')}`;
           const showTooltip = (e: React.SyntheticEvent) => {
             const svgEl = (e.currentTarget as SVGGElement).ownerSVGElement!;
             const svgRect = svgEl.getBoundingClientRect();
@@ -105,13 +143,14 @@ export default function MapVisualization({ referee }: MapVisualizationProps) {
             setTooltip({
               x: x * scaleX + (svgRect.left - containerRect.left),
               y: y * scaleY + (svgRect.top - containerRect.top),
-              game,
-              index,
+              games: group.games,
+              indices: group.indices,
+              location: group.location,
             });
           };
           return (
             <g
-              key={game.id}
+              key={`${group.coordinates[0]},${group.coordinates[1]}`}
               transform={`translate(${x},${y})`}
               style={{ cursor: 'pointer' }}
               role="button"
@@ -134,17 +173,11 @@ export default function MapVisualization({ referee }: MapVisualizationProps) {
                 style={{ pointerEvents: 'none', userSelect: 'none' }}
                 aria-hidden="true"
               >
-                {index + 1}
+                {count > 1 ? count : group.indices[0] + 1}
               </text>
             </g>
           );
         })}
-
-        <defs>
-          <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
-            <feDropShadow dx={0} dy={2} stdDeviation={2} floodOpacity={0.3} />
-          </filter>
-        </defs>
       </svg>
 
       {/* Tooltip overlay — positioned absolutely within the container */}
@@ -166,12 +199,16 @@ export default function MapVisualization({ referee }: MapVisualizationProps) {
           }}
           role="tooltip"
         >
-          <strong>Game {tooltip.index + 1}</strong>
-          <p style={{ margin: '4px 0', color: '#6b7280', fontSize: '0.8rem' }}>{formatDate(tooltip.game.date)}</p>
-          <p style={{ margin: '4px 0' }}><strong>{tooltip.game.homeTeam.location} {tooltip.game.homeTeam.name}</strong></p>
-          <p style={{ margin: '2px 0', color: '#6b7280', fontSize: '0.8rem' }}>vs</p>
-          <p style={{ margin: '4px 0' }}><strong>{tooltip.game.awayTeam.location} {tooltip.game.awayTeam.name}</strong></p>
-          <p style={{ margin: '4px 0', color: '#374151' }}>📍 {tooltip.game.location}</p>
+          <p style={{ margin: '0 0 6px 0', fontWeight: 600 }}>📍 {tooltip.location}</p>
+          {tooltip.games.map((game, i) => (
+            <div key={game.id} style={{ marginBottom: i < tooltip.games.length - 1 ? '8px' : 0, borderTop: i > 0 ? '1px solid #e5e7eb' : undefined, paddingTop: i > 0 ? '8px' : undefined }}>
+              <strong>Game {tooltip.indices[i] + 1}</strong>
+              <p style={{ margin: '4px 0', color: '#6b7280', fontSize: '0.8rem' }}>{formatDate(game.date)}</p>
+              <p style={{ margin: '4px 0' }}><strong>{game.homeTeam.location} {game.homeTeam.name}</strong></p>
+              <p style={{ margin: '2px 0', color: '#6b7280', fontSize: '0.8rem' }}>vs</p>
+              <p style={{ margin: '4px 0' }}><strong>{game.awayTeam.location} {game.awayTeam.name}</strong></p>
+            </div>
+          ))}
         </div>
       )}
     </div>
