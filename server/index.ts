@@ -1,8 +1,25 @@
 import express, { type Request, Response, NextFunction } from "express";
 import { createServer } from "http";
-import { referees } from "./data";
 import { type RefereeListItem, type TeamCount } from "./types";
 import { setupVite, serveStatic, log } from "./vite";
+import { readFileSync } from "node:fs";
+
+type RefereeSource = {
+  id: string;
+  name: string;
+  totalMilesTravelled?: number;
+  games: {
+    date: string;
+    location: string;
+    coordinates: [number, number];
+    homeTeam: { name: string };
+    awayTeam: { name: string };
+  }[];
+};
+
+const referees = JSON.parse(
+  readFileSync(new URL("./data/referees.json", import.meta.url), "utf-8"),
+) as RefereeSource[];
 
 function haversineDistanceMiles(coord1: [number, number], coord2: [number, number]): number {
   const R = 3958.8;
@@ -27,13 +44,13 @@ function computeTotalMiles(games: { coordinates: [number, number]; date: string 
 }
 
 function computeMostCommonTeams(
-  games: { homeTeam: { name: string; location: string }; awayTeam: { name: string; location: string } }[],
+  games: { homeTeam: { name: string }; awayTeam: { name: string } }[],
   topN = 3
 ): TeamCount[] {
   const counts: Record<string, number> = {};
   for (const game of games) {
-    const home = `${game.homeTeam.location} ${game.homeTeam.name}`;
-    const away = `${game.awayTeam.location} ${game.awayTeam.name}`;
+    const home = game.homeTeam.name;
+    const away = game.awayTeam.name;
     counts[home] = (counts[home] ?? 0) + 1;
     counts[away] = (counts[away] ?? 0) + 1;
   }
@@ -113,7 +130,7 @@ app.get("/api/referees/:id", (req, res) => {
   }
   return res.json({
     ...referee,
-    totalMilesTravelled: computeTotalMiles(referee.games),
+    totalMilesTravelled: referee.totalMilesTravelled ?? computeTotalMiles(referee.games),
     mostCommonTeams: computeMostCommonTeams(referee.games),
     daysWorkedStreak: computeDaysWorkedStreak(referee.games),
   });

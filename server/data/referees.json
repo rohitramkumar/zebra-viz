@@ -1,0 +1,3341 @@
+[
+  {
+    "id": "714359",
+    "name": "Kipp Kissinger",
+    "games": [
+      {
+        "date": "2026-02-25",
+        "location": "Tuscaloosa, AL",
+        "homeTeam": {
+          "name": "Alabama"
+        },
+        "awayTeam": {
+          "name": "Mississippi St."
+        },
+        "coordinates": [
+          33.21031,
+          -87.5658722
+        ]
+      },
+      {
+        "date": "2026-02-24",
+        "location": "Columbia, MO",
+        "homeTeam": {
+          "name": "Missouri"
+        },
+        "awayTeam": {
+          "name": "Tennessee"
+        },
+        "coordinates": [
+          38.951768,
+          -92.32829319999999
+        ]
+      },
+      {
+        "date": "2026-02-23",
+        "location": "Lawrence, KS",
+        "homeTeam": {
+          "name": "Kansas"
+        },
+        "awayTeam": {
+          "name": "Houston"
+        },
+        "coordinates": [
+          38.9716689,
+          -95.2352501
+        ]
+      },
+      {
+        "date": "2026-02-21",
+        "location": "Fort Worth, TX",
+        "homeTeam": {
+          "name": "TCU"
+        },
+        "awayTeam": {
+          "name": "West Virginia"
+        },
+        "coordinates": [
+          32.7554883,
+          -97.3307658
+        ]
+      },
+      {
+        "date": "2026-02-20",
+        "location": "St. Louis, MO",
+        "homeTeam": {
+          "name": "Saint Louis"
+        },
+        "awayTeam": {
+          "name": "VCU"
+        },
+        "coordinates": [
+          38.62742799999999,
+          -90.1982439
+        ]
+      },
+      {
+        "date": "2026-02-19",
+        "location": "Arlington, TX",
+        "homeTeam": {
+          "name": "UT Arlington"
+        },
+        "awayTeam": {
+          "name": "Utah Tech"
+        },
+        "coordinates": [
+          32.735687,
+          -97.10806559999999
+        ]
+      },
+      {
+        "date": "2026-02-18",
+        "location": "Tucson, AZ",
+        "homeTeam": {
+          "name": "Arizona"
+        },
+        "awayTeam": {
+          "name": "BYU"
+        },
+        "coordinates": [
+          32.2539787,
+          -110.9741769
+        ]
+      },
+      {
+        "date": "2026-02-17",
+        "location": "Manhattan, KS",
+        "homeTeam": {
+          "name": "Kansas St."
+        },
+        "awayTeam": {
+          "name": "Baylor"
+        },
+        "coordinates": [
+          39.179475,
+          -96.57331699999999
+        ]
+      },
+      {
+        "date": "2026-02-16",
+        "location": "Ames, IA",
+        "homeTeam": {
+          "name": "Iowa St."
+        },
+        "awayTeam": {
+          "name": "Houston"
+        },
+        "coordinates": [
+          42.0307812,
+          -93.63191309999999
+        ]
+      },
+      {
+        "date": "2026-02-15",
+        "location": "Cincinnati, OH",
+        "homeTeam": {
+          "name": "Cincinnati"
+        },
+        "awayTeam": {
+          "name": "Utah"
+        },
+        "coordinates": [
+          39.1031182,
+          -84.5120196
+        ]
+      },
+      {
+        "date": "2026-02-14",
+        "location": "Cincinnati, OH",
+        "homeTeam": {
+          "name": "Xavier"
+        },
+        "awayTeam": {
+          "name": "Marquette"
+        },
+        "coordinates": [
+          39.1031182,
+          -84.5120196
+        ]
+      },
+      {
+        "date": "2026-02-13",
+        "location": "Chicago, IL",
+        "homeTeam": {
+          "name": "Saint Louis"
+        },
+        "awayTeam": {
+          "name": "Loyola Chicago"
+        },
+        "coordinates": [
+          41.88325,
+          -87.6323879
+        ]
+      },
+      {
+        "date": "2026-02-12",
+        "location": "Nashville, TN",
+        "homeTeam": {
+          "name": "Belmont"
+        },
+        "awayTeam": {
+          "name": "Northern Iowa"
+        },
+        "coordinates": [
+          36.1626638,
+          -86.7816016
+        ]
+      },
+      {
+        "date": "2026-02-11",
+        "location": "Chestnut Hill, MA",
+        "homeTeam": {
+          "name": "Stanford"
+        },
+        "awayTeam": {
+          "name": "Boston College"
+        },
+        "coordinates": [
+          42.3328668,
+          -71.1727583
+        ]
+      },
+      {
+        "date": "2026-02-10",
+        "location": "Dallas, TX",
+        "homeTeam": {
+          "name": "SMU"
+        },
+        "awayTeam": {
+          "name": "Notre Dame"
+        },
+        "coordinates": [
+          32.7766642,
+          -96.79698789999999
+        ]
+      },
+      {
+        "date": "2026-02-09",
+        "location": "Lawrence, KS",
+        "homeTeam": {
+          "name": "Kansas"
+        },
+        "awayTeam": {
+          "name": "Arizona"
+        },
+        "coordinates": [
+          38.9716689,
+          -95.2352501
+        ]
+      },
+      {
+        "date": "2026-02-08",
+        "location": "Cincinnati, OH",
+        "homeTeam": {
+          "name": "Cincinnati"
+        },
+        "awayTeam": {
+          "name": "UCF"
+        },
+        "coordinates": [
+          39.1031182,
+          -84.5120196
+        ]
+      },
+      {
+        "date": "2026-02-07",
+        "location": "Ames, IA",
+        "homeTeam": {
+          "name": "Iowa St."
+        },
+        "awayTeam": {
+          "name": "Baylor"
+        },
+        "coordinates": [
+          42.0307812,
+          -93.63191309999999
+        ]
+      },
+      {
+        "date": "2026-02-06",
+        "location": "Cedar Falls, IA",
+        "homeTeam": {
+          "name": "Northern Iowa"
+        },
+        "awayTeam": {
+          "name": "Bradley"
+        },
+        "coordinates": [
+          42.5348993,
+          -92.4453161
+        ]
+      },
+      {
+        "date": "2026-02-04",
+        "location": "Providence, RI",
+        "homeTeam": {
+          "name": "Providence"
+        },
+        "awayTeam": {
+          "name": "Butler"
+        },
+        "coordinates": [
+          41.8244836,
+          -71.4127462
+        ]
+      },
+      {
+        "date": "2026-02-03",
+        "location": "Charlottesville, VA",
+        "homeTeam": {
+          "name": "Virginia"
+        },
+        "awayTeam": {
+          "name": "Pittsburgh"
+        },
+        "coordinates": [
+          38.0301826,
+          -78.4769353
+        ]
+      },
+      {
+        "date": "2026-02-02",
+        "location": "Lubbock, TX",
+        "homeTeam": {
+          "name": "Kansas"
+        },
+        "awayTeam": {
+          "name": "Texas Tech"
+        },
+        "coordinates": [
+          33.5845235,
+          -101.8552139
+        ]
+      },
+      {
+        "date": "2026-02-01",
+        "location": "Boulder, CO",
+        "homeTeam": {
+          "name": "Colorado"
+        },
+        "awayTeam": {
+          "name": "TCU"
+        },
+        "coordinates": [
+          40.0189728,
+          -105.2747406
+        ]
+      },
+      {
+        "date": "2026-01-31",
+        "location": "Tempe, AZ",
+        "homeTeam": {
+          "name": "Arizona"
+        },
+        "awayTeam": {
+          "name": "Arizona St."
+        },
+        "coordinates": [
+          33.4255104,
+          -111.9400054
+        ]
+      },
+      {
+        "date": "2026-01-29",
+        "location": "Ames, IA",
+        "homeTeam": {
+          "name": "Iowa St."
+        },
+        "awayTeam": {
+          "name": "Colorado"
+        },
+        "coordinates": [
+          42.0307812,
+          -93.63191309999999
+        ]
+      },
+      {
+        "date": "2026-01-28",
+        "location": "Cincinnati, OH",
+        "homeTeam": {
+          "name": "Cincinnati"
+        },
+        "awayTeam": {
+          "name": "Baylor"
+        },
+        "coordinates": [
+          39.1031182,
+          -84.5120196
+        ]
+      },
+      {
+        "date": "2026-01-27",
+        "location": "Orlando, FL",
+        "homeTeam": {
+          "name": "UCF"
+        },
+        "awayTeam": {
+          "name": "Arizona St."
+        },
+        "coordinates": [
+          28.5383832,
+          -81.3789269
+        ]
+      },
+      {
+        "date": "2026-01-26",
+        "location": "Provo, UT",
+        "homeTeam": {
+          "name": "Arizona"
+        },
+        "awayTeam": {
+          "name": "BYU"
+        },
+        "coordinates": [
+          40.2335349,
+          -111.6669789
+        ]
+      },
+      {
+        "date": "2026-01-24",
+        "location": "Manhattan, KS",
+        "homeTeam": {
+          "name": "Kansas"
+        },
+        "awayTeam": {
+          "name": "Kansas St."
+        },
+        "coordinates": [
+          39.179475,
+          -96.57331699999999
+        ]
+      },
+      {
+        "date": "2026-01-23",
+        "location": "Piscataway, NJ",
+        "homeTeam": {
+          "name": "Indiana"
+        },
+        "awayTeam": {
+          "name": "Rutgers"
+        },
+        "coordinates": [
+          40.5500011,
+          -74.475777
+        ]
+      },
+      {
+        "date": "2026-01-22",
+        "location": "University Park, PA",
+        "homeTeam": {
+          "name": "Wisconsin"
+        },
+        "awayTeam": {
+          "name": "Penn St."
+        },
+        "coordinates": [
+          40.8147955,
+          -77.86531260000001
+        ]
+      },
+      {
+        "date": "2026-01-21",
+        "location": "Chestnut Hill, MA",
+        "homeTeam": {
+          "name": "Boston College"
+        },
+        "awayTeam": {
+          "name": "Pittsburgh"
+        },
+        "coordinates": [
+          42.3328668,
+          -71.1727583
+        ]
+      },
+      {
+        "date": "2026-01-20",
+        "location": "Ames, IA",
+        "homeTeam": {
+          "name": "Iowa St."
+        },
+        "awayTeam": {
+          "name": "UCF"
+        },
+        "coordinates": [
+          42.0307812,
+          -93.63191309999999
+        ]
+      },
+      {
+        "date": "2026-01-19",
+        "location": "Greeley, CO",
+        "homeTeam": {
+          "name": "Montana St."
+        },
+        "awayTeam": {
+          "name": "Northern Colorado"
+        },
+        "coordinates": [
+          40.4233142,
+          -104.7091322
+        ]
+      },
+      {
+        "date": "2026-01-18",
+        "location": "Houston, TX",
+        "homeTeam": {
+          "name": "Houston"
+        },
+        "awayTeam": {
+          "name": "Arizona St."
+        },
+        "coordinates": [
+          29.7600771,
+          -95.37011079999999
+        ]
+      },
+      {
+        "date": "2026-01-17",
+        "location": "Norman, OK",
+        "homeTeam": {
+          "name": "Alabama"
+        },
+        "awayTeam": {
+          "name": "Oklahoma"
+        },
+        "coordinates": [
+          35.2215893,
+          -97.4446151
+        ]
+      },
+      {
+        "date": "2026-01-15",
+        "location": "Boca Raton, FL",
+        "homeTeam": {
+          "name": "Florida Atlantic"
+        },
+        "awayTeam": {
+          "name": "Wichita St."
+        },
+        "coordinates": [
+          26.3683064,
+          -80.1289321
+        ]
+      },
+      {
+        "date": "2026-01-14",
+        "location": "Fayetteville, AR",
+        "homeTeam": {
+          "name": "Arkansas"
+        },
+        "awayTeam": {
+          "name": "South Carolina"
+        },
+        "coordinates": [
+          36.0618562,
+          -94.1579584
+        ]
+      },
+      {
+        "date": "2026-01-13",
+        "location": "Lawrence, KS",
+        "homeTeam": {
+          "name": "Kansas"
+        },
+        "awayTeam": {
+          "name": "Iowa St."
+        },
+        "coordinates": [
+          38.9716689,
+          -95.2352501
+        ]
+      },
+      {
+        "date": "2026-01-11",
+        "location": "Orlando, FL",
+        "homeTeam": {
+          "name": "UCF"
+        },
+        "awayTeam": {
+          "name": "Cincinnati"
+        },
+        "coordinates": [
+          28.5383832,
+          -81.3789269
+        ]
+      },
+      {
+        "date": "2026-01-10",
+        "location": "Fort Worth, TX",
+        "homeTeam": {
+          "name": "Arizona"
+        },
+        "awayTeam": {
+          "name": "TCU"
+        },
+        "coordinates": [
+          32.7554883,
+          -97.3307658
+        ]
+      },
+      {
+        "date": "2026-01-08",
+        "location": "East Lansing, MI",
+        "homeTeam": {
+          "name": "Michigan St."
+        },
+        "awayTeam": {
+          "name": "Northwestern"
+        },
+        "coordinates": [
+          42.7369792,
+          -84.48386540000001
+        ]
+      },
+      {
+        "date": "2026-01-07",
+        "location": "Boulder, CO",
+        "homeTeam": {
+          "name": "Colorado"
+        },
+        "awayTeam": {
+          "name": "Utah"
+        },
+        "coordinates": [
+          40.0189728,
+          -105.2747406
+        ]
+      },
+      {
+        "date": "2026-01-06",
+        "location": "Stillwater, OK",
+        "homeTeam": {
+          "name": "Oklahoma St."
+        },
+        "awayTeam": {
+          "name": "UCF"
+        },
+        "coordinates": [
+          36.1157217,
+          -97.0585722
+        ]
+      },
+      {
+        "date": "2026-01-05",
+        "location": "Columbus, OH",
+        "homeTeam": {
+          "name": "Nebraska"
+        },
+        "awayTeam": {
+          "name": "Ohio St."
+        },
+        "coordinates": [
+          39.9625112,
+          -83.0032218
+        ]
+      },
+      {
+        "date": "2026-01-04",
+        "location": "Nashville, TN",
+        "homeTeam": {
+          "name": "Southern Illinois"
+        },
+        "awayTeam": {
+          "name": "Belmont"
+        },
+        "coordinates": [
+          36.1626638,
+          -86.7816016
+        ]
+      },
+      {
+        "date": "2026-01-03",
+        "location": "Fort Worth, TX",
+        "homeTeam": {
+          "name": "TCU"
+        },
+        "awayTeam": {
+          "name": "Baylor"
+        },
+        "coordinates": [
+          32.7554883,
+          -97.3307658
+        ]
+      },
+      {
+        "date": "2026-01-02",
+        "location": "Ames, IA",
+        "homeTeam": {
+          "name": "Iowa St."
+        },
+        "awayTeam": {
+          "name": "West Virginia"
+        },
+        "coordinates": [
+          42.0307812,
+          -93.63191309999999
+        ]
+      },
+      {
+        "date": "2026-01-01",
+        "location": "Cedar Falls, IA",
+        "homeTeam": {
+          "name": "Northern Iowa"
+        },
+        "awayTeam": {
+          "name": "Indiana St."
+        },
+        "coordinates": [
+          42.5348993,
+          -92.4453161
+        ]
+      },
+      {
+        "date": "2025-12-31",
+        "location": "Raleigh, NC",
+        "homeTeam": {
+          "name": "N.C. State"
+        },
+        "awayTeam": {
+          "name": "Wake Forest"
+        },
+        "coordinates": [
+          35.7795897,
+          -78.6381787
+        ]
+      },
+      {
+        "date": "2025-12-30",
+        "location": "Chapel Hill, NC",
+        "homeTeam": {
+          "name": "North Carolina"
+        },
+        "awayTeam": {
+          "name": "Florida St."
+        },
+        "coordinates": [
+          35.9131996,
+          -79.0558445
+        ]
+      },
+      {
+        "date": "2025-12-29",
+        "location": "Houston, TX",
+        "homeTeam": {
+          "name": "Houston"
+        },
+        "awayTeam": {
+          "name": "Middle Tennessee"
+        },
+        "coordinates": [
+          29.7600771,
+          -95.37011079999999
+        ]
+      },
+      {
+        "date": "2025-12-28",
+        "location": "Boulder, CO",
+        "homeTeam": {
+          "name": "Northern Colorado"
+        },
+        "awayTeam": {
+          "name": "Colorado"
+        },
+        "coordinates": [
+          40.0189728,
+          -105.2747406
+        ]
+      },
+      {
+        "date": "2025-12-22",
+        "location": "Lawrence, KS",
+        "homeTeam": {
+          "name": "Kansas"
+        },
+        "awayTeam": {
+          "name": "Davidson"
+        },
+        "coordinates": [
+          38.9716689,
+          -95.2352501
+        ]
+      },
+      {
+        "date": "2025-12-21",
+        "location": "Ames, IA",
+        "homeTeam": {
+          "name": "Iowa St."
+        },
+        "awayTeam": {
+          "name": "Long Beach St."
+        },
+        "coordinates": [
+          42.0307812,
+          -93.63191309999999
+        ]
+      },
+      {
+        "date": "2025-12-20",
+        "location": "Salt Lake City, UT",
+        "homeTeam": {
+          "name": "Utah"
+        },
+        "awayTeam": {
+          "name": "Eastern Washington"
+        },
+        "coordinates": [
+          40.7605601,
+          -111.8881397
+        ]
+      },
+      {
+        "date": "2025-12-19",
+        "location": "Waco, TX",
+        "homeTeam": {
+          "name": "Baylor"
+        },
+        "awayTeam": {
+          "name": "Alcorn St."
+        },
+        "coordinates": [
+          31.5575916,
+          -97.12899220000001
+        ]
+      },
+      {
+        "date": "2025-12-18",
+        "location": "Stillwater, OK",
+        "homeTeam": {
+          "name": "Oklahoma St."
+        },
+        "awayTeam": {
+          "name": "Kansas City"
+        },
+        "coordinates": [
+          36.1157217,
+          -97.0585722
+        ]
+      },
+      {
+        "date": "2025-12-17",
+        "location": "Boulder, CO",
+        "homeTeam": {
+          "name": "Colorado"
+        },
+        "awayTeam": {
+          "name": "Portland St."
+        },
+        "coordinates": [
+          40.0189728,
+          -105.2747406
+        ]
+      },
+      {
+        "date": "2025-12-16",
+        "location": "Provo, UT",
+        "homeTeam": {
+          "name": "BYU"
+        },
+        "awayTeam": {
+          "name": "Pacific"
+        },
+        "coordinates": [
+          40.2335349,
+          -111.6669789
+        ]
+      },
+      {
+        "date": "2025-12-15",
+        "location": "Fort Worth, TX",
+        "homeTeam": {
+          "name": "TCU"
+        },
+        "awayTeam": {
+          "name": "Incarnate Word"
+        },
+        "coordinates": [
+          32.7554883,
+          -97.3307658
+        ]
+      },
+      {
+        "date": "2025-12-14",
+        "location": "Idaho Falls, ID",
+        "homeTeam": {
+          "name": "Boise St."
+        },
+        "awayTeam": {
+          "name": "Saint Mary's"
+        },
+        "coordinates": [
+          43.4926602,
+          -112.0407506
+        ]
+      },
+      {
+        "date": "2025-12-13",
+        "location": "Salt Lake City, UT",
+        "homeTeam": {
+          "name": "Mississippi St."
+        },
+        "awayTeam": {
+          "name": "Utah"
+        },
+        "coordinates": [
+          40.7605601,
+          -111.8881397
+        ]
+      },
+      {
+        "date": "2025-12-11",
+        "location": "Ames, IA",
+        "homeTeam": {
+          "name": "Iowa St."
+        },
+        "awayTeam": {
+          "name": "Iowa"
+        },
+        "coordinates": [
+          42.0307812,
+          -93.63191309999999
+        ]
+      },
+      {
+        "date": "2025-12-10",
+        "location": "New York, NY",
+        "homeTeam": {
+          "name": "Fordham"
+        },
+        "awayTeam": {
+          "name": "Fairleigh Dickinson"
+        },
+        "coordinates": [
+          40.7127753,
+          -74.0059728
+        ]
+      },
+      {
+        "date": "2025-12-09",
+        "location": "New York, NY",
+        "homeTeam": {
+          "name": "BYU"
+        },
+        "awayTeam": {
+          "name": "Clemson"
+        },
+        "coordinates": [
+          40.7127753,
+          -74.0059728
+        ]
+      },
+      {
+        "date": "2025-12-08",
+        "location": "Manhattan, KS",
+        "homeTeam": {
+          "name": "Kansas St."
+        },
+        "awayTeam": {
+          "name": "Mississippi Valley St."
+        },
+        "coordinates": [
+          39.179475,
+          -96.57331699999999
+        ]
+      },
+      {
+        "date": "2025-12-07",
+        "location": "Orlando, FL",
+        "homeTeam": {
+          "name": "UCF"
+        },
+        "awayTeam": {
+          "name": "Towson"
+        },
+        "coordinates": [
+          28.5383832,
+          -81.3789269
+        ]
+      },
+      {
+        "date": "2025-12-06",
+        "location": "Nashville, TN",
+        "homeTeam": {
+          "name": "Illinois"
+        },
+        "awayTeam": {
+          "name": "Tennessee"
+        },
+        "coordinates": [
+          36.1626638,
+          -86.7816016
+        ]
+      },
+      {
+        "date": "2025-12-05",
+        "location": "Cincinnati, OH",
+        "homeTeam": {
+          "name": "Xavier"
+        },
+        "awayTeam": {
+          "name": "Cincinnati"
+        },
+        "coordinates": [
+          39.1031182,
+          -84.5120196
+        ]
+      },
+      {
+        "date": "2025-12-03",
+        "location": "Ames, IA",
+        "homeTeam": {
+          "name": "Iowa St."
+        },
+        "awayTeam": {
+          "name": "Alcorn St."
+        },
+        "coordinates": [
+          42.0307812,
+          -93.63191309999999
+        ]
+      },
+      {
+        "date": "2025-12-02",
+        "location": "Lawrence, KS",
+        "homeTeam": {
+          "name": "Connecticut"
+        },
+        "awayTeam": {
+          "name": "Kansas"
+        },
+        "coordinates": [
+          38.9716689,
+          -95.2352501
+        ]
+      },
+      {
+        "date": "2025-12-01",
+        "location": "Boulder, CO",
+        "homeTeam": {
+          "name": "Colorado"
+        },
+        "awayTeam": {
+          "name": "Cal Baptist"
+        },
+        "coordinates": [
+          40.0189728,
+          -105.2747406
+        ]
+      },
+      {
+        "date": "2025-11-30",
+        "location": "Lubbock, TX",
+        "homeTeam": {
+          "name": "Texas Tech"
+        },
+        "awayTeam": {
+          "name": "Wyoming"
+        },
+        "coordinates": [
+          33.5845235,
+          -101.8552139
+        ]
+      },
+      {
+        "date": "2025-11-29",
+        "location": "Arlington, TX",
+        "homeTeam": {
+          "name": "UT Arlington"
+        },
+        "awayTeam": {
+          "name": "Stephen F. Austin"
+        },
+        "coordinates": [
+          32.735687,
+          -97.10806559999999
+        ]
+      },
+      {
+        "date": "2025-11-28",
+        "location": "San Diego, CA",
+        "homeTeam": {
+          "name": "TCU"
+        },
+        "awayTeam": {
+          "name": "Wisconsin"
+        },
+        "coordinates": [
+          32.715738,
+          -117.1610838
+        ]
+      },
+      {
+        "date": "2025-11-27",
+        "location": "San Diego, CA",
+        "homeTeam": {
+          "name": "TCU"
+        },
+        "awayTeam": {
+          "name": "Florida"
+        },
+        "coordinates": [
+          32.715738,
+          -117.1610838
+        ]
+      },
+      {
+        "date": "2025-11-26",
+        "location": "Palm Springs, CA",
+        "homeTeam": {
+          "name": "Iowa"
+        },
+        "awayTeam": {
+          "name": "Grand Canyon"
+        },
+        "coordinates": [
+          33.8232286,
+          -116.5106191
+        ]
+      },
+      {
+        "date": "2025-11-25",
+        "location": "Palm Springs, CA",
+        "homeTeam": {
+          "name": "Iowa"
+        },
+        "awayTeam": {
+          "name": "Mississippi"
+        },
+        "coordinates": [
+          33.8232286,
+          -116.5106191
+        ]
+      },
+      {
+        "date": "2025-11-24",
+        "location": "Tucson, AZ",
+        "homeTeam": {
+          "name": "Arizona"
+        },
+        "awayTeam": {
+          "name": "Denver"
+        },
+        "coordinates": [
+          32.2539787,
+          -110.9741769
+        ]
+      },
+      {
+        "date": "2025-11-23",
+        "location": "Normal, IL",
+        "homeTeam": {
+          "name": "Illinois St."
+        },
+        "awayTeam": {
+          "name": "Coastal Carolina"
+        },
+        "coordinates": [
+          40.5142026,
+          -88.9906312
+        ]
+      },
+      {
+        "date": "2025-11-22",
+        "location": "Stillwater, OK",
+        "homeTeam": {
+          "name": "Oklahoma St."
+        },
+        "awayTeam": {
+          "name": "Nicholls"
+        },
+        "coordinates": [
+          36.1157217,
+          -97.0585722
+        ]
+      },
+      {
+        "date": "2025-11-21",
+        "location": "Salt Lake City, UT",
+        "homeTeam": {
+          "name": "BYU"
+        },
+        "awayTeam": {
+          "name": "Wisconsin"
+        },
+        "coordinates": [
+          40.7605601,
+          -111.8881397
+        ]
+      },
+      {
+        "date": "2025-11-20",
+        "location": "Salt Lake City, UT",
+        "homeTeam": {
+          "name": "Cal Poly"
+        },
+        "awayTeam": {
+          "name": "Utah"
+        },
+        "coordinates": [
+          40.7605601,
+          -111.8881397
+        ]
+      },
+      {
+        "date": "2025-11-19",
+        "location": "Storrs, CT",
+        "homeTeam": {
+          "name": "Arizona"
+        },
+        "awayTeam": {
+          "name": "Connecticut"
+        },
+        "coordinates": [
+          41.8084314,
+          -72.24952309999999
+        ]
+      },
+      {
+        "date": "2025-11-18",
+        "location": "New York, NY",
+        "homeTeam": {
+          "name": "Duke"
+        },
+        "awayTeam": {
+          "name": "Kansas"
+        },
+        "coordinates": [
+          40.7127753,
+          -74.0059728
+        ]
+      },
+      {
+        "date": "2025-11-17",
+        "location": "Orlando, FL",
+        "homeTeam": {
+          "name": "UCF"
+        },
+        "awayTeam": {
+          "name": "Oakland"
+        },
+        "coordinates": [
+          28.5383832,
+          -81.3789269
+        ]
+      },
+      {
+        "date": "2025-11-16",
+        "location": "Cincinnati, OH",
+        "homeTeam": {
+          "name": "Cincinnati"
+        },
+        "awayTeam": {
+          "name": "Mount St. Mary's"
+        },
+        "coordinates": [
+          39.1031182,
+          -84.5120196
+        ]
+      },
+      {
+        "date": "2025-11-15",
+        "location": "Salt Lake City, UT",
+        "homeTeam": {
+          "name": "Utah"
+        },
+        "awayTeam": {
+          "name": "Sam Houston St."
+        },
+        "coordinates": [
+          40.7605601,
+          -111.8881397
+        ]
+      },
+      {
+        "date": "2025-11-14",
+        "location": "Waco, TX",
+        "homeTeam": {
+          "name": "Baylor"
+        },
+        "awayTeam": {
+          "name": "Tarleton St."
+        },
+        "coordinates": [
+          31.5575916,
+          -97.12899220000001
+        ]
+      },
+      {
+        "date": "2025-11-13",
+        "location": "Morgantown, WV",
+        "homeTeam": {
+          "name": "West Virginia"
+        },
+        "awayTeam": {
+          "name": "Pittsburgh"
+        },
+        "coordinates": [
+          39.6304078,
+          -79.95446799999999
+        ]
+      },
+      {
+        "date": "2025-11-12",
+        "location": "Houston, TX",
+        "homeTeam": {
+          "name": "Houston"
+        },
+        "awayTeam": {
+          "name": "Oakland"
+        },
+        "coordinates": [
+          29.7600771,
+          -95.37011079999999
+        ]
+      },
+      {
+        "date": "2025-11-11",
+        "location": "Cincinnati, OH",
+        "homeTeam": {
+          "name": "Cincinnati"
+        },
+        "awayTeam": {
+          "name": "Dayton"
+        },
+        "coordinates": [
+          39.1031182,
+          -84.5120196
+        ]
+      },
+      {
+        "date": "2025-11-10",
+        "location": "Fort Worth, TX",
+        "homeTeam": {
+          "name": "TCU"
+        },
+        "awayTeam": {
+          "name": "Lamar"
+        },
+        "coordinates": [
+          32.7554883,
+          -97.3307658
+        ]
+      },
+      {
+        "date": "2025-11-09",
+        "location": "Stillwater, OK",
+        "homeTeam": {
+          "name": "Oklahoma St."
+        },
+        "awayTeam": {
+          "name": "Texas A&M"
+        },
+        "coordinates": [
+          36.1157217,
+          -97.0585722
+        ]
+      },
+      {
+        "date": "2025-11-08",
+        "location": "Manhattan, KS",
+        "homeTeam": {
+          "name": "Kansas St."
+        },
+        "awayTeam": {
+          "name": "Bellarmine"
+        },
+        "coordinates": [
+          39.179475,
+          -96.57331699999999
+        ]
+      },
+      {
+        "date": "2025-11-07",
+        "location": "Lubbock, TX",
+        "homeTeam": {
+          "name": "Texas Tech"
+        },
+        "awayTeam": {
+          "name": "Sam Houston St."
+        },
+        "coordinates": [
+          33.5845235,
+          -101.8552139
+        ]
+      },
+      {
+        "date": "2025-11-06",
+        "location": "Ames, IA",
+        "homeTeam": {
+          "name": "Iowa St."
+        },
+        "awayTeam": {
+          "name": "Grambling St."
+        },
+        "coordinates": [
+          42.0307812,
+          -93.63191309999999
+        ]
+      },
+      {
+        "date": "2025-11-05",
+        "location": "Los Angeles, CA",
+        "homeTeam": {
+          "name": "Loyola Marymount"
+        },
+        "awayTeam": {
+          "name": "Eastern Washington"
+        },
+        "coordinates": [
+          34.0549076,
+          -118.242643
+        ]
+      },
+      {
+        "date": "2025-11-04",
+        "location": "Tempe, AZ",
+        "homeTeam": {
+          "name": "Arizona St."
+        },
+        "awayTeam": {
+          "name": "Southern Utah"
+        },
+        "coordinates": [
+          33.4255104,
+          -111.9400054
+        ]
+      },
+      {
+        "date": "2025-11-03",
+        "location": "Las Vegas, NV",
+        "homeTeam": {
+          "name": "Arizona"
+        },
+        "awayTeam": {
+          "name": "Florida"
+        },
+        "coordinates": [
+          36.171563,
+          -115.1391009
+        ]
+      }
+    ],
+    "totalMilesTravelled": 67473
+  },
+  {
+    "id": "714269",
+    "name": "Jeffrey Anderson",
+    "games": [
+      {
+        "date": "2026-02-25",
+        "location": "Phoenix, AZ",
+        "homeTeam": {
+          "name": "Grand Canyon"
+        },
+        "awayTeam": {
+          "name": "UNLV"
+        },
+        "coordinates": [
+          33.4482948,
+          -112.0725488
+        ]
+      },
+      {
+        "date": "2026-02-24",
+        "location": "Los Angeles, CA",
+        "homeTeam": {
+          "name": "UCLA"
+        },
+        "awayTeam": {
+          "name": "USC"
+        },
+        "coordinates": [
+          34.0549076,
+          -118.242643
+        ]
+      },
+      {
+        "date": "2026-02-21",
+        "location": "College Park, MD",
+        "homeTeam": {
+          "name": "Maryland"
+        },
+        "awayTeam": {
+          "name": "Washington"
+        },
+        "coordinates": [
+          38.9896967,
+          -76.93776
+        ]
+      },
+      {
+        "date": "2026-02-20",
+        "location": "West Lafayette, IN",
+        "homeTeam": {
+          "name": "Purdue"
+        },
+        "awayTeam": {
+          "name": "Indiana"
+        },
+        "coordinates": [
+          40.4258686,
+          -86.90806549999999
+        ]
+      },
+      {
+        "date": "2026-02-18",
+        "location": "University Park, PA",
+        "homeTeam": {
+          "name": "Rutgers"
+        },
+        "awayTeam": {
+          "name": "Penn St."
+        },
+        "coordinates": [
+          40.8147955,
+          -77.86531260000001
+        ]
+      },
+      {
+        "date": "2026-02-17",
+        "location": "Iowa City, IA",
+        "homeTeam": {
+          "name": "Iowa"
+        },
+        "awayTeam": {
+          "name": "Nebraska"
+        },
+        "coordinates": [
+          41.6578257,
+          -91.53461689999999
+        ]
+      },
+      {
+        "date": "2026-02-15",
+        "location": "Champaign, IL",
+        "homeTeam": {
+          "name": "Illinois"
+        },
+        "awayTeam": {
+          "name": "Indiana"
+        },
+        "coordinates": [
+          40.11628839999999,
+          -88.2435155
+        ]
+      },
+      {
+        "date": "2026-02-14",
+        "location": "Ann Arbor, MI",
+        "homeTeam": {
+          "name": "Michigan"
+        },
+        "awayTeam": {
+          "name": "UCLA"
+        },
+        "coordinates": [
+          42.2808256,
+          -83.7430378
+        ]
+      },
+      {
+        "date": "2026-02-12",
+        "location": "Terre Haute, IN",
+        "homeTeam": {
+          "name": "Murray St."
+        },
+        "awayTeam": {
+          "name": "Indiana St."
+        },
+        "coordinates": [
+          39.4654441,
+          -87.41394269999999
+        ]
+      },
+      {
+        "date": "2026-02-11",
+        "location": "Columbus, OH",
+        "homeTeam": {
+          "name": "Ohio St."
+        },
+        "awayTeam": {
+          "name": "USC"
+        },
+        "coordinates": [
+          39.9625112,
+          -83.0032218
+        ]
+      },
+      {
+        "date": "2026-02-10",
+        "location": "Lincoln, NE",
+        "homeTeam": {
+          "name": "Purdue"
+        },
+        "awayTeam": {
+          "name": "Nebraska"
+        },
+        "coordinates": [
+          40.8136634,
+          -96.7025764
+        ]
+      },
+      {
+        "date": "2026-02-09",
+        "location": "Peoria, IL",
+        "homeTeam": {
+          "name": "Bradley"
+        },
+        "awayTeam": {
+          "name": "Belmont"
+        },
+        "coordinates": [
+          40.6928141,
+          -89.5906035
+        ]
+      },
+      {
+        "date": "2026-02-08",
+        "location": "Minneapolis, MN",
+        "homeTeam": {
+          "name": "Maryland"
+        },
+        "awayTeam": {
+          "name": "Minnesota"
+        },
+        "coordinates": [
+          44.977753,
+          -93.2650108
+        ]
+      },
+      {
+        "date": "2026-02-07",
+        "location": "East Lansing, MI",
+        "homeTeam": {
+          "name": "Michigan St."
+        },
+        "awayTeam": {
+          "name": "Illinois"
+        },
+        "coordinates": [
+          42.7369792,
+          -84.48386540000001
+        ]
+      },
+      {
+        "date": "2026-02-05",
+        "location": "Cincinnati, OH",
+        "homeTeam": {
+          "name": "West Virginia"
+        },
+        "awayTeam": {
+          "name": "Cincinnati"
+        },
+        "coordinates": [
+          39.1031182,
+          -84.5120196
+        ]
+      },
+      {
+        "date": "2026-01-27",
+        "location": "Orlando, FL",
+        "homeTeam": {
+          "name": "UCF"
+        },
+        "awayTeam": {
+          "name": "Arizona St."
+        },
+        "coordinates": [
+          28.5383832,
+          -81.3789269
+        ]
+      },
+      {
+        "date": "2026-01-26",
+        "location": "Columbus, OH",
+        "homeTeam": {
+          "name": "Ohio St."
+        },
+        "awayTeam": {
+          "name": "Penn St."
+        },
+        "coordinates": [
+          39.9625112,
+          -83.0032218
+        ]
+      },
+      {
+        "date": "2026-01-25",
+        "location": "Madison, WI",
+        "homeTeam": {
+          "name": "USC"
+        },
+        "awayTeam": {
+          "name": "Wisconsin"
+        },
+        "coordinates": [
+          43.0721661,
+          -89.4007501
+        ]
+      },
+      {
+        "date": "2026-01-24",
+        "location": "West Lafayette, IN",
+        "homeTeam": {
+          "name": "Illinois"
+        },
+        "awayTeam": {
+          "name": "Purdue"
+        },
+        "coordinates": [
+          40.4258686,
+          -86.90806549999999
+        ]
+      },
+      {
+        "date": "2026-01-22",
+        "location": "Fullerton, CA",
+        "homeTeam": {
+          "name": "Cal St. Fullerton"
+        },
+        "awayTeam": {
+          "name": "Long Beach St."
+        },
+        "coordinates": [
+          33.8703645,
+          -117.9242123
+        ]
+      },
+      {
+        "date": "2026-01-21",
+        "location": "Phoenix, AZ",
+        "homeTeam": {
+          "name": "Grand Canyon"
+        },
+        "awayTeam": {
+          "name": "San Diego St."
+        },
+        "coordinates": [
+          33.4482948,
+          -112.0725488
+        ]
+      },
+      {
+        "date": "2026-01-20",
+        "location": "Iowa City, IA",
+        "homeTeam": {
+          "name": "Iowa"
+        },
+        "awayTeam": {
+          "name": "Rutgers"
+        },
+        "coordinates": [
+          41.6578257,
+          -91.53461689999999
+        ]
+      },
+      {
+        "date": "2026-01-18",
+        "location": "San Francisco, CA",
+        "homeTeam": {
+          "name": "San Francisco"
+        },
+        "awayTeam": {
+          "name": "Washington St."
+        },
+        "coordinates": [
+          37.7749295,
+          -122.4194155
+        ]
+      },
+      {
+        "date": "2026-01-17",
+        "location": "Lubbock, TX",
+        "homeTeam": {
+          "name": "Texas Tech"
+        },
+        "awayTeam": {
+          "name": "BYU"
+        },
+        "coordinates": [
+          33.5845235,
+          -101.8552139
+        ]
+      },
+      {
+        "date": "2026-01-14",
+        "location": "University Park, PA",
+        "homeTeam": {
+          "name": "UCLA"
+        },
+        "awayTeam": {
+          "name": "Penn St."
+        },
+        "coordinates": [
+          40.8147955,
+          -77.86531260000001
+        ]
+      },
+      {
+        "date": "2026-01-13",
+        "location": "Lincoln, NE",
+        "homeTeam": {
+          "name": "Nebraska"
+        },
+        "awayTeam": {
+          "name": "Oregon"
+        },
+        "coordinates": [
+          40.8136634,
+          -96.7025764
+        ]
+      },
+      {
+        "date": "2026-01-11",
+        "location": "Orlando, FL",
+        "homeTeam": {
+          "name": "UCF"
+        },
+        "awayTeam": {
+          "name": "Cincinnati"
+        },
+        "coordinates": [
+          28.5383832,
+          -81.3789269
+        ]
+      },
+      {
+        "date": "2026-01-10",
+        "location": "Morgantown, WV",
+        "homeTeam": {
+          "name": "West Virginia"
+        },
+        "awayTeam": {
+          "name": "Kansas"
+        },
+        "coordinates": [
+          39.6304078,
+          -79.95446799999999
+        ]
+      },
+      {
+        "date": "2026-01-08",
+        "location": "Spokane, WA",
+        "homeTeam": {
+          "name": "Gonzaga"
+        },
+        "awayTeam": {
+          "name": "Santa Clara"
+        },
+        "coordinates": [
+          47.6579711,
+          -117.4235319
+        ]
+      },
+      {
+        "date": "2026-01-07",
+        "location": "West Lafayette, IN",
+        "homeTeam": {
+          "name": "Purdue"
+        },
+        "awayTeam": {
+          "name": "Washington"
+        },
+        "coordinates": [
+          40.4258686,
+          -86.90806549999999
+        ]
+      },
+      {
+        "date": "2026-01-06",
+        "location": "Madison, WI",
+        "homeTeam": {
+          "name": "Wisconsin"
+        },
+        "awayTeam": {
+          "name": "UCLA"
+        },
+        "coordinates": [
+          43.0721661,
+          -89.4007501
+        ]
+      },
+      {
+        "date": "2026-01-05",
+        "location": "East Lansing, MI",
+        "homeTeam": {
+          "name": "Michigan St."
+        },
+        "awayTeam": {
+          "name": "USC"
+        },
+        "coordinates": [
+          42.7369792,
+          -84.48386540000001
+        ]
+      },
+      {
+        "date": "2026-01-04",
+        "location": "San Francisco, CA",
+        "homeTeam": {
+          "name": "San Francisco"
+        },
+        "awayTeam": {
+          "name": "Portland"
+        },
+        "coordinates": [
+          37.7749295,
+          -122.4194155
+        ]
+      },
+      {
+        "date": "2026-01-03",
+        "location": "Philadelphia, PA",
+        "homeTeam": {
+          "name": "Illinois"
+        },
+        "awayTeam": {
+          "name": "Penn St."
+        },
+        "coordinates": [
+          39.9525839,
+          -75.1652215
+        ]
+      },
+      {
+        "date": "2026-01-02",
+        "location": "College Park, MD",
+        "homeTeam": {
+          "name": "Oregon"
+        },
+        "awayTeam": {
+          "name": "Maryland"
+        },
+        "coordinates": [
+          38.9896967,
+          -76.93776
+        ]
+      },
+      {
+        "date": "2025-12-30",
+        "location": "Lincoln, NE",
+        "homeTeam": {
+          "name": "Nebraska"
+        },
+        "awayTeam": {
+          "name": "New Hampshire"
+        },
+        "coordinates": [
+          40.8136634,
+          -96.7025764
+        ]
+      },
+      {
+        "date": "2025-12-29",
+        "location": "West Lafayette, IN",
+        "homeTeam": {
+          "name": "Purdue"
+        },
+        "awayTeam": {
+          "name": "Kent St."
+        },
+        "coordinates": [
+          40.4258686,
+          -86.90806549999999
+        ]
+      },
+      {
+        "date": "2025-12-28",
+        "location": "Manhattan, KS",
+        "homeTeam": {
+          "name": "Kansas St."
+        },
+        "awayTeam": {
+          "name": "Louisiana Monroe"
+        },
+        "coordinates": [
+          39.179475,
+          -96.57331699999999
+        ]
+      },
+      {
+        "date": "2025-12-22",
+        "location": "Madison, WI",
+        "homeTeam": {
+          "name": "Wisconsin"
+        },
+        "awayTeam": {
+          "name": "Central Michigan"
+        },
+        "coordinates": [
+          43.0721661,
+          -89.4007501
+        ]
+      },
+      {
+        "date": "2025-12-21",
+        "location": "Fort Worth, TX",
+        "homeTeam": {
+          "name": "TCU"
+        },
+        "awayTeam": {
+          "name": "Florida A&M"
+        },
+        "coordinates": [
+          32.7554883,
+          -97.3307658
+        ]
+      },
+      {
+        "date": "2025-12-20",
+        "location": "Albuquerque, NM",
+        "homeTeam": {
+          "name": "New Mexico"
+        },
+        "awayTeam": {
+          "name": "San Jose St."
+        },
+        "coordinates": [
+          35.0843859,
+          -106.650422
+        ]
+      },
+      {
+        "date": "2025-12-19",
+        "location": "Los Angeles, CA",
+        "homeTeam": {
+          "name": "UCLA"
+        },
+        "awayTeam": {
+          "name": "Cal Poly"
+        },
+        "coordinates": [
+          34.0549076,
+          -118.242643
+        ]
+      },
+      {
+        "date": "2025-12-17",
+        "location": "Los Angeles, CA",
+        "homeTeam": {
+          "name": "USC"
+        },
+        "awayTeam": {
+          "name": "UTSA"
+        },
+        "coordinates": [
+          34.0549076,
+          -118.242643
+        ]
+      },
+      {
+        "date": "2025-12-16",
+        "location": "Tucson, AZ",
+        "homeTeam": {
+          "name": "Arizona"
+        },
+        "awayTeam": {
+          "name": "Abilene Christian"
+        },
+        "coordinates": [
+          32.2539787,
+          -110.9741769
+        ]
+      },
+      {
+        "date": "2025-12-14",
+        "location": "Ames, IA",
+        "homeTeam": {
+          "name": "Iowa St."
+        },
+        "awayTeam": {
+          "name": "Eastern Illinois"
+        },
+        "coordinates": [
+          42.0307812,
+          -93.63191309999999
+        ]
+      },
+      {
+        "date": "2025-12-13",
+        "location": "West Lafayette, IN",
+        "homeTeam": {
+          "name": "Purdue"
+        },
+        "awayTeam": {
+          "name": "Marquette"
+        },
+        "coordinates": [
+          40.4258686,
+          -86.90806549999999
+        ]
+      },
+      {
+        "date": "2025-12-10",
+        "location": "Lincoln, NE",
+        "homeTeam": {
+          "name": "Nebraska"
+        },
+        "awayTeam": {
+          "name": "Wisconsin"
+        },
+        "coordinates": [
+          40.8136634,
+          -96.7025764
+        ]
+      },
+      {
+        "date": "2025-12-09",
+        "location": "Columbus, OH",
+        "homeTeam": {
+          "name": "Illinois"
+        },
+        "awayTeam": {
+          "name": "Ohio St."
+        },
+        "coordinates": [
+          39.9625112,
+          -83.0032218
+        ]
+      },
+      {
+        "date": "2025-12-07",
+        "location": "Kansas City, MO",
+        "homeTeam": {
+          "name": "Kansas"
+        },
+        "awayTeam": {
+          "name": "Missouri"
+        },
+        "coordinates": [
+          39.0997265,
+          -94.5785667
+        ]
+      },
+      {
+        "date": "2025-12-06",
+        "location": "West Lafayette, IN",
+        "homeTeam": {
+          "name": "Iowa St."
+        },
+        "awayTeam": {
+          "name": "Purdue"
+        },
+        "coordinates": [
+          40.4258686,
+          -86.90806549999999
+        ]
+      },
+      {
+        "date": "2025-12-03",
+        "location": "Minneapolis, MN",
+        "homeTeam": {
+          "name": "Minnesota"
+        },
+        "awayTeam": {
+          "name": "Indiana"
+        },
+        "coordinates": [
+          44.977753,
+          -93.2650108
+        ]
+      },
+      {
+        "date": "2025-12-02",
+        "location": "East Lansing, MI",
+        "homeTeam": {
+          "name": "Michigan St."
+        },
+        "awayTeam": {
+          "name": "Iowa"
+        },
+        "coordinates": [
+          42.7369792,
+          -84.48386540000001
+        ]
+      },
+      {
+        "date": "2025-11-29",
+        "location": "Corvallis, OR",
+        "homeTeam": {
+          "name": "Cal Baptist"
+        },
+        "awayTeam": {
+          "name": "Oregon St."
+        },
+        "coordinates": [
+          44.5646356,
+          -123.2619607
+        ]
+      },
+      {
+        "date": "2025-11-28",
+        "location": "San Diego, CA",
+        "homeTeam": {
+          "name": "TCU"
+        },
+        "awayTeam": {
+          "name": "Wisconsin"
+        },
+        "coordinates": [
+          32.715738,
+          -117.1610838
+        ]
+      },
+      {
+        "date": "2025-11-27",
+        "location": "San Diego, CA",
+        "homeTeam": {
+          "name": "Wisconsin"
+        },
+        "awayTeam": {
+          "name": "Providence"
+        },
+        "coordinates": [
+          32.715738,
+          -117.1610838
+        ]
+      },
+      {
+        "date": "2025-11-26",
+        "location": "Lahaina, HI",
+        "homeTeam": {
+          "name": "USC"
+        },
+        "awayTeam": {
+          "name": "Arizona St."
+        },
+        "coordinates": [
+          20.882371,
+          -156.6816195
+        ]
+      },
+      {
+        "date": "2025-11-25",
+        "location": "Lahaina, HI",
+        "homeTeam": {
+          "name": "Arizona St."
+        },
+        "awayTeam": {
+          "name": "Washington St."
+        },
+        "coordinates": [
+          20.882371,
+          -156.6816195
+        ]
+      },
+      {
+        "date": "2025-11-24",
+        "location": "Lahaina, HI",
+        "homeTeam": {
+          "name": "Seton Hall"
+        },
+        "awayTeam": {
+          "name": "N.C. State"
+        },
+        "coordinates": [
+          20.882371,
+          -156.6816195
+        ]
+      },
+      {
+        "date": "2025-11-22",
+        "location": "Reno, NV",
+        "homeTeam": {
+          "name": "Nevada"
+        },
+        "awayTeam": {
+          "name": "UC Santa Barbara"
+        },
+        "coordinates": [
+          39.529919,
+          -119.8142691
+        ]
+      },
+      {
+        "date": "2025-11-21",
+        "location": "Fresno, CA",
+        "homeTeam": {
+          "name": "Fresno St."
+        },
+        "awayTeam": {
+          "name": "New Orleans"
+        },
+        "coordinates": [
+          36.7377981,
+          -119.7871247
+        ]
+      },
+      {
+        "date": "2025-11-20",
+        "location": "Houston, TX",
+        "homeTeam": {
+          "name": "Houston"
+        },
+        "awayTeam": {
+          "name": "Rider"
+        },
+        "coordinates": [
+          29.7600771,
+          -95.37011079999999
+        ]
+      },
+      {
+        "date": "2025-11-19",
+        "location": "University Park, PA",
+        "homeTeam": {
+          "name": "Penn St."
+        },
+        "awayTeam": {
+          "name": "Harvard"
+        },
+        "coordinates": [
+          40.8147955,
+          -77.86531260000001
+        ]
+      },
+      {
+        "date": "2025-11-18",
+        "location": "Salt Lake City, UT",
+        "homeTeam": {
+          "name": "Utah"
+        },
+        "awayTeam": {
+          "name": "Purdue Fort Wayne"
+        },
+        "coordinates": [
+          40.7605601,
+          -111.8881397
+        ]
+      },
+      {
+        "date": "2025-11-17",
+        "location": "Manhattan, KS",
+        "homeTeam": {
+          "name": "Kansas St."
+        },
+        "awayTeam": {
+          "name": "Tulsa"
+        },
+        "coordinates": [
+          39.179475,
+          -96.57331699999999
+        ]
+      },
+      {
+        "date": "2025-11-16",
+        "location": "Columbus, OH",
+        "homeTeam": {
+          "name": "Ohio St."
+        },
+        "awayTeam": {
+          "name": "Notre Dame"
+        },
+        "coordinates": [
+          39.9625112,
+          -83.0032218
+        ]
+      },
+      {
+        "date": "2025-11-15",
+        "location": "Lawrence, KS",
+        "homeTeam": {
+          "name": "Kansas"
+        },
+        "awayTeam": {
+          "name": "Princeton"
+        },
+        "coordinates": [
+          38.9716689,
+          -95.2352501
+        ]
+      },
+      {
+        "date": "2025-11-14",
+        "location": "Inglewood, CA",
+        "homeTeam": {
+          "name": "Arizona"
+        },
+        "awayTeam": {
+          "name": "UCLA"
+        },
+        "coordinates": [
+          33.9617977,
+          -118.3533544
+        ]
+      },
+      {
+        "date": "2025-11-12",
+        "location": "Bloomington, IN",
+        "homeTeam": {
+          "name": "Indiana"
+        },
+        "awayTeam": {
+          "name": "Milwaukee"
+        },
+        "coordinates": [
+          39.169574,
+          -86.5385549
+        ]
+      },
+      {
+        "date": "2025-11-11",
+        "location": "West Point, NY",
+        "homeTeam": {
+          "name": "Duke"
+        },
+        "awayTeam": {
+          "name": "Army"
+        },
+        "coordinates": [
+          41.3914827,
+          -73.95597210000001
+        ]
+      },
+      {
+        "date": "2025-11-10",
+        "location": "Sioux Falls, SD",
+        "homeTeam": {
+          "name": "Iowa St."
+        },
+        "awayTeam": {
+          "name": "Mississippi St."
+        },
+        "coordinates": [
+          43.5460223,
+          -96.731265
+        ]
+      },
+      {
+        "date": "2025-11-09",
+        "location": "Normal, IL",
+        "homeTeam": {
+          "name": "Illinois St."
+        },
+        "awayTeam": {
+          "name": "Cornell"
+        },
+        "coordinates": [
+          40.5142026,
+          -88.9906312
+        ]
+      },
+      {
+        "date": "2025-11-07",
+        "location": "College Park, MD",
+        "homeTeam": {
+          "name": "Georgetown"
+        },
+        "awayTeam": {
+          "name": "Maryland"
+        },
+        "coordinates": [
+          38.9896967,
+          -76.93776
+        ]
+      },
+      {
+        "date": "2025-11-06",
+        "location": "Morgantown, WV",
+        "homeTeam": {
+          "name": "West Virginia"
+        },
+        "awayTeam": {
+          "name": "Campbell"
+        },
+        "coordinates": [
+          39.6304078,
+          -79.95446799999999
+        ]
+      },
+      {
+        "date": "2025-11-05",
+        "location": "Bloomington, IN",
+        "homeTeam": {
+          "name": "Indiana"
+        },
+        "awayTeam": {
+          "name": "Alabama A&M"
+        },
+        "coordinates": [
+          39.169574,
+          -86.5385549
+        ]
+      },
+      {
+        "date": "2025-11-04",
+        "location": "Stillwater, OK",
+        "homeTeam": {
+          "name": "Oklahoma St."
+        },
+        "awayTeam": {
+          "name": "Oral Roberts"
+        },
+        "coordinates": [
+          36.1157217,
+          -97.0585722
+        ]
+      },
+      {
+        "date": "2025-11-03",
+        "location": "Ann Arbor, MI",
+        "homeTeam": {
+          "name": "Michigan"
+        },
+        "awayTeam": {
+          "name": "Oakland"
+        },
+        "coordinates": [
+          42.2808256,
+          -83.7430378
+        ]
+      }
+    ],
+    "totalMilesTravelled": 61450
+  },
+  {
+    "id": "714367",
+    "name": "James Breeding",
+    "games": [
+      {
+        "date": "2026-02-26",
+        "location": "Murfreesboro, TN",
+        "homeTeam": {
+          "name": "Middle Tennessee"
+        },
+        "awayTeam": {
+          "name": "UTEP"
+        },
+        "coordinates": [
+          35.8451777,
+          -86.3951864
+        ]
+      },
+      {
+        "date": "2026-02-25",
+        "location": "Nashville, TN",
+        "homeTeam": {
+          "name": "Vanderbilt"
+        },
+        "awayTeam": {
+          "name": "Georgia"
+        },
+        "coordinates": [
+          36.1626638,
+          -86.7816016
+        ]
+      },
+      {
+        "date": "2026-02-21",
+        "location": "Newark, NJ",
+        "homeTeam": {
+          "name": "Seton Hall"
+        },
+        "awayTeam": {
+          "name": "Georgetown"
+        },
+        "coordinates": [
+          40.7315293,
+          -74.1744671
+        ]
+      },
+      {
+        "date": "2026-02-19",
+        "location": "Boston, MA",
+        "homeTeam": {
+          "name": "Drexel"
+        },
+        "awayTeam": {
+          "name": "Northeastern"
+        },
+        "coordinates": [
+          42.3555076,
+          -71.0565364
+        ]
+      },
+      {
+        "date": "2026-02-18",
+        "location": "Storrs, CT",
+        "homeTeam": {
+          "name": "Creighton"
+        },
+        "awayTeam": {
+          "name": "Connecticut"
+        },
+        "coordinates": [
+          41.8084314,
+          -72.24952309999999
+        ]
+      },
+      {
+        "date": "2026-02-17",
+        "location": "West Lafayette, IN",
+        "homeTeam": {
+          "name": "Michigan"
+        },
+        "awayTeam": {
+          "name": "Purdue"
+        },
+        "coordinates": [
+          40.4258686,
+          -86.90806549999999
+        ]
+      },
+      {
+        "date": "2026-02-15",
+        "location": "Birmingham, AL",
+        "homeTeam": {
+          "name": "Tulane"
+        },
+        "awayTeam": {
+          "name": "UAB"
+        },
+        "coordinates": [
+          33.5185892,
+          -86.8103567
+        ]
+      },
+      {
+        "date": "2026-02-14",
+        "location": "Providence, RI",
+        "homeTeam": {
+          "name": "St. John's"
+        },
+        "awayTeam": {
+          "name": "Providence"
+        },
+        "coordinates": [
+          41.8244836,
+          -71.4127462
+        ]
+      },
+      {
+        "date": "2026-02-11",
+        "location": "College Park, MD",
+        "homeTeam": {
+          "name": "Maryland"
+        },
+        "awayTeam": {
+          "name": "Iowa"
+        },
+        "coordinates": [
+          38.9896967,
+          -76.93776
+        ]
+      },
+      {
+        "date": "2026-02-10",
+        "location": "Champaign, IL",
+        "homeTeam": {
+          "name": "Wisconsin"
+        },
+        "awayTeam": {
+          "name": "Illinois"
+        },
+        "coordinates": [
+          40.11628839999999,
+          -88.2435155
+        ]
+      },
+      {
+        "date": "2026-02-07",
+        "location": "Providence, RI",
+        "homeTeam": {
+          "name": "Providence"
+        },
+        "awayTeam": {
+          "name": "DePaul"
+        },
+        "coordinates": [
+          41.8244836,
+          -71.4127462
+        ]
+      },
+      {
+        "date": "2026-02-06",
+        "location": "New York, NY",
+        "homeTeam": {
+          "name": "St. John's"
+        },
+        "awayTeam": {
+          "name": "Connecticut"
+        },
+        "coordinates": [
+          40.7127753,
+          -74.0059728
+        ]
+      },
+      {
+        "date": "2026-02-05",
+        "location": "College Park, MD",
+        "homeTeam": {
+          "name": "Ohio St."
+        },
+        "awayTeam": {
+          "name": "Maryland"
+        },
+        "coordinates": [
+          38.9896967,
+          -76.93776
+        ]
+      },
+      {
+        "date": "2026-02-03",
+        "location": "Knoxville, TN",
+        "homeTeam": {
+          "name": "Tennessee"
+        },
+        "awayTeam": {
+          "name": "Mississippi"
+        },
+        "coordinates": [
+          35.965266,
+          -83.923304
+        ]
+      },
+      {
+        "date": "2026-01-31",
+        "location": "Indianapolis, IN",
+        "homeTeam": {
+          "name": "Georgetown"
+        },
+        "awayTeam": {
+          "name": "Butler"
+        },
+        "coordinates": [
+          39.76909,
+          -86.158018
+        ]
+      },
+      {
+        "date": "2026-01-29",
+        "location": "Evanston, IL",
+        "homeTeam": {
+          "name": "Northwestern"
+        },
+        "awayTeam": {
+          "name": "Penn St."
+        },
+        "coordinates": [
+          42.0568276,
+          -87.6872172
+        ]
+      },
+      {
+        "date": "2026-01-28",
+        "location": "Newark, NJ",
+        "homeTeam": {
+          "name": "Seton Hall"
+        },
+        "awayTeam": {
+          "name": "Xavier"
+        },
+        "coordinates": [
+          40.7315293,
+          -74.1744671
+        ]
+      },
+      {
+        "date": "2026-01-27",
+        "location": "Milwaukee, WI",
+        "homeTeam": {
+          "name": "Marquette"
+        },
+        "awayTeam": {
+          "name": "Creighton"
+        },
+        "coordinates": [
+          43.0410344,
+          -87.9096783
+        ]
+      },
+      {
+        "date": "2026-01-24",
+        "location": "Hartford, CT",
+        "homeTeam": {
+          "name": "Connecticut"
+        },
+        "awayTeam": {
+          "name": "Villanova"
+        },
+        "coordinates": [
+          41.7658043,
+          -72.6733723
+        ]
+      },
+      {
+        "date": "2026-01-21",
+        "location": "College Station, TX",
+        "homeTeam": {
+          "name": "Texas A&M"
+        },
+        "awayTeam": {
+          "name": "Mississippi St."
+        },
+        "coordinates": [
+          30.6210482,
+          -96.3255016
+        ]
+      },
+      {
+        "date": "2026-01-20",
+        "location": "Columbia, MO",
+        "homeTeam": {
+          "name": "Georgia"
+        },
+        "awayTeam": {
+          "name": "Missouri"
+        },
+        "coordinates": [
+          38.951768,
+          -92.32829319999999
+        ]
+      },
+      {
+        "date": "2026-01-18",
+        "location": "Philadelphia, PA",
+        "homeTeam": {
+          "name": "Florida Atlantic"
+        },
+        "awayTeam": {
+          "name": "Temple"
+        },
+        "coordinates": [
+          39.9525839,
+          -75.1652215
+        ]
+      },
+      {
+        "date": "2026-01-17",
+        "location": "Newark, NJ",
+        "homeTeam": {
+          "name": "Butler"
+        },
+        "awayTeam": {
+          "name": "Seton Hall"
+        },
+        "coordinates": [
+          40.7315293,
+          -74.1744671
+        ]
+      },
+      {
+        "date": "2026-01-14",
+        "location": "West Lafayette, IN",
+        "homeTeam": {
+          "name": "Purdue"
+        },
+        "awayTeam": {
+          "name": "Iowa"
+        },
+        "coordinates": [
+          40.4258686,
+          -86.90806549999999
+        ]
+      },
+      {
+        "date": "2026-01-13",
+        "location": "Providence, RI",
+        "homeTeam": {
+          "name": "Villanova"
+        },
+        "awayTeam": {
+          "name": "Providence"
+        },
+        "coordinates": [
+          41.8244836,
+          -71.4127462
+        ]
+      },
+      {
+        "date": "2026-01-11",
+        "location": "Wichita, KS",
+        "homeTeam": {
+          "name": "Wichita St."
+        },
+        "awayTeam": {
+          "name": "North Texas"
+        },
+        "coordinates": [
+          37.693452,
+          -97.3382202
+        ]
+      },
+      {
+        "date": "2026-01-10",
+        "location": "Omaha, NE",
+        "homeTeam": {
+          "name": "St. John's"
+        },
+        "awayTeam": {
+          "name": "Creighton"
+        },
+        "coordinates": [
+          41.2565369,
+          -95.9345034
+        ]
+      },
+      {
+        "date": "2026-01-08",
+        "location": "Champaign, IL",
+        "homeTeam": {
+          "name": "Illinois"
+        },
+        "awayTeam": {
+          "name": "Rutgers"
+        },
+        "coordinates": [
+          40.11628839999999,
+          -88.2435155
+        ]
+      },
+      {
+        "date": "2026-01-06",
+        "location": "Knoxville, TN",
+        "homeTeam": {
+          "name": "Tennessee"
+        },
+        "awayTeam": {
+          "name": "Texas"
+        },
+        "coordinates": [
+          35.965266,
+          -83.923304
+        ]
+      },
+      {
+        "date": "2026-01-05",
+        "location": "East Lansing, MI",
+        "homeTeam": {
+          "name": "Michigan St."
+        },
+        "awayTeam": {
+          "name": "USC"
+        },
+        "coordinates": [
+          42.7369792,
+          -84.48386540000001
+        ]
+      },
+      {
+        "date": "2026-01-04",
+        "location": "Storrs, CT",
+        "homeTeam": {
+          "name": "Connecticut"
+        },
+        "awayTeam": {
+          "name": "Marquette"
+        },
+        "coordinates": [
+          41.8084314,
+          -72.24952309999999
+        ]
+      },
+      {
+        "date": "2026-01-03",
+        "location": "Indianapolis, IN",
+        "homeTeam": {
+          "name": "Villanova"
+        },
+        "awayTeam": {
+          "name": "Butler"
+        },
+        "coordinates": [
+          39.76909,
+          -86.158018
+        ]
+      },
+      {
+        "date": "2025-12-31",
+        "location": "Washington, DC",
+        "homeTeam": {
+          "name": "St. John's"
+        },
+        "awayTeam": {
+          "name": "Georgetown"
+        },
+        "coordinates": [
+          38.9072873,
+          -77.0369274
+        ]
+      },
+      {
+        "date": "2025-12-29",
+        "location": "Athens, GA",
+        "homeTeam": {
+          "name": "Georgia"
+        },
+        "awayTeam": {
+          "name": "LIU"
+        },
+        "coordinates": [
+          33.9596643,
+          -83.3764161
+        ]
+      },
+      {
+        "date": "2025-12-21",
+        "location": "Greensboro, NC",
+        "homeTeam": {
+          "name": "N.C. State"
+        },
+        "awayTeam": {
+          "name": "Mississippi"
+        },
+        "coordinates": [
+          36.0725632,
+          -79.791534
+        ]
+      },
+      {
+        "date": "2025-12-20",
+        "location": "Charlottesville, VA",
+        "homeTeam": {
+          "name": "Virginia"
+        },
+        "awayTeam": {
+          "name": "Maryland"
+        },
+        "coordinates": [
+          38.0301826,
+          -78.4769353
+        ]
+      },
+      {
+        "date": "2025-12-19",
+        "location": "Milwaukee, WI",
+        "homeTeam": {
+          "name": "Villanova"
+        },
+        "awayTeam": {
+          "name": "Wisconsin"
+        },
+        "coordinates": [
+          43.0410344,
+          -87.9096783
+        ]
+      },
+      {
+        "date": "2025-12-17",
+        "location": "Milwaukee, WI",
+        "homeTeam": {
+          "name": "Georgetown"
+        },
+        "awayTeam": {
+          "name": "Marquette"
+        },
+        "coordinates": [
+          43.0410344,
+          -87.9096783
+        ]
+      },
+      {
+        "date": "2025-12-16",
+        "location": "Dayton, OH",
+        "homeTeam": {
+          "name": "Dayton"
+        },
+        "awayTeam": {
+          "name": "Florida St."
+        },
+        "coordinates": [
+          39.7592225,
+          -84.1936144
+        ]
+      },
+      {
+        "date": "2025-12-14",
+        "location": "Chicago, IL",
+        "homeTeam": {
+          "name": "Chicago St."
+        },
+        "awayTeam": {
+          "name": "Loyola Chicago"
+        },
+        "coordinates": [
+          41.88325,
+          -87.6323879
+        ]
+      },
+      {
+        "date": "2025-12-13",
+        "location": "Omaha, NE",
+        "homeTeam": {
+          "name": "Kansas St."
+        },
+        "awayTeam": {
+          "name": "Creighton"
+        },
+        "coordinates": [
+          41.2565369,
+          -95.9345034
+        ]
+      },
+      {
+        "date": "2025-12-10",
+        "location": "Richmond, VA",
+        "homeTeam": {
+          "name": "New Mexico"
+        },
+        "awayTeam": {
+          "name": "VCU"
+        },
+        "coordinates": [
+          37.5407246,
+          -77.4360481
+        ]
+      },
+      {
+        "date": "2025-12-09",
+        "location": "New York, NY",
+        "homeTeam": {
+          "name": "Connecticut"
+        },
+        "awayTeam": {
+          "name": "Florida"
+        },
+        "coordinates": [
+          40.7127753,
+          -74.0059728
+        ]
+      },
+      {
+        "date": "2025-12-06",
+        "location": "Evanston, IL",
+        "homeTeam": {
+          "name": "Ohio St."
+        },
+        "awayTeam": {
+          "name": "Northwestern"
+        },
+        "coordinates": [
+          42.0568276,
+          -87.6872172
+        ]
+      },
+      {
+        "date": "2025-12-02",
+        "location": "Indianapolis, IN",
+        "homeTeam": {
+          "name": "Butler"
+        },
+        "awayTeam": {
+          "name": "Eastern Michigan"
+        },
+        "coordinates": [
+          39.76909,
+          -86.158018
+        ]
+      },
+      {
+        "date": "2025-12-01",
+        "location": "Newark, DE",
+        "homeTeam": {
+          "name": "Iona"
+        },
+        "awayTeam": {
+          "name": "Delaware"
+        },
+        "coordinates": [
+          39.6837226,
+          -75.74965720000002
+        ]
+      },
+      {
+        "date": "2025-11-29",
+        "location": "Jersey City, NJ",
+        "homeTeam": {
+          "name": "Dartmouth"
+        },
+        "awayTeam": {
+          "name": "Saint Peter's"
+        },
+        "coordinates": [
+          40.7195342,
+          -74.0430133
+        ]
+      },
+      {
+        "date": "2025-11-28",
+        "location": "New York, NY",
+        "homeTeam": {
+          "name": "Connecticut"
+        },
+        "awayTeam": {
+          "name": "Illinois"
+        },
+        "coordinates": [
+          40.7127753,
+          -74.0059728
+        ]
+      },
+      {
+        "date": "2025-11-24",
+        "location": "Cincinnati, OH",
+        "homeTeam": {
+          "name": "Cincinnati"
+        },
+        "awayTeam": {
+          "name": "NJIT"
+        },
+        "coordinates": [
+          39.1031182,
+          -84.5120196
+        ]
+      },
+      {
+        "date": "2025-11-21",
+        "location": "Birmingham, AL",
+        "homeTeam": {
+          "name": "UAB"
+        },
+        "awayTeam": {
+          "name": "South Alabama"
+        },
+        "coordinates": [
+          33.5185892,
+          -86.8103567
+        ]
+      },
+      {
+        "date": "2025-11-20",
+        "location": "Knoxville, TN",
+        "homeTeam": {
+          "name": "Tennessee"
+        },
+        "awayTeam": {
+          "name": "Tennessee St."
+        },
+        "coordinates": [
+          35.965266,
+          -83.923304
+        ]
+      },
+      {
+        "date": "2025-11-19",
+        "location": "Milwaukee, WI",
+        "homeTeam": {
+          "name": "Dayton"
+        },
+        "awayTeam": {
+          "name": "Marquette"
+        },
+        "coordinates": [
+          43.0410344,
+          -87.9096783
+        ]
+      },
+      {
+        "date": "2025-11-16",
+        "location": "Jacksonville, FL",
+        "homeTeam": {
+          "name": "Florida"
+        },
+        "awayTeam": {
+          "name": "Miami FL"
+        },
+        "coordinates": [
+          30.3297566,
+          -81.6591529
+        ]
+      },
+      {
+        "date": "2025-11-15",
+        "location": "Washington, DC",
+        "homeTeam": {
+          "name": "Georgetown"
+        },
+        "awayTeam": {
+          "name": "Clemson"
+        },
+        "coordinates": [
+          38.9072873,
+          -77.0369274
+        ]
+      },
+      {
+        "date": "2025-11-11",
+        "location": "Providence, RI",
+        "homeTeam": {
+          "name": "Providence"
+        },
+        "awayTeam": {
+          "name": "Penn"
+        },
+        "coordinates": [
+          41.8244836,
+          -71.4127462
+        ]
+      },
+      {
+        "date": "2025-11-10",
+        "location": "Storrs, CT",
+        "homeTeam": {
+          "name": "Connecticut"
+        },
+        "awayTeam": {
+          "name": "Columbia"
+        },
+        "coordinates": [
+          41.8084314,
+          -72.24952309999999
+        ]
+      },
+      {
+        "date": "2025-11-08",
+        "location": "New York, NY",
+        "homeTeam": {
+          "name": "Alabama"
+        },
+        "awayTeam": {
+          "name": "St. John's"
+        },
+        "coordinates": [
+          40.7127753,
+          -74.0059728
+        ]
+      },
+      {
+        "date": "2025-11-07",
+        "location": "College Park, MD",
+        "homeTeam": {
+          "name": "Georgetown"
+        },
+        "awayTeam": {
+          "name": "Maryland"
+        },
+        "coordinates": [
+          38.9896967,
+          -76.93776
+        ]
+      },
+      {
+        "date": "2025-11-06",
+        "location": "Gainesville, FL",
+        "homeTeam": {
+          "name": "Florida"
+        },
+        "awayTeam": {
+          "name": "North Florida"
+        },
+        "coordinates": [
+          29.6519563,
+          -82.324998
+        ]
+      },
+      {
+        "date": "2025-11-03",
+        "location": "Milwaukee, WI",
+        "homeTeam": {
+          "name": "Marquette"
+        },
+        "awayTeam": {
+          "name": "Albany"
+        },
+        "coordinates": [
+          43.0410344,
+          -87.9096783
+        ]
+      }
+    ],
+    "totalMilesTravelled": 29057
+  }
+]
