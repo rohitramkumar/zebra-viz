@@ -1,10 +1,8 @@
 export interface Team {
   name: string;
-  location: string;
 }
 
 export interface Game {
-  id: string;
   date: string;
   location: string;
   coordinates: [number, number]; // [lat, lng]

@@ -286,7 +286,7 @@ export default function MapVisualization({ referee }: MapVisualizationProps) {
           const count = group.games.length;
           const markerRadius = count === 1 ? 6 : 6 + Math.sqrt(count - 1) * 3;
           const label = count === 1
-            ? `Game ${group.indices[0] + 1}: ${group.games[0].homeTeam.location} ${group.games[0].homeTeam.name} vs ${group.games[0].awayTeam.location} ${group.games[0].awayTeam.name}, ${formatDate(group.games[0].date)}, ${group.location}`
+            ? `Game ${group.indices[0] + 1}: ${group.games[0].homeTeam.name} vs ${group.games[0].awayTeam.name}, ${formatDate(group.games[0].date)}, ${group.location}`
             : `${count} games in ${group.location}: ${group.games.map((_g, i) => `Game ${group.indices[i] + 1}`).join(', ')}`;
           const showTooltip = (e: React.SyntheticEvent) => {
             cancelTooltipHide();
@@ -371,12 +371,12 @@ export default function MapVisualization({ referee }: MapVisualizationProps) {
         >
           <p style={{ margin: '0 0 6px 0', fontWeight: 600 }}>📍 {tooltip.location}</p>
           {tooltip.games.map((game, i) => (
-            <div key={game.id} style={{ marginBottom: i < tooltip.games.length - 1 ? '8px' : 0, borderTop: i > 0 ? '1px solid #e5e7eb' : undefined, paddingTop: i > 0 ? '8px' : undefined }}>
+            <div key={i} style={{ marginBottom: i < tooltip.games.length - 1 ? '8px' : 0, borderTop: i > 0 ? '1px solid #e5e7eb' : undefined, paddingTop: i > 0 ? '8px' : undefined }}>
               <strong>Game {tooltip.indices[i] + 1}</strong>
               <p style={{ margin: '4px 0', color: '#6b7280', fontSize: '0.8rem' }}>{formatDate(game.date)}</p>
-              <p style={{ margin: '4px 0' }}><strong>{game.homeTeam.location} {game.homeTeam.name}</strong></p>
+              <p style={{ margin: '4px 0' }}><strong>{game.homeTeam.name}</strong></p>
               <p style={{ margin: '2px 0', color: '#6b7280', fontSize: '0.8rem' }}>vs</p>
-              <p style={{ margin: '4px 0' }}><strong>{game.awayTeam.location} {game.awayTeam.name}</strong></p>
+              <p style={{ margin: '4px 0' }}><strong>{game.awayTeam.name}</strong></p>
             </div>
           ))}
         </div>

@@ -1418,7 +1418,22 @@
         ]
       }
     ],
-    "totalMilesTravelled": 67473
+    "totalMilesTravelled": 67473,
+    "mostCommonTeams": [
+      {
+        "name": "Iowa St.",
+        "count": 10
+      },
+      {
+        "name": "Kansas",
+        "count": 8
+      },
+      {
+        "name": "TCU",
+        "count": 8
+      }
+    ],
+    "daysWorkedStreak": 31
   },
   {
     "id": "714269",
@@ -2489,7 +2504,22 @@
         ]
       }
     ],
-    "totalMilesTravelled": 61450
+    "totalMilesTravelled": 61450,
+    "mostCommonTeams": [
+      {
+        "name": "Purdue",
+        "count": 7
+      },
+      {
+        "name": "UCLA",
+        "count": 6
+      },
+      {
+        "name": "USC",
+        "count": 6
+      }
+    ],
+    "daysWorkedStreak": 9
   },
   {
     "id": "714367",
@@ -3336,6 +3366,21 @@
         ]
       }
     ],
-    "totalMilesTravelled": 29057
+    "totalMilesTravelled": 29057,
+    "mostCommonTeams": [
+      {
+        "name": "Connecticut",
+        "count": 7
+      },
+      {
+        "name": "Georgetown",
+        "count": 6
+      },
+      {
+        "name": "St. John's",
+        "count": 5
+      }
+    ],
+    "daysWorkedStreak": 4
   }
 ]

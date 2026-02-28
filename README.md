@@ -1,15 +1,18 @@
-# zebra-air
+# zebra-viz
+
 Tracking NCAA referees
 
-## Build referee data
+## Developer Notes
+
+### Build referee data
 
 Use `server/data/parse_referees.py` to parse downloaded referee HTML files, geocode each game city with Google Geocoding API, and compute `totalMilesTravelled` per referee.
 
-### Requirements
+#### Requirements
 
 - A Google Geocoding API key with Geocoding API enabled.
 
-### Run
+#### Run
 
 ```bash
 export GOOGLE_GEOCODING_API_KEY="<your_api_key>"
@@ -19,8 +22,3 @@ export GOOGLE_GEOCODING_API_KEY="<your_api_key>"
 ```
 
 You can also pass the key directly with `--google-api-key`.
-
-### Notes
-
-- Geocoding cache is in-memory only for the current script run.
-- Output JSON includes game `coordinates` and per-referee `totalMilesTravelled`.

@@ -17,16 +17,16 @@ export default function RefereeTravelCard({ referee }: RefereeTravelCardProps) {
       </div>
       <div style={styles.gameList}>
         {sortedGames.map((game, index) => (
-          <div key={game.id} style={styles.gameItem}>
+          <div key={index} style={styles.gameItem}>
             <div style={styles.gameNumber}>{index + 1}</div>
             <div style={styles.gameDetails}>
               <div style={styles.gameTeams}>
                 <span style={styles.homeTeam}>
-                  {game.homeTeam.location} {game.homeTeam.name}
+                  {game.homeTeam.name}
                 </span>
                 <span style={styles.vs}>vs</span>
                 <span style={styles.awayTeam}>
-                  {game.awayTeam.location} {game.awayTeam.name}
+                  {game.awayTeam.name}
                 </span>
               </div>
               <div style={styles.gameMeta}>

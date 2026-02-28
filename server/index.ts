@@ -7,7 +7,9 @@ import { readFileSync } from "node:fs";
 type RefereeSource = {
   id: string;
   name: string;
-  totalMilesTravelled?: number;
+  totalMilesTravelled: number;
+  mostCommonTeams: TeamCount[];
+  daysWorkedStreak: number;
   games: {
     date: string;
     location: string;
@@ -20,64 +22,6 @@ type RefereeSource = {
 const referees = JSON.parse(
   readFileSync(new URL("./data/referees.json", import.meta.url), "utf-8"),
 ) as RefereeSource[];
-
-function haversineDistanceMiles(coord1: [number, number], coord2: [number, number]): number {
-  const R = 3958.8;
-  const toRad = (deg: number) => (deg * Math.PI) / 180;
-  const [lat1, lon1] = coord1;
-  const [lat2, lon2] = coord2;
-  const dLat = toRad(lat2 - lat1);
-  const dLon = toRad(lon2 - lon1);
-  const a =
-    Math.sin(dLat / 2) ** 2 +
-    Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) * Math.sin(dLon / 2) ** 2;
-  return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-}
-
-function computeTotalMiles(games: { coordinates: [number, number]; date: string }[]): number {
-  const sorted = [...games].sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
-  let total = 0;
-  for (let i = 1; i < sorted.length; i++) {
-    total += haversineDistanceMiles(sorted[i - 1].coordinates, sorted[i].coordinates);
-  }
-  return Math.round(total);
-}
-
-function computeMostCommonTeams(
-  games: { homeTeam: { name: string }; awayTeam: { name: string } }[],
-  topN = 3
-): TeamCount[] {
-  const counts: Record<string, number> = {};
-  for (const game of games) {
-    const home = game.homeTeam.name;
-    const away = game.awayTeam.name;
-    counts[home] = (counts[home] ?? 0) + 1;
-    counts[away] = (counts[away] ?? 0) + 1;
-  }
-  return Object.entries(counts)
-    .map(([name, count]) => ({ name, count }))
-    .sort((a, b) => b.count - a.count)
-    .slice(0, topN);
-}
-
-function computeDaysWorkedStreak(games: { date: string }[]): number {
-  const dates = Array.from(new Set(games.map((g) => g.date))).sort();
-  if (dates.length === 0) return 0;
-  let maxStreak = 1;
-  let streak = 1;
-  for (let i = 1; i < dates.length; i++) {
-    const prev = new Date(dates[i - 1]).getTime();
-    const curr = new Date(dates[i]).getTime();
-    const diffDays = (curr - prev) / (1000 * 60 * 60 * 24);
-    if (Math.round(diffDays) === 1) {
-      streak++;
-      maxStreak = Math.max(maxStreak, streak);
-    } else {
-      streak = 1;
-    }
-  }
-  return maxStreak;
-}
 
 const app = express();
 
@@ -130,9 +74,9 @@ app.get("/api/referees/:id", (req, res) => {
   }
   return res.json({
     ...referee,
-    totalMilesTravelled: referee.totalMilesTravelled ?? computeTotalMiles(referee.games),
-    mostCommonTeams: computeMostCommonTeams(referee.games),
-    daysWorkedStreak: computeDaysWorkedStreak(referee.games),
+    totalMilesTravelled: referee.totalMilesTravelled,
+    mostCommonTeams: referee.mostCommonTeams,
+    daysWorkedStreak: referee.daysWorkedStreak,
   });
 });
 

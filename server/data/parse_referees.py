@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+import collections
 import glob
 import html
 import json
@@ -10,6 +11,7 @@ import math
 import os
 import re
 import time
+from datetime import date
 from urllib.parse import urlencode
 from urllib.request import urlopen
 from typing import Any
@@ -49,7 +51,54 @@ def compute_total_miles(games: list[dict[str, Any]]) -> int:
     return round(total_miles)
 
 
-def geocode_location(location: str, api_key: str, cache: dict[str, list[float]]) -> list[float]:
+def compute_most_common_teams(games: list[dict[str, Any]], top_n: int = 3) -> list[dict[str, Any]]:
+    counts: collections.Counter[str] = collections.Counter()
+    for game in games:
+        home_team = game.get("homeTeam", {}).get("name")
+        away_team = game.get("awayTeam", {}).get("name")
+        if isinstance(home_team, str) and home_team:
+            counts[home_team] += 1
+        if isinstance(away_team, str) and away_team:
+            counts[away_team] += 1
+
+    return [{"name": name, "count": count} for name, count in counts.most_common(top_n)]
+
+
+def compute_days_worked_streak(games: list[dict[str, Any]]) -> int:
+    unique_dates: set[date] = set()
+    for game in games:
+        raw_date = game.get("date")
+        if not isinstance(raw_date, str):
+            continue
+        try:
+            unique_dates.add(date.fromisoformat(raw_date))
+        except ValueError:
+            continue
+
+    date_values = sorted(unique_dates)
+    if not date_values:
+        return 0
+
+    max_streak = 1
+    current_streak = 1
+
+    for index in range(1, len(date_values)):
+        previous_date = date_values[index - 1]
+        current_date = date_values[index]
+        if (current_date - previous_date).days == 1:
+            current_streak += 1
+            max_streak = max(max_streak, current_streak)
+        else:
+            current_streak = 1
+
+    return max_streak
+
+
+def geocode_location(
+    location: str,
+    api_key: str,
+    cache: dict[str, list[float]],
+) -> list[float]:
     cached = cache.get(location)
     if cached is not None:
         return cached
@@ -97,6 +146,8 @@ def enrich_referees_with_mileage(
             game["coordinates"] = coordinates
 
         referee["totalMilesTravelled"] = compute_total_miles(games)
+        referee["mostCommonTeams"] = compute_most_common_teams(games)
+        referee["daysWorkedStreak"] = compute_days_worked_streak(games)
 
 
 def extract_referee_id(contents: str) -> str:
