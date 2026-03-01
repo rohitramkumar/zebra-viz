@@ -12,6 +12,7 @@ function App() {
   const [selectedRefereeId, setSelectedRefereeId] = useState<string | null>(null);
   const [listLoading, setListLoading] = useState(true);
   const [detailLoading, setDetailLoading] = useState(false);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   useEffect(() => {
     fetch('/api/referees')
@@ -26,6 +27,7 @@ function App() {
   const handleSelectReferee = (id: string) => {
     setSelectedRefereeId(id);
     setDetailLoading(true);
+    setIsSidebarOpen(false);
     fetch(`/api/referees/${id}`)
       .then(res => res.json())
       .then((data: Referee) => {
@@ -38,6 +40,14 @@ function App() {
   return (
     <div className="app">
       <header className="app-header">
+        <button
+          className="hamburger-btn"
+          onClick={() => setIsSidebarOpen(o => !o)}
+          aria-label="Toggle referee list"
+          aria-expanded={isSidebarOpen}
+        >
+          ☰
+        </button>
         <h1>🦓 Zebra Viz - NCAA Mens Basketball Referee Tracker</h1>
       </header>
       <div className="wip-watermark" aria-hidden="true">WORK IN PROGRESS</div>
@@ -47,6 +57,8 @@ function App() {
           selectedRefereeId={selectedRefereeId}
           onSelectReferee={handleSelectReferee}
           loading={listLoading}
+          isOpen={isSidebarOpen}
+          onClose={() => setIsSidebarOpen(false)}
         />
         <main className="main-area">
           {detailLoading ? (
