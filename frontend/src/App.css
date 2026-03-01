@@ -111,3 +111,52 @@
   user-select: none;
   z-index: 1000;
 }
+
+.hamburger-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 1.4rem;
+  cursor: pointer;
+  padding: 4px 8px;
+  margin-right: 8px;
+  border-radius: 4px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.hamburger-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+@media (max-width: 768px) {
+  .hamburger-btn {
+    display: flex;
+    align-items: center;
+  }
+
+  .app-header h1 {
+    font-size: 0.9rem;
+  }
+
+  .wip-watermark {
+    display: none;
+  }
+
+  .dashboard-layout {
+    flex-direction: column;
+    flex: none;
+    overflow: visible;
+  }
+
+  .details-column {
+    min-width: 0;
+    max-width: none;
+  }
+
+  .map-container {
+    height: 300px !important;
+    min-height: 220px !important;
+  }
+}

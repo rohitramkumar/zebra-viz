@@ -193,7 +193,7 @@ export default function MapVisualization({ referee }: MapVisualizationProps) {
   };
 
   return (
-    <div ref={containerRef} style={{ borderRadius: '8px', overflow: 'hidden', boxShadow: '0 1px 3px rgba(0,0,0,0.1)', minHeight: '360px', height: '680px', background: '#d4e9f7', position: 'relative' }}>
+    <div ref={containerRef} className="map-container" style={{ borderRadius: '8px', overflow: 'hidden', boxShadow: '0 1px 3px rgba(0,0,0,0.1)', minHeight: '360px', height: '680px', background: '#d4e9f7', position: 'relative' }}>
       <button
         type="button"
         onClick={handlePlayTimeline}

@@ -1,11 +1,14 @@
 import { useState } from 'react';
 import { RefereeListItem } from '../types';
+import './RefereeSidebar.css';
 
 interface RefereeSidebarProps {
   referees: RefereeListItem[];
   selectedRefereeId: string | null;
   onSelectReferee: (id: string) => void;
   loading: boolean;
+  isOpen: boolean;
+  onClose: () => void;
 }
 
 export default function RefereeSidebar({
@@ -13,6 +16,8 @@ export default function RefereeSidebar({
   selectedRefereeId,
   onSelectReferee,
   loading,
+  isOpen,
+  onClose,
 }: RefereeSidebarProps) {
   const [search, setSearch] = useState('');
 
@@ -21,7 +26,9 @@ export default function RefereeSidebar({
   );
 
   return (
-    <aside style={styles.sidebar}>
+    <>
+      {isOpen && <div className="sidebar-backdrop" onClick={onClose} aria-hidden="true" />}
+      <aside className={`sidebar${isOpen ? ' sidebar--open' : ''}`}>
       <div style={styles.sidebarHeader}>
         <h2 style={styles.sidebarTitle}>Referees</h2>
         <input
@@ -59,19 +66,11 @@ export default function RefereeSidebar({
         </ul>
       )}
     </aside>
+    </>
   );
 }
 
 const styles: Record<string, React.CSSProperties> = {
-  sidebar: {
-    width: '240px',
-    flexShrink: 0,
-    backgroundColor: '#ffffff',
-    borderRight: '1px solid #e5e7eb',
-    display: 'flex',
-    flexDirection: 'column',
-    overflowY: 'auto',
-  },
   sidebarHeader: {
     padding: '12px',
     borderBottom: '1px solid #e5e7eb',
