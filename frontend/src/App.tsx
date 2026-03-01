@@ -40,6 +40,7 @@ function App() {
       <header className="app-header">
         <h1>🦓 Zebra Viz - NCAA Mens Basketball Referee Tracker</h1>
       </header>
+      <div className="wip-watermark" aria-hidden="true">WORK IN PROGRESS</div>
       <div className="app-content">
         <RefereeSidebar
           referees={referees}

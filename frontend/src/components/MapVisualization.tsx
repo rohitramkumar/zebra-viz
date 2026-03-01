@@ -214,7 +214,7 @@ export default function MapVisualization({ referee }: MapVisualizationProps) {
           opacity: isTimelinePlaying || routePoints.length < 2 ? 0.65 : 1,
         }}
       >
-        {isTimelinePlaying ? 'Playing Timeline…' : 'Show Travel Timeline'}
+        {isTimelinePlaying ? 'Playing Timeline…' : 'Play Travel Timeline'}
       </button>
       {isTimelinePlaying && (
         <button
