@@ -20,7 +20,7 @@ type RefereeSource = {
 };
 
 const referees = JSON.parse(
-  readFileSync(new URL("./data/referees.json", import.meta.url), "utf-8"),
+  readFileSync(new URL("../data/referees.json", import.meta.url), "utf-8"),
 ) as RefereeSource[];
 
 const app = express();

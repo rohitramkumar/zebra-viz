@@ -28,6 +28,7 @@ RUN npm ci
 
 # Copy built artifacts from builder
 COPY --from=builder /app/dist ./dist
+COPY --from=builder /app/data ./data
 
 # Expose the port
 EXPOSE 8080

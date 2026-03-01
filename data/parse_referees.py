@@ -269,12 +269,12 @@ def main() -> None:
     parser.add_argument(
         "--input-dir",
         default=current_dir,
-        help="Directory containing referee HTML files (default: server/data)",
+        help="Directory containing referee HTML files (default: data)",
     )
     parser.add_argument(
         "--output",
         default=os.path.join(current_dir, "referees.json"),
-        help="Output JSON file path (default: server/data/referees.json)",
+        help="Output JSON file path (default: data/referees.json)",
     )
     parser.add_argument(
         "--google-api-key",
