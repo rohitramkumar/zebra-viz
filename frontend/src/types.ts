@@ -10,9 +10,15 @@ export interface Game {
   awayTeam: Team;
 }
 
+export interface TeamRecord {
+  wins: number;
+  losses: number;
+}
+
 export interface TeamCount {
   name: string;
   count: number;
+  record: TeamRecord;
 }
 
 export interface Referee {
