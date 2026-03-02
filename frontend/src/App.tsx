@@ -13,6 +13,7 @@ function App() {
   const [listLoading, setListLoading] = useState(true);
   const [detailLoading, setDetailLoading] = useState(false);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
     fetch('/api/referees')
@@ -23,6 +24,10 @@ function App() {
       })
       .catch(() => setListLoading(false));
   }, []);
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', isDarkMode ? 'dark' : 'light');
+  }, [isDarkMode]);
 
   const handleSelectReferee = (id: string) => {
     setSelectedRefereeId(id);
@@ -49,6 +54,14 @@ function App() {
           ☰
         </button>
         <h1>🦓 Zebra Viz - NCAA Mens Basketball Referee Tracker</h1>
+        <button
+          className="theme-toggle-btn"
+          onClick={() => setIsDarkMode(d => !d)}
+          aria-label={isDarkMode ? 'Switch to light mode' : 'Switch to dark mode'}
+          title={isDarkMode ? 'Switch to light mode' : 'Switch to dark mode'}
+        >
+          {isDarkMode ? '☀️' : '🌙'}
+        </button>
       </header>
       <div className="wip-watermark" aria-hidden="true">WORK IN PROGRESS</div>
       <div className="app-content">
