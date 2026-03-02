@@ -21,6 +21,7 @@
   font-size: 1.2rem;
   font-weight: 700;
   letter-spacing: 0.5px;
+  flex: 1;
 }
 
 .app-content {
@@ -95,9 +96,6 @@
 }
 
 .wip-watermark {
-  position: fixed;
-  right: 14px;
-  top: 12px;
   font-size: 0.78rem;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -109,7 +107,8 @@
   text-transform: uppercase;
   pointer-events: none;
   user-select: none;
-  z-index: 1000;
+  flex-shrink: 0;
+  margin-right: 8px;
 }
 
 .hamburger-btn {
@@ -131,7 +130,6 @@
 }
 
 .theme-toggle-btn {
-  margin-left: auto;
   background: none;
   border: 1px solid rgba(255, 255, 255, 0.3);
   color: #ffffff;

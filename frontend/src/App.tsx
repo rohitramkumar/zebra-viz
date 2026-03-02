@@ -54,6 +54,7 @@ function App() {
           ☰
         </button>
         <h1>🦓 Zebra Viz - NCAA Mens Basketball Referee Tracker</h1>
+        <div className="wip-watermark" aria-hidden="true">WORK IN PROGRESS</div>
         <button
           className="theme-toggle-btn"
           onClick={() => setIsDarkMode(d => !d)}
@@ -63,7 +64,6 @@ function App() {
           {isDarkMode ? '☀️' : '🌙'}
         </button>
       </header>
-      <div className="wip-watermark" aria-hidden="true">WORK IN PROGRESS</div>
       <div className="app-content">
         <RefereeSidebar
           referees={referees}
