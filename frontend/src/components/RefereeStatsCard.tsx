@@ -24,7 +24,9 @@ export default function RefereeStatsCard({ referee }: RefereeStatsCardProps) {
             {referee.mostCommonTeams.map((t) => (
               <div key={t.name} style={styles.teamRow}>
                 <span style={styles.teamName}>{t.name}</span>
-                <span style={styles.teamCount}>{t.count} {t.count === 1 ? 'game' : 'games'}</span>
+                <span style={styles.teamCount}>
+                  {t.record.wins}-{t.record.losses} ({t.count} {t.count === 1 ? 'game' : 'games'})
+                </span>
               </div>
             ))}
           </div>

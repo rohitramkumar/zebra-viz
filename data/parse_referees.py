@@ -52,16 +52,30 @@ def compute_total_miles(games: list[dict[str, Any]]) -> int:
 
 
 def compute_most_common_teams(games: list[dict[str, Any]], top_n: int = 3) -> list[dict[str, Any]]:
+    # In the source HTML, the first team listed in each game row is the winner,
+    # which maps to homeTeam in the parsed game data.
     counts: collections.Counter[str] = collections.Counter()
+    wins: dict[str, int] = {}
+    losses: dict[str, int] = {}
+
     for game in games:
         home_team = game.get("homeTeam", {}).get("name")
         away_team = game.get("awayTeam", {}).get("name")
         if isinstance(home_team, str) and home_team:
             counts[home_team] += 1
+            wins[home_team] = wins.get(home_team, 0) + 1
         if isinstance(away_team, str) and away_team:
             counts[away_team] += 1
+            losses[away_team] = losses.get(away_team, 0) + 1
 
-    return [{"name": name, "count": count} for name, count in counts.most_common(top_n)]
+    return [
+        {
+            "name": name,
+            "count": count,
+            "record": {"wins": wins.get(name, 0), "losses": losses.get(name, 0)},
+        }
+        for name, count in counts.most_common(top_n)
+    ]
 
 
 def compute_days_worked_streak(games: list[dict[str, Any]]) -> int:

@@ -1422,15 +1422,27 @@
     "mostCommonTeams": [
       {
         "name": "Iowa St.",
-        "count": 10
+        "count": 10,
+        "record": {
+          "wins": 9,
+          "losses": 1
+        }
       },
       {
         "name": "Kansas",
-        "count": 8
+        "count": 8,
+        "record": {
+          "wins": 6,
+          "losses": 2
+        }
       },
       {
         "name": "TCU",
-        "count": 8
+        "count": 8,
+        "record": {
+          "wins": 6,
+          "losses": 2
+        }
       }
     ],
     "daysWorkedStreak": 31
@@ -2508,15 +2520,27 @@
     "mostCommonTeams": [
       {
         "name": "Purdue",
-        "count": 7
+        "count": 7,
+        "record": {
+          "wins": 5,
+          "losses": 2
+        }
       },
       {
         "name": "UCLA",
-        "count": 6
+        "count": 6,
+        "record": {
+          "wins": 3,
+          "losses": 3
+        }
       },
       {
         "name": "USC",
-        "count": 6
+        "count": 6,
+        "record": {
+          "wins": 3,
+          "losses": 3
+        }
       }
     ],
     "daysWorkedStreak": 9
@@ -3370,15 +3394,27 @@
     "mostCommonTeams": [
       {
         "name": "Connecticut",
-        "count": 7
+        "count": 7,
+        "record": {
+          "wins": 5,
+          "losses": 2
+        }
       },
       {
         "name": "Georgetown",
-        "count": 6
+        "count": 6,
+        "record": {
+          "wins": 4,
+          "losses": 2
+        }
       },
       {
         "name": "St. John's",
-        "count": 5
+        "count": 5,
+        "record": {
+          "wins": 4,
+          "losses": 1
+        }
       }
     ],
     "daysWorkedStreak": 4
@@ -4596,15 +4632,27 @@
     "mostCommonTeams": [
       {
         "name": "Michigan",
-        "count": 6
+        "count": 6,
+        "record": {
+          "wins": 6,
+          "losses": 0
+        }
       },
       {
         "name": "Minnesota",
-        "count": 6
+        "count": 6,
+        "record": {
+          "wins": 3,
+          "losses": 3
+        }
       },
       {
         "name": "Purdue",
-        "count": 6
+        "count": 6,
+        "record": {
+          "wins": 5,
+          "losses": 1
+        }
       }
     ],
     "daysWorkedStreak": 9
@@ -5962,15 +6010,27 @@
     "mostCommonTeams": [
       {
         "name": "North Carolina",
-        "count": 8
+        "count": 8,
+        "record": {
+          "wins": 7,
+          "losses": 1
+        }
       },
       {
         "name": "N.C. State",
-        "count": 7
+        "count": 7,
+        "record": {
+          "wins": 4,
+          "losses": 3
+        }
       },
       {
         "name": "Duke",
-        "count": 6
+        "count": 6,
+        "record": {
+          "wins": 6,
+          "losses": 0
+        }
       }
     ],
     "daysWorkedStreak": 15
