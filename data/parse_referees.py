@@ -16,6 +16,15 @@ from urllib.parse import urlencode
 from urllib.request import urlopen
 from typing import Any
 
+try:
+    import pandas as pd
+    from kenpompy import misc as kenpompy_misc
+    from kenpompy.utils import get_html as kenpompy_get_html, login as kenpompy_login
+
+    KENPOMPY_AVAILABLE = True
+except ImportError:
+    KENPOMPY_AVAILABLE = False
+
 
 def normalize_text(raw_html: str) -> str:
     text = re.sub(r"<[^>]+>", " ", raw_html)
@@ -233,10 +242,7 @@ def parse_game_row(row_html: str) -> dict[str, Any] | None:
     }
 
 
-def parse_referee_file(file_path: str) -> dict[str, Any]:
-    with open(file_path, "r", encoding="utf-8") as file:
-        contents = file.read()
-
+def parse_referee_html(contents: str) -> dict[str, Any]:
     referee_id = extract_referee_id(contents)
     referee_name = extract_referee_name(contents)
     tbody_html = extract_ratings_tbody(contents)
@@ -255,6 +261,12 @@ def parse_referee_file(file_path: str) -> dict[str, Any]:
     }
 
 
+def parse_referee_file(file_path: str) -> dict[str, Any]:
+    with open(file_path, "r", encoding="utf-8") as file:
+        contents = file.read()
+    return parse_referee_html(contents)
+
+
 def parse_all_referees(input_dir: str) -> list[dict[str, Any]]:
     pattern = os.path.join(input_dir, "*.html")
     files = sorted(glob.glob(pattern))
@@ -270,6 +282,30 @@ def parse_all_referees(input_dir: str) -> list[dict[str, Any]]:
 
     if not referees:
         raise ValueError(f"No parseable referee HTML files found in: {input_dir}")
+
+    return referees
+
+
+def fetch_referees_from_kenpompy(browser: Any) -> list[dict[str, Any]]:
+    refs_df = kenpompy_misc.get_refs(browser)
+
+    referees: list[dict[str, Any]] = []
+    for _, row in refs_df.iterrows():
+        ref_id = row["ID"]
+        if pd.isna(ref_id):
+            print(f"Skipping referee {str(row.get('Name', '(unknown)'))}: no ID found")
+            continue
+        url = f"https://kenpom.com/referee.php?r={int(ref_id)}"
+        html_bytes = kenpompy_get_html(browser, url)
+        contents = html_bytes.decode("utf-8") if isinstance(html_bytes, bytes) else str(html_bytes)
+        try:
+            referee = parse_referee_html(contents)
+            referees.append(referee)
+        except ValueError as error:
+            print(f"Skipping referee {str(row.get('Name', ref_id))} ({int(ref_id)}): {error}")
+
+    if not referees:
+        raise ValueError("No referee data fetched from kenpom.com")
 
     return referees
 
@@ -298,6 +334,16 @@ def main() -> None:
             "GOOGLE_MAPS_API_KEY environment variable."
         ),
     )
+    parser.add_argument(
+        "--kenpompy-email",
+        default=os.getenv("KENPOM_EMAIL"),
+        help="Kenpom.com email for scraping via kenpompy. Defaults to KENPOM_EMAIL env var.",
+    )
+    parser.add_argument(
+        "--kenpompy-password",
+        default=os.getenv("KENPOM_PASSWORD"),
+        help="Kenpom.com password for scraping via kenpompy. Defaults to KENPOM_PASSWORD env var.",
+    )
     args = parser.parse_args()
 
     if not args.google_api_key:
@@ -305,7 +351,17 @@ def main() -> None:
             "Missing Google API key. Provide --google-api-key or set GOOGLE_GEOCODING_API_KEY"
         )
 
-    referees = parse_all_referees(args.input_dir)
+    if args.kenpompy_email and args.kenpompy_password:
+        if not KENPOMPY_AVAILABLE:
+            parser.error(
+                "kenpompy is not installed. Install it with: "
+                "pip install git+https://github.com/rohitramkumar/kenpompy.git"
+            )
+        browser = kenpompy_login(args.kenpompy_email, args.kenpompy_password)
+        referees = fetch_referees_from_kenpompy(browser)
+    else:
+        referees = parse_all_referees(args.input_dir)
+
     enrich_referees_with_mileage(referees, args.google_api_key)
 
     output_dir = os.path.dirname(args.output)
