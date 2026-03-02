@@ -95,7 +95,7 @@ function App() {
             </div>
           ) : (
             <div className="welcome-message">
-              <div className="welcome-icon">🏀</div>
+              <div className="welcome-icon">🦓</div>
               <h2>Select a Referee</h2>
               <p>Choose a referee from the sidebar to view their game assignments and travel map.</p>
             </div>
