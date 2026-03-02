@@ -52,7 +52,7 @@ function formatDate(dateStr: string): string {
 
 const styles: Record<string, React.CSSProperties> = {
   card: {
-    backgroundColor: '#ffffff',
+    backgroundColor: 'var(--bg-surface)',
     borderRadius: '8px',
     boxShadow: '0 1px 3px rgba(0,0,0,0.1)',
     overflow: 'hidden',
@@ -63,8 +63,8 @@ const styles: Record<string, React.CSSProperties> = {
   },
   cardHeader: {
     padding: '10px 12px',
-    backgroundColor: '#f9fafb',
-    borderBottom: '1px solid #e5e7eb',
+    backgroundColor: 'var(--bg-surface-alt)',
+    borderBottom: '1px solid var(--border-color)',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-between',
@@ -72,13 +72,13 @@ const styles: Record<string, React.CSSProperties> = {
   refereeName: {
     fontSize: '0.85rem',
     fontWeight: 600,
-    color: '#111827',
+    color: 'var(--text-primary)',
   },
   totalBadge: {
     fontSize: '0.7rem',
     fontWeight: 600,
-    backgroundColor: '#dbeafe',
-    color: '#1d4ed8',
+    backgroundColor: 'var(--accent-badge-bg)',
+    color: 'var(--accent-primary-text)',
     padding: '2px 8px',
     borderRadius: '12px',
   },
@@ -96,15 +96,15 @@ const styles: Record<string, React.CSSProperties> = {
     alignItems: 'flex-start',
     gap: '8px',
     padding: '8px 10px',
-    backgroundColor: '#f9fafb',
+    backgroundColor: 'var(--bg-surface-alt)',
     borderRadius: '6px',
-    border: '1px solid #e5e7eb',
+    border: '1px solid var(--border-color)',
   },
   gameNumber: {
     width: '22px',
     height: '22px',
     borderRadius: '50%',
-    backgroundColor: '#3b82f6',
+    backgroundColor: 'var(--accent-primary)',
     color: '#ffffff',
     display: 'flex',
     alignItems: 'center',
@@ -128,17 +128,17 @@ const styles: Record<string, React.CSSProperties> = {
   homeTeam: {
     fontSize: '0.8rem',
     fontWeight: 600,
-    color: '#111827',
+    color: 'var(--text-primary)',
   },
   vs: {
     fontSize: '0.7rem',
-    color: '#9ca3af',
+    color: 'var(--text-very-muted)',
     fontStyle: 'italic',
   },
   awayTeam: {
     fontSize: '0.8rem',
     fontWeight: 600,
-    color: '#374151',
+    color: 'var(--text-secondary)',
   },
   gameMeta: {
     display: 'flex',
@@ -147,10 +147,10 @@ const styles: Record<string, React.CSSProperties> = {
   },
   gameDate: {
     fontSize: '0.7rem',
-    color: '#6b7280',
+    color: 'var(--text-muted)',
   },
   gameLocation: {
     fontSize: '0.7rem',
-    color: '#6b7280',
+    color: 'var(--text-muted)',
   },
 };

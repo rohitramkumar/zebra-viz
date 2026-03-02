@@ -1,8 +1,8 @@
 .sidebar {
   width: 240px;
   flex-shrink: 0;
-  background-color: #ffffff;
-  border-right: 1px solid #e5e7eb;
+  background-color: var(--bg-surface);
+  border-right: 1px solid var(--border-color);
   display: flex;
   flex-direction: column;
   overflow-y: auto;

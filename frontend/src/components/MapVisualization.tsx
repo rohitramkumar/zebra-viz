@@ -193,7 +193,7 @@ export default function MapVisualization({ referee }: MapVisualizationProps) {
   };
 
   return (
-    <div ref={containerRef} className="map-container" style={{ borderRadius: '8px', overflow: 'hidden', boxShadow: '0 1px 3px rgba(0,0,0,0.1)', minHeight: '360px', height: '680px', background: '#d4e9f7', position: 'relative' }}>
+    <div ref={containerRef} className="map-container" style={{ borderRadius: '8px', overflow: 'hidden', boxShadow: '0 1px 3px rgba(0,0,0,0.1)', minHeight: '360px', height: '680px', background: 'var(--map-bg)', position: 'relative' }}>
       <button
         type="button"
         onClick={handlePlayTimeline}
@@ -203,9 +203,9 @@ export default function MapVisualization({ referee }: MapVisualizationProps) {
           top: 12,
           right: 12,
           zIndex: 10,
-          border: '1px solid #d1d5db',
-          background: 'white',
-          color: '#1f2937',
+          border: '1px solid var(--btn-border)',
+          background: 'var(--btn-bg)',
+          color: 'var(--btn-text)',
           borderRadius: '8px',
           padding: '8px 12px',
           fontSize: '0.85rem',
@@ -225,9 +225,9 @@ export default function MapVisualization({ referee }: MapVisualizationProps) {
             top: 12,
             right: 172,
             zIndex: 10,
-            border: '1px solid #d1d5db',
-            background: 'white',
-            color: '#1f2937',
+            border: '1px solid var(--btn-border)',
+            background: 'var(--btn-bg)',
+            color: 'var(--btn-text)',
             borderRadius: '8px',
             padding: '8px 12px',
             fontSize: '0.85rem',
@@ -256,8 +256,7 @@ export default function MapVisualization({ referee }: MapVisualizationProps) {
           <path
             key={i}
             d={pathGen(feat) ?? ''}
-            fill="#e8f0e0"
-            stroke="#9ab07a"
+            style={{ fill: 'var(--map-land)', stroke: 'var(--map-border)' }}
             strokeWidth={0.5}
           />
         ))}
@@ -267,7 +266,7 @@ export default function MapVisualization({ referee }: MapVisualizationProps) {
           <polyline
             points={timelinePolylinePoints}
             fill="none"
-            stroke="#3b82f6"
+            style={{ stroke: 'var(--accent-primary)' }}
             strokeWidth={2}
             strokeDasharray="8,5"
             opacity={0.8}
@@ -337,7 +336,7 @@ export default function MapVisualization({ referee }: MapVisualizationProps) {
               onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') showTooltip(e); }}
             >
               <title>{label}</title>
-              <circle r={markerRadius} fill="#3b82f6" stroke="white" strokeWidth={2} filter="url(#shadow)" />
+              <circle r={markerRadius} style={{ fill: 'var(--accent-primary)' }} stroke="white" strokeWidth={2} filter="url(#shadow)" />
             </g>
           );
         })}
@@ -350,8 +349,8 @@ export default function MapVisualization({ referee }: MapVisualizationProps) {
             position: 'absolute',
             left: tooltip.x,
             top: tooltip.y,
-            background: 'white',
-            border: '1px solid #e5e7eb',
+            background: 'var(--tooltip-bg)',
+            border: '1px solid var(--border-color)',
             borderRadius: '8px',
             padding: '10px 14px',
             boxShadow: '0 4px 12px rgba(0,0,0,0.15)',
@@ -362,6 +361,7 @@ export default function MapVisualization({ referee }: MapVisualizationProps) {
             maxHeight: `${tooltip.maxHeight}px`,
             overflowY: 'auto',
             fontSize: '0.85rem',
+            color: 'var(--text-primary)',
           }}
           onMouseEnter={cancelTooltipHide}
           onMouseLeave={scheduleTooltipHide}
@@ -371,11 +371,11 @@ export default function MapVisualization({ referee }: MapVisualizationProps) {
         >
           <p style={{ margin: '0 0 6px 0', fontWeight: 600 }}>📍 {tooltip.location}</p>
           {tooltip.games.map((game, i) => (
-            <div key={i} style={{ marginBottom: i < tooltip.games.length - 1 ? '8px' : 0, borderTop: i > 0 ? '1px solid #e5e7eb' : undefined, paddingTop: i > 0 ? '8px' : undefined }}>
+            <div key={i} style={{ marginBottom: i < tooltip.games.length - 1 ? '8px' : 0, borderTop: i > 0 ? '1px solid var(--border-color)' : undefined, paddingTop: i > 0 ? '8px' : undefined }}>
               <strong>Game {tooltip.indices[i] + 1}</strong>
-              <p style={{ margin: '4px 0', color: '#6b7280', fontSize: '0.8rem' }}>{formatDate(game.date)}</p>
+              <p style={{ margin: '4px 0', color: 'var(--text-muted)', fontSize: '0.8rem' }}>{formatDate(game.date)}</p>
               <p style={{ margin: '4px 0' }}><strong>{game.homeTeam.name}</strong></p>
-              <p style={{ margin: '2px 0', color: '#6b7280', fontSize: '0.8rem' }}>vs</p>
+              <p style={{ margin: '2px 0', color: 'var(--text-muted)', fontSize: '0.8rem' }}>vs</p>
               <p style={{ margin: '4px 0' }}><strong>{game.awayTeam.name}</strong></p>
             </div>
           ))}

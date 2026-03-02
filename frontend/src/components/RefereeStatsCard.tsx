@@ -44,7 +44,7 @@ export default function RefereeStatsCard({ referee }: RefereeStatsCardProps) {
 
 const styles: Record<string, React.CSSProperties> = {
   card: {
-    backgroundColor: '#ffffff',
+    backgroundColor: 'var(--bg-surface)',
     borderRadius: '8px',
     boxShadow: '0 1px 3px rgba(0,0,0,0.1)',
     overflow: 'hidden',
@@ -54,13 +54,13 @@ const styles: Record<string, React.CSSProperties> = {
   },
   cardHeader: {
     padding: '10px 12px',
-    backgroundColor: '#f9fafb',
-    borderBottom: '1px solid #e5e7eb',
+    backgroundColor: 'var(--bg-surface-alt)',
+    borderBottom: '1px solid var(--border-color)',
   },
   title: {
     fontSize: '0.85rem',
     fontWeight: 600,
-    color: '#111827',
+    color: 'var(--text-primary)',
   },
   body: {
     padding: '10px 12px',
@@ -81,18 +81,18 @@ const styles: Record<string, React.CSSProperties> = {
   statLabel: {
     fontSize: '0.65rem',
     fontWeight: 600,
-    color: '#6b7280',
+    color: 'var(--text-muted)',
     textTransform: 'uppercase',
     letterSpacing: '0.05em',
   },
   statValue: {
     fontSize: '0.95rem',
     fontWeight: 700,
-    color: '#111827',
+    color: 'var(--text-primary)',
   },
   divider: {
     height: '1px',
-    backgroundColor: '#e5e7eb',
+    backgroundColor: 'var(--border-color)',
   },
   teamList: {
     display: 'flex',
@@ -109,11 +109,11 @@ const styles: Record<string, React.CSSProperties> = {
   teamName: {
     fontSize: '0.75rem',
     fontWeight: 500,
-    color: '#111827',
+    color: 'var(--text-primary)',
   },
   teamCount: {
     fontSize: '0.65rem',
-    color: '#6b7280',
+    color: 'var(--text-muted)',
     whiteSpace: 'nowrap',
   },
 };

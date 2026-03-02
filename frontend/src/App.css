@@ -21,6 +21,7 @@
   font-size: 1.2rem;
   font-weight: 700;
   letter-spacing: 0.5px;
+  flex: 1;
 }
 
 .app-content {
@@ -76,14 +77,14 @@
   align-items: center;
   justify-content: center;
   flex: 1;
-  color: #6b7280;
+  color: var(--text-muted);
   text-align: center;
   gap: 12px;
 }
 
 .welcome-message h2 {
   font-size: 1.5rem;
-  color: #374151;
+  color: var(--text-secondary);
 }
 
 .welcome-message p {
@@ -95,9 +96,6 @@
 }
 
 .wip-watermark {
-  position: fixed;
-  right: 14px;
-  top: 12px;
   font-size: 0.78rem;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -109,7 +107,8 @@
   text-transform: uppercase;
   pointer-events: none;
   user-select: none;
-  z-index: 1000;
+  flex-shrink: 0;
+  margin-right: 8px;
 }
 
 .hamburger-btn {
@@ -127,6 +126,23 @@
 }
 
 .hamburger-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.theme-toggle-btn {
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 6px;
+  line-height: 1;
+  flex-shrink: 0;
+  transition: background 0.15s;
+}
+
+.theme-toggle-btn:hover {
   background: rgba(255, 255, 255, 0.15);
 }
 
