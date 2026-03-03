@@ -1,4 +1,4 @@
-name: Parse Referees
+name: Refresh Referee Data
 
 on:
   schedule:
@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  parse-referees:
+  refresh-referee-data:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -21,12 +21,12 @@ jobs:
       - name: Install dependencies
         run: pip install -r data/requirements.txt
 
-      - name: Run parse_referees.py
+      - name: Run refresh-referee-data.py
         env:
           GOOGLE_GEOCODING_API_KEY: ${{ secrets.GOOGLE_GEOCODING_API_KEY }}
           KENPOM_EMAIL: ${{ secrets.KENPOM_EMAIL }}
           KENPOM_PASSWORD: ${{ secrets.KENPOM_PASSWORD }}
-        run: python data/parse_referees.py --output data/referees.json
+        run: python data/refresh-referee-data.py --output data/referees.json
 
       - name: Commit updated referees.json
         run: |

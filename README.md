@@ -6,7 +6,7 @@ Tracking NCAA referees
 
 ### Build referee data
 
-Use `data/parse_referees.py` to parse downloaded referee HTML files, geocode each game city with Google Geocoding API, and compute `totalMilesTravelled` per referee.
+Use `data/refresh-referee-data.py` to parse downloaded referee HTML files, geocode each game city with Google Geocoding API, and compute `totalMilesTravelled` per referee.
 
 #### Requirements
 
@@ -16,7 +16,7 @@ Use `data/parse_referees.py` to parse downloaded referee HTML files, geocode eac
 
 ```bash
 export GOOGLE_GEOCODING_API_KEY="<your_api_key>"
-/workspaces/zebra-viz/.venv/bin/python data/parse_referees.py \
+/workspaces/zebra-viz/.venv/bin/python data/refresh-referee-data.py \
 	--input-dir data \
 	--output data/referees.json
 ```
@@ -25,7 +25,7 @@ You can also pass the key directly with `--google-api-key`.
 
 ## CI / Scheduled workflow
 
-A GitHub Actions workflow (`.github/workflows/parse-referees.yml`) runs `parse_referees.py` automatically every day at **9 AM EST / 10 AM EDT** and commits the refreshed `data/referees.json` back to the branch. It can also be triggered manually from the **Actions** tab via `workflow_dispatch`.
+A GitHub Actions workflow (`.github/workflows/refresh-referee-data.yml`) runs `refresh-referee-data.py` automatically every day at **9 AM EST / 10 AM EDT** and commits the refreshed `data/referees.json` back to the branch. It can also be triggered manually from the **Actions** tab via `workflow_dispatch`.
 
 ### Running the workflow manually
 
@@ -33,7 +33,7 @@ In addition to the daily schedule, the workflow can be triggered at any time fro
 
 1. Go to your repository on GitHub.
 2. Click the **Actions** tab.
-3. Select **Parse Referees** in the left-hand workflow list.
+3. Select **Refresh Referee Data** in the left-hand workflow list.
 4. Click **Run workflow** (top-right of the run list).
 5. Choose the branch you want to run it on and click **Run workflow**.
 
