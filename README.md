@@ -22,3 +22,23 @@ export GOOGLE_GEOCODING_API_KEY="<your_api_key>"
 ```
 
 You can also pass the key directly with `--google-api-key`.
+
+## CI / Scheduled workflow
+
+A GitHub Actions workflow (`.github/workflows/parse-referees.yml`) runs `parse_referees.py` automatically every day at **9 AM EST / 10 AM EDT** and commits the refreshed `data/referees.json` back to the branch. It can also be triggered manually from the **Actions** tab via `workflow_dispatch`.
+
+### Required repository secrets
+
+The workflow reads three secrets from the repository. To set them:
+
+1. Go to your repository on GitHub.
+2. Click **Settings** → **Secrets and variables** → **Actions**.
+3. Click **New repository secret** and add each of the following:
+
+| Secret name | Required | Description |
+|---|---|---|
+| `GOOGLE_GEOCODING_API_KEY` | **Yes** | Google Geocoding API key with the Geocoding API enabled. Used to resolve game locations to coordinates. |
+| `KENPOM_EMAIL` | No | Email address for a kenpom.com account. When provided together with `KENPOM_PASSWORD`, the workflow scrapes live referee data directly from kenpom.com instead of using local HTML files. |
+| `KENPOM_PASSWORD` | No | Password for the kenpom.com account above. |
+
+> **Note:** If `KENPOM_EMAIL` and `KENPOM_PASSWORD` are omitted the script falls back to parsing any `*.html` files already present in the `data/` directory.
