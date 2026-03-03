@@ -275,29 +275,31 @@ export default function MapVisualization({ referee }: MapVisualizationProps) {
 
   return (
     <div ref={containerRef} className="map-container" style={{ borderRadius: '8px', overflow: 'hidden', boxShadow: '0 1px 3px rgba(0,0,0,0.1)', minHeight: '360px', height: '680px', background: 'var(--map-bg)', position: 'relative' }}>
-      <button
-        type="button"
-        onClick={handlePlayTimeline}
-        disabled={isTimelinePlaying || routePoints.length < 2}
-        style={{
-          position: 'absolute',
-          top: 12,
-          right: 12,
-          zIndex: 10,
-          border: '1px solid var(--btn-border)',
-          background: 'var(--btn-bg)',
-          color: 'var(--btn-text)',
-          borderRadius: '8px',
-          padding: '8px 12px',
-          fontSize: '0.85rem',
-          fontWeight: 600,
-          cursor: isTimelinePlaying || routePoints.length < 2 ? 'not-allowed' : 'pointer',
-          opacity: isTimelinePlaying || routePoints.length < 2 ? 0.65 : 1,
-        }}
-      >
-        {isTimelinePlaying ? 'Playing Timeline…' : 'Play Travel Timeline'}
-      </button>
-      {isTimelinePlaying && (
+      {!isZoomed && (
+        <button
+          type="button"
+          onClick={handlePlayTimeline}
+          disabled={isTimelinePlaying || routePoints.length < 2}
+          style={{
+            position: 'absolute',
+            top: 12,
+            right: 12,
+            zIndex: 10,
+            border: '1px solid var(--btn-border)',
+            background: 'var(--btn-bg)',
+            color: 'var(--btn-text)',
+            borderRadius: '8px',
+            padding: '8px 12px',
+            fontSize: '0.85rem',
+            fontWeight: 600,
+            cursor: isTimelinePlaying || routePoints.length < 2 ? 'not-allowed' : 'pointer',
+            opacity: isTimelinePlaying || routePoints.length < 2 ? 0.65 : 1,
+          }}
+        >
+          {isTimelinePlaying ? 'Playing Timeline…' : 'Play Travel Timeline'}
+        </button>
+      )}
+      {!isZoomed && isTimelinePlaying && (
         <button
           type="button"
           onClick={handleStopTimeline}
