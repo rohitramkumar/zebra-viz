@@ -101,6 +101,9 @@ function App() {
           )}
         </main>
       </div>
+      <footer className="app-footer">
+        Built on data from kenpom.com
+      </footer>
     </div>
   );
 }
