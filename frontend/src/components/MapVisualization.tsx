@@ -46,12 +46,31 @@ interface TooltipState {
   maxHeight: number;
 }
 
+interface ViewBoxState {
+  x: number;
+  y: number;
+  w: number;
+  h: number;
+}
+
+const DEFAULT_VIEWBOX: ViewBoxState = { x: 0, y: 0, w: W, h: H };
+const MIN_ZOOM_BOX_PX = 10;
+
 export default function MapVisualization({ referee }: MapVisualizationProps) {
   const [tooltip, setTooltip] = useState<TooltipState | null>(null);
   const [isTimelinePlaying, setIsTimelinePlaying] = useState(false);
   const [timelineProgress, setTimelineProgress] = useState(0);
+  const [viewBoxState, setViewBoxState] = useState<ViewBoxState>(DEFAULT_VIEWBOX);
+  const [dragStart, setDragStart] = useState<[number, number] | null>(null);
+  const [dragCurrent, setDragCurrent] = useState<[number, number] | null>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const tooltipHideTimeoutRef = useRef<number | null>(null);
+
+  const isZoomed =
+    viewBoxState.x !== DEFAULT_VIEWBOX.x ||
+    viewBoxState.y !== DEFAULT_VIEWBOX.y ||
+    viewBoxState.w !== DEFAULT_VIEWBOX.w ||
+    viewBoxState.h !== DEFAULT_VIEWBOX.h;
 
   const sortedGames: Game[] = useMemo(
     () => [...referee.games].sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime()),
@@ -99,6 +118,7 @@ export default function MapVisualization({ referee }: MapVisualizationProps) {
     setIsTimelinePlaying(false);
     setTimelineProgress(0);
     setTooltip(null);
+    setViewBoxState(DEFAULT_VIEWBOX);
   }, [referee.id]);
 
   useEffect(() => {
@@ -164,6 +184,67 @@ export default function MapVisualization({ referee }: MapVisualizationProps) {
     return timelineStops[visibleStops - 1].gameIndex;
   }, [isTimelinePlaying, timelineProgress, timelineStops]);
 
+  const handleSVGMouseDown = (e: React.MouseEvent<SVGSVGElement>) => {
+    if (e.button !== 0) return;
+    const svgEl = e.currentTarget;
+    const ctm = svgEl.getScreenCTM();
+    if (!ctm) return;
+    cancelTooltipHide();
+    setTooltip(null);
+    const pt = new DOMPoint(e.clientX, e.clientY);
+    const svgPt = pt.matrixTransform(ctm.inverse());
+    const coords: [number, number] = [svgPt.x, svgPt.y];
+    setDragStart(coords);
+    setDragCurrent(coords);
+    e.preventDefault();
+  };
+
+  const handleSVGMouseMove = (e: React.MouseEvent<SVGSVGElement>) => {
+    if (!dragStart) return;
+    const svgEl = e.currentTarget;
+    const ctm = svgEl.getScreenCTM();
+    if (!ctm) return;
+    const pt = new DOMPoint(e.clientX, e.clientY);
+    const svgPt = pt.matrixTransform(ctm.inverse());
+    setDragCurrent([svgPt.x, svgPt.y]);
+  };
+
+  const handleSVGMouseUp = (e: React.MouseEvent<SVGSVGElement>) => {
+    if (!dragStart || !dragCurrent) return;
+    const x1 = Math.min(dragStart[0], dragCurrent[0]);
+    const y1 = Math.min(dragStart[1], dragCurrent[1]);
+    const x2 = Math.max(dragStart[0], dragCurrent[0]);
+    const y2 = Math.max(dragStart[1], dragCurrent[1]);
+    const boxW = x2 - x1;
+    const boxH = y2 - y1;
+
+    if (boxW > MIN_ZOOM_BOX_PX && boxH > MIN_ZOOM_BOX_PX) {
+      const aspectRatio = W / H;
+      let newW = boxW;
+      let newH = boxH;
+      if (boxW / boxH > aspectRatio) {
+        newH = boxW / aspectRatio;
+      } else {
+        newW = boxH * aspectRatio;
+      }
+      const cx = (x1 + x2) / 2;
+      const cy = (y1 + y2) / 2;
+      setViewBoxState({ x: cx - newW / 2, y: cy - newH / 2, w: newW, h: newH });
+    }
+
+    setDragStart(null);
+    setDragCurrent(null);
+  };
+
+  const handleSVGMouseLeave = () => {
+    setDragStart(null);
+    setDragCurrent(null);
+  };
+
+  const handleResetZoom = () => {
+    setViewBoxState(DEFAULT_VIEWBOX);
+  };
+
   const handlePlayTimeline = () => {
     if (routePoints.length < 2) return;
     setTooltip(null);
@@ -194,29 +275,31 @@ export default function MapVisualization({ referee }: MapVisualizationProps) {
 
   return (
     <div ref={containerRef} className="map-container" style={{ borderRadius: '8px', overflow: 'hidden', boxShadow: '0 1px 3px rgba(0,0,0,0.1)', minHeight: '360px', height: '680px', background: 'var(--map-bg)', position: 'relative' }}>
-      <button
-        type="button"
-        onClick={handlePlayTimeline}
-        disabled={isTimelinePlaying || routePoints.length < 2}
-        style={{
-          position: 'absolute',
-          top: 12,
-          right: 12,
-          zIndex: 10,
-          border: '1px solid var(--btn-border)',
-          background: 'var(--btn-bg)',
-          color: 'var(--btn-text)',
-          borderRadius: '8px',
-          padding: '8px 12px',
-          fontSize: '0.85rem',
-          fontWeight: 600,
-          cursor: isTimelinePlaying || routePoints.length < 2 ? 'not-allowed' : 'pointer',
-          opacity: isTimelinePlaying || routePoints.length < 2 ? 0.65 : 1,
-        }}
-      >
-        {isTimelinePlaying ? 'Playing Timeline…' : 'Play Travel Timeline'}
-      </button>
-      {isTimelinePlaying && (
+      {!isZoomed && (
+        <button
+          type="button"
+          onClick={handlePlayTimeline}
+          disabled={isTimelinePlaying || routePoints.length < 2}
+          style={{
+            position: 'absolute',
+            top: 12,
+            right: 12,
+            zIndex: 10,
+            border: '1px solid var(--btn-border)',
+            background: 'var(--btn-bg)',
+            color: 'var(--btn-text)',
+            borderRadius: '8px',
+            padding: '8px 12px',
+            fontSize: '0.85rem',
+            fontWeight: 600,
+            cursor: isTimelinePlaying || routePoints.length < 2 ? 'not-allowed' : 'pointer',
+            opacity: isTimelinePlaying || routePoints.length < 2 ? 0.65 : 1,
+          }}
+        >
+          {isTimelinePlaying ? 'Playing Timeline…' : 'Play Travel Timeline'}
+        </button>
+      )}
+      {!isZoomed && isTimelinePlaying && (
         <button
           type="button"
           onClick={handleStopTimeline}
@@ -238,12 +321,38 @@ export default function MapVisualization({ referee }: MapVisualizationProps) {
           Stop & Reset
         </button>
       )}
+      {isZoomed && (
+        <button
+          type="button"
+          onClick={handleResetZoom}
+          style={{
+            position: 'absolute',
+            top: 12,
+            left: 12,
+            zIndex: 10,
+            border: '1px solid var(--btn-border)',
+            background: 'var(--btn-bg)',
+            color: 'var(--btn-text)',
+            borderRadius: '8px',
+            padding: '8px 12px',
+            fontSize: '0.85rem',
+            fontWeight: 600,
+            cursor: 'pointer',
+          }}
+        >
+          Reset Zoom
+        </button>
+      )}
       <svg
-        viewBox={`0 0 ${W} ${H}`}
+        viewBox={`${viewBoxState.x} ${viewBoxState.y} ${viewBoxState.w} ${viewBoxState.h}`}
         preserveAspectRatio="xMidYMid meet"
-        style={{ width: '100%', height: '100%', display: 'block' }}
+        style={{ width: '100%', height: '100%', display: 'block', cursor: 'crosshair' }}
         aria-label={`Travel map for ${referee.name}`}
         role="img"
+        onMouseDown={handleSVGMouseDown}
+        onMouseMove={handleSVGMouseMove}
+        onMouseUp={handleSVGMouseUp}
+        onMouseLeave={handleSVGMouseLeave}
       >
         <defs>
           <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
@@ -288,6 +397,7 @@ export default function MapVisualization({ referee }: MapVisualizationProps) {
             ? `Game ${group.indices[0] + 1}: ${group.games[0].homeTeam.name} vs ${group.games[0].awayTeam.name}, ${formatDate(group.games[0].date)}, ${group.location}`
             : `${count} games in ${group.location}: ${group.games.map((_g, i) => `Game ${group.indices[i] + 1}`).join(', ')}`;
           const showTooltip = (e: React.SyntheticEvent) => {
+            if (dragStart) return;
             cancelTooltipHide();
             const svgEl = (e.currentTarget as SVGGElement).ownerSVGElement!;
             const svgRect = svgEl.getBoundingClientRect();
@@ -340,6 +450,22 @@ export default function MapVisualization({ referee }: MapVisualizationProps) {
             </g>
           );
         })}
+        {/* Zoom selection rectangle */}
+        {dragStart && dragCurrent && (
+          <rect
+            x={Math.min(dragStart[0], dragCurrent[0])}
+            y={Math.min(dragStart[1], dragCurrent[1])}
+            width={Math.abs(dragCurrent[0] - dragStart[0])}
+            height={Math.abs(dragCurrent[1] - dragStart[1])}
+            fill="rgba(0, 100, 255, 0.1)"
+            stroke="rgba(0, 100, 255, 0.8)"
+            strokeWidth={1}
+            vectorEffect="non-scaling-stroke"
+            strokeDasharray="6,4"
+            pointerEvents="none"
+            aria-hidden="true"
+          />
+        )}
       </svg>
 
       {/* Tooltip overlay — positioned absolutely within the container */}
