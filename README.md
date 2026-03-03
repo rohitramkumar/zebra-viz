@@ -27,6 +27,18 @@ You can also pass the key directly with `--google-api-key`.
 
 A GitHub Actions workflow (`.github/workflows/parse-referees.yml`) runs `parse_referees.py` automatically every day at **9 AM EST / 10 AM EDT** and commits the refreshed `data/referees.json` back to the branch. It can also be triggered manually from the **Actions** tab via `workflow_dispatch`.
 
+### Running the workflow manually
+
+In addition to the daily schedule, the workflow can be triggered at any time from the GitHub UI:
+
+1. Go to your repository on GitHub.
+2. Click the **Actions** tab.
+3. Select **Parse Referees** in the left-hand workflow list.
+4. Click **Run workflow** (top-right of the run list).
+5. Choose the branch you want to run it on and click **Run workflow**.
+
+The run will appear in the list within a few seconds. Once it completes, a new commit updating `data/referees.json` will be pushed to the selected branch (only if the data changed).
+
 ### Required repository secrets
 
 The workflow reads three secrets from the repository. To set them:
