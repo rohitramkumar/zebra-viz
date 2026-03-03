@@ -1,0 +1,39 @@
+name: Refresh Referee Data
+
+on:
+  schedule:
+    - cron: "0 14 * * *" # 9 AM EST / 10 AM EDT
+  workflow_dispatch:
+
+jobs:
+  refresh-referee-data:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install dependencies
+        run: pip install -r data/requirements.txt
+
+      - name: Run refresh-referee-data.py
+        env:
+          GOOGLE_GEOCODING_API_KEY: ${{ secrets.GOOGLE_GEOCODING_API_KEY }}
+          KENPOM_EMAIL: ${{ secrets.KENPOM_EMAIL }}
+          KENPOM_PASSWORD: ${{ secrets.KENPOM_PASSWORD }}
+        run: python data/refresh-referee-data.py --output data/referees.json
+
+      - name: Commit updated referees.json
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/referees.json
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: update referees.json [skip ci]"
+            git push
+          fi
