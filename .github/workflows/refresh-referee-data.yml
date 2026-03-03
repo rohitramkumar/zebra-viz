@@ -34,6 +34,6 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/referees.json
           if ! git diff --cached --quiet; then
-            git commit -m "chore: update referees.json [skip ci]"
+            git commit -m "chore: update referees.json"
             git push
           fi
