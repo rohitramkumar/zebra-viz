@@ -29,3 +29,8 @@ export interface RefereeListItem {
   name: string;
   gameCount: number;
 }
+
+export interface RefereeListResponse {
+  lastUpdated: string;
+  referees: RefereeListItem[];
+}

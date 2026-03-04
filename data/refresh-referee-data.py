@@ -368,8 +368,13 @@ def main() -> None:
     if output_dir:
         os.makedirs(output_dir, exist_ok=True)
 
+    payload = {
+        "lastUpdated": date.today().isoformat(),
+        "referees": referees,
+    }
+
     with open(args.output, "w", encoding="utf-8") as output_file:
-        json.dump(referees, output_file, indent=2, ensure_ascii=False)
+        json.dump(payload, output_file, indent=2, ensure_ascii=False)
 
     print(f"Wrote {len(referees)} referees to {args.output}")
 
