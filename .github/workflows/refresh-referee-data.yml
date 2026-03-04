@@ -2,7 +2,7 @@ name: Refresh Referee Data
 
 on:
   schedule:
-    - cron: "0 14 * * 1" # 9 AM EST / 10 AM EDT, every Monday
+    - cron: "0 14 */3 * *" # 9 AM EST / 10 AM EDT, every 3 days
   workflow_dispatch:
 
 jobs:
