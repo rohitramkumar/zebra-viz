@@ -14,12 +14,16 @@ function App() {
   const [detailLoading, setDetailLoading] = useState(false);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(false);
+  const [lastUpdated, setLastUpdated] = useState<string | null>(null);
 
   useEffect(() => {
     fetch('/api/referees')
       .then(res => res.json())
       .then((data: RefereeListItem[]) => {
         setReferees(data);
+        if (data.length > 0) {
+          setLastUpdated(data[0].lastUpdated);
+        }
         setListLoading(false);
       })
       .catch(() => setListLoading(false));
@@ -102,10 +106,18 @@ function App() {
         </main>
       </div>
       <footer className="app-footer">
-        Built on data from kenpom.com
+        Built on data from kenpom.com{lastUpdated && ` · Last updated: ${formatLastUpdated(lastUpdated)}`}
       </footer>
     </div>
   );
+}
+
+function formatLastUpdated(dateStr: string): string {
+  return new Date(dateStr + 'T12:00:00').toLocaleDateString('en-US', {
+    month: 'long',
+    day: 'numeric',
+    year: 'numeric',
+  });
 }
 
 export default App;

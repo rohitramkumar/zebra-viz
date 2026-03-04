@@ -364,6 +364,10 @@ def main() -> None:
 
     enrich_referees_with_mileage(referees, args.google_api_key)
 
+    last_updated = "2026-03-03"
+    for referee in referees:
+        referee["lastUpdated"] = last_updated
+
     output_dir = os.path.dirname(args.output)
     if output_dir:
         os.makedirs(output_dir, exist_ok=True)

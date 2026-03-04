@@ -10,6 +10,7 @@ type RefereeSource = {
   totalMilesTravelled: number;
   mostCommonTeams: TeamCount[];
   daysWorkedStreak: number;
+  lastUpdated: string;
   games: {
     date: string;
     location: string;
@@ -63,6 +64,7 @@ app.get("/api/referees", (_req, res) => {
     id: ref.id,
     name: ref.name,
     gameCount: ref.games.length,
+    lastUpdated: ref.lastUpdated,
   }));
   res.json(refereeList);
 });
