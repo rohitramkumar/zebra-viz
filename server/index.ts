@@ -10,7 +10,6 @@ type RefereeSource = {
   totalMilesTravelled: number;
   mostCommonTeams: TeamCount[];
   daysWorkedStreak: number;
-  lastUpdated: string;
   games: {
     date: string;
     location: string;
@@ -20,9 +19,11 @@ type RefereeSource = {
   }[];
 };
 
-const referees = JSON.parse(
+const refereeData = JSON.parse(
   readFileSync(new URL("../data/referees.json", import.meta.url), "utf-8"),
-) as RefereeSource[];
+) as { lastUpdated: string; referees: RefereeSource[] };
+
+const { lastUpdated, referees } = refereeData;
 
 const app = express();
 
@@ -64,9 +65,8 @@ app.get("/api/referees", (_req, res) => {
     id: ref.id,
     name: ref.name,
     gameCount: ref.games.length,
-    lastUpdated: ref.lastUpdated,
   }));
-  res.json(refereeList);
+  res.json({ lastUpdated, referees: refereeList });
 });
 
 app.get("/api/referees/:id", (req, res) => {

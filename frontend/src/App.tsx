@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import './App.css';
-import { Referee, RefereeListItem } from './types';
+import { Referee, RefereeListItem, RefereeListResponse } from './types';
 import RefereeSidebar from './components/RefereeSidebar';
 import MapVisualization from './components/MapVisualization';
 import RefereeTravelCard from './components/RefereeTravelCard';
@@ -19,11 +19,9 @@ function App() {
   useEffect(() => {
     fetch('/api/referees')
       .then(res => res.json())
-      .then((data: RefereeListItem[]) => {
-        setReferees(data);
-        if (data.length > 0) {
-          setLastUpdated(data[0].lastUpdated);
-        }
+      .then((data: RefereeListResponse) => {
+        setReferees(data.referees);
+        setLastUpdated(data.lastUpdated);
         setListLoading(false);
       })
       .catch(() => setListLoading(false));

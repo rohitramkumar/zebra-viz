@@ -28,12 +28,15 @@ export interface Referee {
   totalMilesTravelled: number;
   mostCommonTeams: TeamCount[];
   daysWorkedStreak: number;
-  lastUpdated: string;
 }
 
 export interface RefereeListItem {
   id: string;
   name: string;
   gameCount: number;
+}
+
+export interface RefereeListResponse {
   lastUpdated: string;
+  referees: RefereeListItem[];
 }
