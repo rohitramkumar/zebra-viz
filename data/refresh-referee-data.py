@@ -369,7 +369,7 @@ def main() -> None:
         os.makedirs(output_dir, exist_ok=True)
 
     payload = {
-        "lastUpdated": "2026-03-03",
+        "lastUpdated": date.today().isoformat(),
         "referees": referees,
     }
 
