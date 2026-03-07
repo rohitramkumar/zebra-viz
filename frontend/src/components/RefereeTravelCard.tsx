@@ -18,7 +18,6 @@ export default function RefereeTravelCard({ referee }: RefereeTravelCardProps) {
       <div style={styles.gameList}>
         {sortedGames.map((game, index) => (
           <div key={index} style={styles.gameItem}>
-            <div style={styles.gameNumber}>{index + 1}</div>
             <div style={styles.gameDetails}>
               <div style={styles.gameTeams}>
                 <span style={styles.homeTeam}>
@@ -104,19 +103,6 @@ const styles: Record<string, React.CSSProperties> = {
     backgroundColor: 'var(--bg-surface-alt)',
     borderRadius: '6px',
     border: '1px solid var(--border-color)',
-  },
-  gameNumber: {
-    width: '22px',
-    height: '22px',
-    borderRadius: '50%',
-    backgroundColor: 'var(--accent-primary)',
-    color: '#ffffff',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    fontSize: '0.7rem',
-    fontWeight: 700,
-    flexShrink: 0,
   },
   gameDetails: {
     flex: 1,
