@@ -126,10 +126,11 @@ const styles: Record<string, React.CSSProperties> = {
     whiteSpace: 'nowrap',
   },
   streakSectionLabel: {
-    fontSize: '0.75rem',
-    fontWeight: 400,
-    color: 'var(--text-primary)',
-    letterSpacing: '0.01em',
+    fontSize: '0.65rem',
+    fontWeight: 600,
+    color: 'var(--text-muted)',
+    textTransform: 'uppercase' as const,
+    letterSpacing: '0.05em',
   },
   streakRow: {
     display: 'flex',
