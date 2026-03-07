@@ -127,7 +127,7 @@ const styles: Record<string, React.CSSProperties> = {
   },
   streakSectionLabel: {
     fontSize: '0.75rem',
-    fontWeight: 700,
+    fontWeight: 400,
     color: 'var(--text-primary)',
     letterSpacing: '0.01em',
   },
@@ -145,6 +145,7 @@ const styles: Record<string, React.CSSProperties> = {
   streakItemLabel: {
     fontSize: '0.6rem',
     fontWeight: 500,
+    fontStyle: 'italic',
     color: 'var(--text-muted)',
     textTransform: 'uppercase' as const,
     letterSpacing: '0.04em',
