@@ -73,6 +73,9 @@ const styles: Record<string, React.CSSProperties> = {
     fontSize: '0.85rem',
     fontWeight: 600,
     color: 'var(--text-primary)',
+    whiteSpace: 'nowrap',
+    overflow: 'hidden',
+    textOverflow: 'ellipsis',
   },
   totalBadge: {
     fontSize: '0.7rem',
@@ -81,6 +84,8 @@ const styles: Record<string, React.CSSProperties> = {
     color: 'var(--accent-primary-text)',
     padding: '2px 8px',
     borderRadius: '12px',
+    whiteSpace: 'nowrap',
+    flexShrink: 0,
   },
   gameList: {
     display: 'flex',
