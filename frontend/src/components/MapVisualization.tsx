@@ -375,7 +375,7 @@ export default function MapVisualization({ referee }: MapVisualizationProps) {
           <polyline
             points={timelinePolylinePoints}
             fill="none"
-            style={{ stroke: 'var(--accent-primary)' }}
+            style={{ stroke: 'var(--timeline-stroke)' }}
             strokeWidth={2}
             strokeDasharray="8,5"
             opacity={0.8}
