@@ -37,6 +37,25 @@ export default function RefereeStatsCard({ referee }: RefereeStatsCardProps) {
           <div style={styles.statLabel}>Longest Working Streak</div>
           <div style={styles.statValue}>{referee.daysWorkedStreak} {referee.daysWorkedStreak === 1 ? 'day' : 'days'}</div>
         </div>
+        {referee.favoritePartners.length > 0 && (
+          <>
+            <div style={styles.divider} />
+            <div style={styles.statBlock}>
+              <div style={styles.statIcon}>🤝</div>
+              <div style={styles.statLabel}>Favorite Partners</div>
+              <div style={styles.teamList}>
+                {referee.favoritePartners.map((p) => (
+                  <div key={p.id} style={styles.teamRow}>
+                    <span style={styles.teamName}>{p.name}</span>
+                    <span style={styles.teamCount}>
+                      {p.count} {p.count === 1 ? 'game' : 'games'} together
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </>
+        )}
       </div>
     </div>
   );
