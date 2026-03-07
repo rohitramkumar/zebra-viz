@@ -117,6 +117,34 @@ def compute_days_worked_streak(games: list[dict[str, Any]]) -> int:
     return max_streak
 
 
+def compute_current_days_worked_streak(games: list[dict[str, Any]]) -> int:
+    unique_dates: set[date] = set()
+    for game in games:
+        raw_date = game.get("date")
+        if not isinstance(raw_date, str):
+            continue
+        try:
+            unique_dates.add(date.fromisoformat(raw_date))
+        except ValueError:
+            continue
+
+    date_values = sorted(unique_dates)
+    if not date_values:
+        return 0
+
+    current_streak = 1
+
+    for index in range(len(date_values) - 1, 0, -1):
+        current_date = date_values[index]
+        previous_date = date_values[index - 1]
+        if (current_date - previous_date).days == 1:
+            current_streak += 1
+        else:
+            break
+
+    return current_streak
+
+
 def geocode_location(
     location: str,
     api_key: str,
@@ -171,6 +199,7 @@ def enrich_referees_with_mileage(
         referee["totalMilesTravelled"] = compute_total_miles(games)
         referee["mostCommonTeams"] = compute_most_common_teams(games)
         referee["daysWorkedStreak"] = compute_days_worked_streak(games)
+        referee["currentDaysWorkedStreak"] = compute_current_days_worked_streak(games)
 
 
 def extract_referee_id(contents: str) -> str:

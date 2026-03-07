@@ -37,6 +37,12 @@ export default function RefereeStatsCard({ referee }: RefereeStatsCardProps) {
           <div style={styles.statLabel}>Longest Working Streak</div>
           <div style={styles.statValue}>{referee.daysWorkedStreak} {referee.daysWorkedStreak === 1 ? 'day' : 'days'}</div>
         </div>
+        <div style={styles.divider} />
+        <div style={styles.statBlock}>
+          <div style={styles.statIcon}>⚡</div>
+          <div style={styles.statLabel}>Current Working Streak</div>
+          <div style={styles.statValue}>{referee.currentDaysWorkedStreak} {referee.currentDaysWorkedStreak === 1 ? 'day' : 'days'}</div>
+        </div>
       </div>
     </div>
   );
