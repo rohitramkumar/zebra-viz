@@ -34,7 +34,7 @@ export default function RefereeStatsCard({ referee }: RefereeStatsCardProps) {
         <div style={styles.divider} />
         <div style={styles.statBlock}>
           <div style={styles.statIcon}>🔥</div>
-          <div style={styles.statLabel}>Working Streak</div>
+          <div style={styles.streakSectionLabel}>Working Streak</div>
           <div style={styles.streakRow}>
             <div style={styles.streakItem}>
               <div style={styles.streakItemLabel}>Longest</div>
@@ -125,6 +125,12 @@ const styles: Record<string, React.CSSProperties> = {
     color: 'var(--text-muted)',
     whiteSpace: 'nowrap',
   },
+  streakSectionLabel: {
+    fontSize: '0.75rem',
+    fontWeight: 700,
+    color: 'var(--text-primary)',
+    letterSpacing: '0.01em',
+  },
   streakRow: {
     display: 'flex',
     flexDirection: 'row',
@@ -137,10 +143,11 @@ const styles: Record<string, React.CSSProperties> = {
     gap: '2px',
   },
   streakItemLabel: {
-    fontSize: '0.65rem',
-    fontWeight: 600,
+    fontSize: '0.6rem',
+    fontWeight: 500,
     color: 'var(--text-muted)',
     textTransform: 'uppercase' as const,
-    letterSpacing: '0.05em',
+    letterSpacing: '0.04em',
+    opacity: 0.75,
   },
 };
