@@ -72,6 +72,12 @@ export default function MapVisualization({ referee }: MapVisualizationProps) {
     viewBoxState.w !== DEFAULT_VIEWBOX.w ||
     viewBoxState.h !== DEFAULT_VIEWBOX.h;
 
+  // Current zoom level derived from the selected viewBox.
+  const zoomScale = useMemo(
+    () => Math.max(W / viewBoxState.w, H / viewBoxState.h),
+    [viewBoxState.h, viewBoxState.w]
+  );
+
   const sortedGames: Game[] = useMemo(
     () => [...referee.games].sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime()),
     [referee.games]
@@ -392,7 +398,10 @@ export default function MapVisualization({ referee }: MapVisualizationProps) {
           if (!pt) return null;
           const [x, y] = pt;
           const count = group.games.length;
-          const markerRadius = count === 1 ? 6 : 6 + Math.sqrt(count - 1) * 3;
+          const baseMarkerRadius = count === 1 ? 6 : 6 + Math.sqrt(count - 1) * 3;
+          // Use a gentler zoom curve and per-marker minimum so grouped cities remain visually larger.
+          const zoomAdjustedRadius = baseMarkerRadius / Math.pow(zoomScale, 0.7);
+          const markerRadius = Math.max(2.2, baseMarkerRadius * 0.34, zoomAdjustedRadius);
           const label = count === 1
             ? `Game ${group.indices[0] + 1}: ${group.games[0].homeTeam.name} vs ${group.games[0].awayTeam.name}, ${formatDate(group.games[0].date)}, ${group.location}`
             : `${count} games in ${group.location}: ${group.games.map((_g, i) => `Game ${group.indices[i] + 1}`).join(', ')}`;
@@ -402,10 +411,10 @@ export default function MapVisualization({ referee }: MapVisualizationProps) {
             const svgEl = (e.currentTarget as SVGGElement).ownerSVGElement!;
             const svgRect = svgEl.getBoundingClientRect();
             const containerRect = containerRef.current!.getBoundingClientRect();
-            const scaleX = svgRect.width / W;
-            const scaleY = svgRect.height / H;
-            const anchorX = x * scaleX + (svgRect.left - containerRect.left);
-            const anchorY = y * scaleY + (svgRect.top - containerRect.top);
+            const scaleX = svgRect.width / viewBoxState.w;
+            const scaleY = svgRect.height / viewBoxState.h;
+            const anchorX = (x - viewBoxState.x) * scaleX + (svgRect.left - containerRect.left);
+            const anchorY = (y - viewBoxState.y) * scaleY + (svgRect.top - containerRect.top);
             const estimatedTooltipWidth = Math.min(320, containerRect.width - 20);
             const maxHeight = Math.min(360, Math.max(140, containerRect.height - 24));
 
@@ -446,7 +455,13 @@ export default function MapVisualization({ referee }: MapVisualizationProps) {
               onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') showTooltip(e); }}
             >
               <title>{label}</title>
-              <circle r={markerRadius} style={{ fill: 'var(--accent-primary)' }} stroke="white" strokeWidth={2} filter="url(#shadow)" />
+              <circle
+                r={markerRadius}
+                style={{ fill: 'var(--accent-primary)' }}
+                stroke="white"
+                strokeWidth={Math.max(0.8, 2 / zoomScale)}
+                filter={isZoomed ? undefined : 'url(#shadow)'}
+              />
             </g>
           );
         })}
