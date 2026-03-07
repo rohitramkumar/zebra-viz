@@ -2,6 +2,10 @@
 
 Tracking NCAA referees
 
+## Disclaimer
+
+The code in this repository was pretty much 100% vibe coded. Consume it at your own risk.
+
 ## Developer Notes
 
 ### Build referee data
