@@ -1560,23 +1560,7 @@
         }
       ],
       "daysWorkedStreak": 31,
-      "favoritePartners": [
-        {
-          "id": "720087",
-          "name": "Brooks Wells",
-          "count": 35
-        },
-        {
-          "id": "714306",
-          "name": "Doug Sirmons",
-          "count": 27
-        },
-        {
-          "id": "719172",
-          "name": "Marques Pettigrew",
-          "count": 14
-        }
-      ]
+      "currentDaysWorkedStreak": 4
     },
     {
       "id": "714796",
@@ -2983,23 +2967,7 @@
         }
       ],
       "daysWorkedStreak": 13,
-      "favoritePartners": [
-        {
-          "id": "75147",
-          "name": "Roger Ayers",
-          "count": 13
-        },
-        {
-          "id": "714359",
-          "name": "Kipp Kissinger",
-          "count": 10
-        },
-        {
-          "id": "714367",
-          "name": "James Breeding",
-          "count": 10
-        }
-      ]
+      "currentDaysWorkedStreak": 6
     },
     {
       "id": "714306",
@@ -4434,23 +4402,7 @@
         }
       ],
       "daysWorkedStreak": 15,
-      "favoritePartners": [
-        {
-          "id": "714359",
-          "name": "Kipp Kissinger",
-          "count": 27
-        },
-        {
-          "id": "720087",
-          "name": "Brooks Wells",
-          "count": 19
-        },
-        {
-          "id": "714742",
-          "name": "Tony Padilla",
-          "count": 12
-        }
-      ]
+      "currentDaysWorkedStreak": 11
     },
     {
       "id": "75147",
@@ -5927,23 +5879,7 @@
         }
       ],
       "daysWorkedStreak": 15,
-      "favoritePartners": [
-        {
-          "id": "714796",
-          "name": "Ron Groover",
-          "count": 13
-        },
-        {
-          "id": "714305",
-          "name": "Brian O'Connell",
-          "count": 10
-        },
-        {
-          "id": "714359",
-          "name": "Kipp Kissinger",
-          "count": 10
-        }
-      ]
+      "currentDaysWorkedStreak": 7
     },
     {
       "id": "714363",
@@ -7266,23 +7202,7 @@
         }
       ],
       "daysWorkedStreak": 9,
-      "favoritePartners": [
-        {
-          "id": "714473",
-          "name": "Jeb Hartness",
-          "count": 10
-        },
-        {
-          "id": "714278",
-          "name": "D.J. Carstensen",
-          "count": 10
-        },
-        {
-          "id": "714294",
-          "name": "Brian Dorsey",
-          "count": 8
-        }
-      ]
+      "currentDaysWorkedStreak": 6
     },
     {
       "id": "719172",
@@ -8521,23 +8441,7 @@
         }
       ],
       "daysWorkedStreak": 11,
-      "favoritePartners": [
-        {
-          "id": "714359",
-          "name": "Kipp Kissinger",
-          "count": 14
-        },
-        {
-          "id": "720087",
-          "name": "Brooks Wells",
-          "count": 10
-        },
-        {
-          "id": "714462",
-          "name": "Michael Greenstein",
-          "count": 8
-        }
-      ]
+      "currentDaysWorkedStreak": 4
     },
     {
       "id": "719171",
@@ -9636,23 +9540,7 @@
         }
       ],
       "daysWorkedStreak": 4,
-      "favoritePartners": [
-        {
-          "id": "714769",
-          "name": "Jason Baker",
-          "count": 8
-        },
-        {
-          "id": "719498",
-          "name": "Vladimir Voyard-Tadal",
-          "count": 7
-        },
-        {
-          "id": "969046",
-          "name": "Lucas Santos",
-          "count": 7
-        }
-      ]
+      "currentDaysWorkedStreak": 3
     },
     {
       "id": "714269",
@@ -10835,23 +10723,7 @@
         }
       ],
       "daysWorkedStreak": 9,
-      "favoritePartners": [
-        {
-          "id": "714294",
-          "name": "Brian Dorsey",
-          "count": 9
-        },
-        {
-          "id": "714276",
-          "name": "Earl Walton",
-          "count": 8
-        },
-        {
-          "id": "714278",
-          "name": "D.J. Carstensen",
-          "count": 8
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "714484",
@@ -11978,23 +11850,7 @@
         }
       ],
       "daysWorkedStreak": 7,
-      "favoritePartners": [
-        {
-          "id": "714294",
-          "name": "Brian Dorsey",
-          "count": 14
-        },
-        {
-          "id": "861589",
-          "name": "Randy Richardson",
-          "count": 9
-        },
-        {
-          "id": "714740",
-          "name": "Mike Reed",
-          "count": 6
-        }
-      ]
+      "currentDaysWorkedStreak": 4
     },
     {
       "id": "75187",
@@ -13191,23 +13047,7 @@
         }
       ],
       "daysWorkedStreak": 7,
-      "favoritePartners": [
-        {
-          "id": "714796",
-          "name": "Ron Groover",
-          "count": 10
-        },
-        {
-          "id": "75147",
-          "name": "Roger Ayers",
-          "count": 9
-        },
-        {
-          "id": "714742",
-          "name": "Tony Padilla",
-          "count": 9
-        }
-      ]
+      "currentDaysWorkedStreak": 2
     },
     {
       "id": "714294",
@@ -14460,23 +14300,7 @@
         }
       ],
       "daysWorkedStreak": 12,
-      "favoritePartners": [
-        {
-          "id": "714484",
-          "name": "Paul Szelc",
-          "count": 14
-        },
-        {
-          "id": "714269",
-          "name": "Jeffrey Anderson",
-          "count": 9
-        },
-        {
-          "id": "714276",
-          "name": "Earl Walton",
-          "count": 9
-        }
-      ]
+      "currentDaysWorkedStreak": 3
     },
     {
       "id": "714367",
@@ -15435,23 +15259,7 @@
         }
       ],
       "daysWorkedStreak": 4,
-      "favoritePartners": [
-        {
-          "id": "714796",
-          "name": "Ron Groover",
-          "count": 10
-        },
-        {
-          "id": "714408",
-          "name": "Matt Potter",
-          "count": 6
-        },
-        {
-          "id": "719499",
-          "name": "Nathan Farrell",
-          "count": 6
-        }
-      ]
+      "currentDaysWorkedStreak": 4
     },
     {
       "id": "714742",
@@ -16746,23 +16554,7 @@
         }
       ],
       "daysWorkedStreak": 13,
-      "favoritePartners": [
-        {
-          "id": "714306",
-          "name": "Doug Sirmons",
-          "count": 12
-        },
-        {
-          "id": "714730",
-          "name": "Randy McCall",
-          "count": 11
-        },
-        {
-          "id": "714338",
-          "name": "Bret Smith",
-          "count": 11
-        }
-      ]
+      "currentDaysWorkedStreak": 3
     },
     {
       "id": "714333",
@@ -17917,23 +17709,7 @@
         }
       ],
       "daysWorkedStreak": 6,
-      "favoritePartners": [
-        {
-          "id": "714334",
-          "name": "Chuck Jones",
-          "count": 8
-        },
-        {
-          "id": "859526",
-          "name": "Owen Shortt",
-          "count": 8
-        },
-        {
-          "id": "719498",
-          "name": "Vladimir Voyard-Tadal",
-          "count": 8
-        }
-      ]
+      "currentDaysWorkedStreak": 3
     },
     {
       "id": "714832",
@@ -18990,23 +18766,7 @@
         }
       ],
       "daysWorkedStreak": 6,
-      "favoritePartners": [
-        {
-          "id": "714299",
-          "name": "Joe Lindsay",
-          "count": 10
-        },
-        {
-          "id": "714473",
-          "name": "Jeb Hartness",
-          "count": 9
-        },
-        {
-          "id": "714379",
-          "name": "Doug Shows",
-          "count": 8
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "719498",
@@ -20133,23 +19893,7 @@
         }
       ],
       "daysWorkedStreak": 6,
-      "favoritePartners": [
-        {
-          "id": "714452",
-          "name": "Rob Rorke",
-          "count": 9
-        },
-        {
-          "id": "714522",
-          "name": "Garrick Shannon",
-          "count": 8
-        },
-        {
-          "id": "714333",
-          "name": "Bart Lenox",
-          "count": 8
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "721296",
@@ -21276,23 +21020,7 @@
         }
       ],
       "daysWorkedStreak": 6,
-      "favoritePartners": [
-        {
-          "id": "714832",
-          "name": "Byron Jarrett",
-          "count": 7
-        },
-        {
-          "id": "719498",
-          "name": "Vladimir Voyard-Tadal",
-          "count": 7
-        },
-        {
-          "id": "859526",
-          "name": "Owen Shortt",
-          "count": 6
-        }
-      ]
+      "currentDaysWorkedStreak": 2
     },
     {
       "id": "714379",
@@ -22335,23 +22063,7 @@
         }
       ],
       "daysWorkedStreak": 6,
-      "favoritePartners": [
-        {
-          "id": "714832",
-          "name": "Byron Jarrett",
-          "count": 8
-        },
-        {
-          "id": "859526",
-          "name": "Owen Shortt",
-          "count": 8
-        },
-        {
-          "id": "720662",
-          "name": "Will Howard",
-          "count": 7
-        }
-      ]
+      "currentDaysWorkedStreak": 2
     },
     {
       "id": "859526",
@@ -23464,23 +23176,7 @@
         }
       ],
       "daysWorkedStreak": 7,
-      "favoritePartners": [
-        {
-          "id": "714333",
-          "name": "Bart Lenox",
-          "count": 8
-        },
-        {
-          "id": "714379",
-          "name": "Doug Shows",
-          "count": 8
-        },
-        {
-          "id": "720662",
-          "name": "Will Howard",
-          "count": 6
-        }
-      ]
+      "currentDaysWorkedStreak": 4
     },
     {
       "id": "714277",
@@ -24481,23 +24177,7 @@
         }
       ],
       "daysWorkedStreak": 6,
-      "favoritePartners": [
-        {
-          "id": "714424",
-          "name": "Tony Chiazza",
-          "count": 10
-        },
-        {
-          "id": "714374",
-          "name": "Pat Driscoll",
-          "count": 7
-        },
-        {
-          "id": "714305",
-          "name": "Brian O'Connell",
-          "count": 6
-        }
-      ]
+      "currentDaysWorkedStreak": 2
     },
     {
       "id": "720087",
@@ -25834,23 +25514,7 @@
         }
       ],
       "daysWorkedStreak": 31,
-      "favoritePartners": [
-        {
-          "id": "714359",
-          "name": "Kipp Kissinger",
-          "count": 35
-        },
-        {
-          "id": "714306",
-          "name": "Doug Sirmons",
-          "count": 19
-        },
-        {
-          "id": "714338",
-          "name": "Bret Smith",
-          "count": 16
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "714740",
@@ -26837,23 +26501,7 @@
         }
       ],
       "daysWorkedStreak": 10,
-      "favoritePartners": [
-        {
-          "id": "714434",
-          "name": "Larry Scirotto",
-          "count": 8
-        },
-        {
-          "id": "861589",
-          "name": "Randy Richardson",
-          "count": 8
-        },
-        {
-          "id": "714465",
-          "name": "Michael Irving",
-          "count": 7
-        }
-      ]
+      "currentDaysWorkedStreak": 2
     },
     {
       "id": "714278",
@@ -27910,23 +27558,7 @@
         }
       ],
       "daysWorkedStreak": 5,
-      "favoritePartners": [
-        {
-          "id": "714363",
-          "name": "Keith Kimble",
-          "count": 10
-        },
-        {
-          "id": "714840",
-          "name": "Kelly Pfeifer",
-          "count": 8
-        },
-        {
-          "id": "714269",
-          "name": "Jeffrey Anderson",
-          "count": 8
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "714332",
@@ -29207,23 +28839,7 @@
         }
       ],
       "daysWorkedStreak": 16,
-      "favoritePartners": [
-        {
-          "id": "714414",
-          "name": "A.J. Desai",
-          "count": 13
-        },
-        {
-          "id": "860900",
-          "name": "Tommy Morrissey",
-          "count": 10
-        },
-        {
-          "id": "714796",
-          "name": "Ron Groover",
-          "count": 9
-        }
-      ]
+      "currentDaysWorkedStreak": 4
     },
     {
       "id": "714299",
@@ -30280,23 +29896,7 @@
         }
       ],
       "daysWorkedStreak": 5,
-      "favoritePartners": [
-        {
-          "id": "714832",
-          "name": "Byron Jarrett",
-          "count": 10
-        },
-        {
-          "id": "969046",
-          "name": "Lucas Santos",
-          "count": 10
-        },
-        {
-          "id": "719171",
-          "name": "Courtney Green",
-          "count": 7
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "860900",
@@ -31507,23 +31107,7 @@
         }
       ],
       "daysWorkedStreak": 12,
-      "favoritePartners": [
-        {
-          "id": "714332",
-          "name": "Lee Cassell",
-          "count": 10
-        },
-        {
-          "id": "714406",
-          "name": "Tony Henderson",
-          "count": 10
-        },
-        {
-          "id": "75147",
-          "name": "Roger Ayers",
-          "count": 8
-        }
-      ]
+      "currentDaysWorkedStreak": 5
     },
     {
       "id": "714471",
@@ -32384,23 +31968,7 @@
         }
       ],
       "daysWorkedStreak": 3,
-      "favoritePartners": [
-        {
-          "id": "75169",
-          "name": "Olandis Poole",
-          "count": 8
-        },
-        {
-          "id": "714306",
-          "name": "Doug Sirmons",
-          "count": 5
-        },
-        {
-          "id": "714321",
-          "name": "Patrick Evans",
-          "count": 4
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "714424",
@@ -33611,23 +33179,7 @@
         }
       ],
       "daysWorkedStreak": 7,
-      "favoritePartners": [
-        {
-          "id": "714408",
-          "name": "Matt Potter",
-          "count": 16
-        },
-        {
-          "id": "714277",
-          "name": "John Gaffney",
-          "count": 10
-        },
-        {
-          "id": "714305",
-          "name": "Brian O'Connell",
-          "count": 8
-        }
-      ]
+      "currentDaysWorkedStreak": 3
     },
     {
       "id": "861589",
@@ -34670,23 +34222,7 @@
         }
       ],
       "daysWorkedStreak": 6,
-      "favoritePartners": [
-        {
-          "id": "714484",
-          "name": "Paul Szelc",
-          "count": 9
-        },
-        {
-          "id": "714740",
-          "name": "Mike Reed",
-          "count": 8
-        },
-        {
-          "id": "3600",
-          "name": "Jason Phillips",
-          "count": 8
-        }
-      ]
+      "currentDaysWorkedStreak": 5
     },
     {
       "id": "714374",
@@ -35715,23 +35251,7 @@
         }
       ],
       "daysWorkedStreak": 9,
-      "favoritePartners": [
-        {
-          "id": "714277",
-          "name": "John Gaffney",
-          "count": 7
-        },
-        {
-          "id": "967961",
-          "name": "Tim Smith",
-          "count": 7
-        },
-        {
-          "id": "859280",
-          "name": "Greg Evans",
-          "count": 7
-        }
-      ]
+      "currentDaysWorkedStreak": 2
     },
     {
       "id": "714473",
@@ -36788,23 +36308,7 @@
         }
       ],
       "daysWorkedStreak": 6,
-      "favoritePartners": [
-        {
-          "id": "714363",
-          "name": "Keith Kimble",
-          "count": 10
-        },
-        {
-          "id": "714832",
-          "name": "Byron Jarrett",
-          "count": 9
-        },
-        {
-          "id": "75169",
-          "name": "Olandis Poole",
-          "count": 7
-        }
-      ]
+      "currentDaysWorkedStreak": 3
     },
     {
       "id": "714408",
@@ -38141,23 +37645,7 @@
         }
       ],
       "daysWorkedStreak": 12,
-      "favoritePartners": [
-        {
-          "id": "714424",
-          "name": "Tony Chiazza",
-          "count": 16
-        },
-        {
-          "id": "714305",
-          "name": "Brian O'Connell",
-          "count": 9
-        },
-        {
-          "id": "714381",
-          "name": "Clarence Armstrong",
-          "count": 7
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "714381",
@@ -39424,23 +38912,7 @@
         }
       ],
       "daysWorkedStreak": 10,
-      "favoritePartners": [
-        {
-          "id": "75147",
-          "name": "Roger Ayers",
-          "count": 9
-        },
-        {
-          "id": "75187",
-          "name": "Bert Smith",
-          "count": 8
-        },
-        {
-          "id": "714408",
-          "name": "Matt Potter",
-          "count": 7
-        }
-      ]
+      "currentDaysWorkedStreak": 2
     },
     {
       "id": "714414",
@@ -40693,23 +40165,7 @@
         }
       ],
       "daysWorkedStreak": 10,
-      "favoritePartners": [
-        {
-          "id": "714332",
-          "name": "Lee Cassell",
-          "count": 13
-        },
-        {
-          "id": "723154",
-          "name": "Jemel Spearman",
-          "count": 8
-        },
-        {
-          "id": "860900",
-          "name": "Tommy Morrissey",
-          "count": 8
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "714840",
@@ -41766,23 +41222,7 @@
         }
       ],
       "daysWorkedStreak": 6,
-      "favoritePartners": [
-        {
-          "id": "714278",
-          "name": "D.J. Carstensen",
-          "count": 8
-        },
-        {
-          "id": "714737",
-          "name": "Mike Littlewood",
-          "count": 8
-        },
-        {
-          "id": "714363",
-          "name": "Keith Kimble",
-          "count": 7
-        }
-      ]
+      "currentDaysWorkedStreak": 3
     },
     {
       "id": "714782",
@@ -42867,23 +42307,7 @@
         }
       ],
       "daysWorkedStreak": 6,
-      "favoritePartners": [
-        {
-          "id": "714730",
-          "name": "Randy McCall",
-          "count": 10
-        },
-        {
-          "id": "714330",
-          "name": "Rick Crawford",
-          "count": 8
-        },
-        {
-          "id": "714742",
-          "name": "Tony Padilla",
-          "count": 7
-        }
-      ]
+      "currentDaysWorkedStreak": 2
     },
     {
       "id": "714276",
@@ -43884,23 +43308,7 @@
         }
       ],
       "daysWorkedStreak": 3,
-      "favoritePartners": [
-        {
-          "id": "714294",
-          "name": "Brian Dorsey",
-          "count": 9
-        },
-        {
-          "id": "714412",
-          "name": "Tim Comer",
-          "count": 8
-        },
-        {
-          "id": "714269",
-          "name": "Jeffrey Anderson",
-          "count": 8
-        }
-      ]
+      "currentDaysWorkedStreak": 3
     },
     {
       "id": "714342",
@@ -45013,23 +44421,7 @@
         }
       ],
       "daysWorkedStreak": 6,
-      "favoritePartners": [
-        {
-          "id": "714333",
-          "name": "Bart Lenox",
-          "count": 7
-        },
-        {
-          "id": "720662",
-          "name": "Will Howard",
-          "count": 7
-        },
-        {
-          "id": "714832",
-          "name": "Byron Jarrett",
-          "count": 7
-        }
-      ]
+      "currentDaysWorkedStreak": 5
     },
     {
       "id": "714305",
@@ -46114,23 +45506,7 @@
         }
       ],
       "daysWorkedStreak": 8,
-      "favoritePartners": [
-        {
-          "id": "75147",
-          "name": "Roger Ayers",
-          "count": 10
-        },
-        {
-          "id": "714408",
-          "name": "Matt Potter",
-          "count": 9
-        },
-        {
-          "id": "714424",
-          "name": "Tony Chiazza",
-          "count": 8
-        }
-      ]
+      "currentDaysWorkedStreak": 2
     },
     {
       "id": "802209",
@@ -47243,23 +46619,7 @@
         }
       ],
       "daysWorkedStreak": 7,
-      "favoritePartners": [
-        {
-          "id": "714338",
-          "name": "Bret Smith",
-          "count": 7
-        },
-        {
-          "id": "1090070",
-          "name": "Tommy Johnson",
-          "count": 7
-        },
-        {
-          "id": "714462",
-          "name": "Michael Greenstein",
-          "count": 6
-        }
-      ]
+      "currentDaysWorkedStreak": 3
     },
     {
       "id": "714338",
@@ -48400,23 +47760,7 @@
         }
       ],
       "daysWorkedStreak": 7,
-      "favoritePartners": [
-        {
-          "id": "720087",
-          "name": "Brooks Wells",
-          "count": 16
-        },
-        {
-          "id": "714742",
-          "name": "Tony Padilla",
-          "count": 11
-        },
-        {
-          "id": "720330",
-          "name": "Tyler Kumpf",
-          "count": 8
-        }
-      ]
+      "currentDaysWorkedStreak": 4
     },
     {
       "id": "714462",
@@ -49571,23 +48915,7 @@
         }
       ],
       "daysWorkedStreak": 6,
-      "favoritePartners": [
-        {
-          "id": "1090070",
-          "name": "Tommy Johnson",
-          "count": 8
-        },
-        {
-          "id": "719172",
-          "name": "Marques Pettigrew",
-          "count": 8
-        },
-        {
-          "id": "714338",
-          "name": "Bret Smith",
-          "count": 6
-        }
-      ]
+      "currentDaysWorkedStreak": 2
     },
     {
       "id": "805174",
@@ -50770,23 +50098,7 @@
         }
       ],
       "daysWorkedStreak": 10,
-      "favoritePartners": [
-        {
-          "id": "714376",
-          "name": "Tim Clougherty",
-          "count": 9
-        },
-        {
-          "id": "714796",
-          "name": "Ron Groover",
-          "count": 7
-        },
-        {
-          "id": "714406",
-          "name": "Tony Henderson",
-          "count": 6
-        }
-      ]
+      "currentDaysWorkedStreak": 2
     },
     {
       "id": "1090070",
@@ -51815,23 +51127,7 @@
         }
       ],
       "daysWorkedStreak": 6,
-      "favoritePartners": [
-        {
-          "id": "714462",
-          "name": "Michael Greenstein",
-          "count": 8
-        },
-        {
-          "id": "1090582",
-          "name": "Chris Pacsi",
-          "count": 7
-        },
-        {
-          "id": "714467",
-          "name": "Darron George",
-          "count": 7
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "714406",
@@ -52888,23 +52184,7 @@
         }
       ],
       "daysWorkedStreak": 8,
-      "favoritePartners": [
-        {
-          "id": "860900",
-          "name": "Tommy Morrissey",
-          "count": 10
-        },
-        {
-          "id": "714332",
-          "name": "Lee Cassell",
-          "count": 8
-        },
-        {
-          "id": "805174",
-          "name": "Bill Covington Jr.",
-          "count": 6
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "75118",
@@ -53807,23 +53087,7 @@
         }
       ],
       "daysWorkedStreak": 4,
-      "favoritePartners": [
-        {
-          "id": "720669",
-          "name": "Nate Harris",
-          "count": 9
-        },
-        {
-          "id": "3600",
-          "name": "Jason Phillips",
-          "count": 8
-        },
-        {
-          "id": "861589",
-          "name": "Randy Richardson",
-          "count": 7
-        }
-      ]
+      "currentDaysWorkedStreak": 2
     },
     {
       "id": "720662",
@@ -54866,23 +54130,7 @@
         }
       ],
       "daysWorkedStreak": 5,
-      "favoritePartners": [
-        {
-          "id": "714334",
-          "name": "Chuck Jones",
-          "count": 7
-        },
-        {
-          "id": "714379",
-          "name": "Doug Shows",
-          "count": 7
-        },
-        {
-          "id": "714342",
-          "name": "Steve Anderson",
-          "count": 7
-        }
-      ]
+      "currentDaysWorkedStreak": 3
     },
     {
       "id": "714334",
@@ -55743,23 +54991,7 @@
         }
       ],
       "daysWorkedStreak": 3,
-      "favoritePartners": [
-        {
-          "id": "714333",
-          "name": "Bart Lenox",
-          "count": 8
-        },
-        {
-          "id": "720662",
-          "name": "Will Howard",
-          "count": 7
-        },
-        {
-          "id": "714379",
-          "name": "Doug Shows",
-          "count": 6
-        }
-      ]
+      "currentDaysWorkedStreak": 2
     },
     {
       "id": "714730",
@@ -56844,23 +56076,7 @@
         }
       ],
       "daysWorkedStreak": 8,
-      "favoritePartners": [
-        {
-          "id": "714742",
-          "name": "Tony Padilla",
-          "count": 11
-        },
-        {
-          "id": "714782",
-          "name": "Gregory Nixon",
-          "count": 10
-        },
-        {
-          "id": "524989",
-          "name": "Deldre Carr",
-          "count": 7
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "75169",
@@ -57693,23 +56909,7 @@
         }
       ],
       "daysWorkedStreak": 4,
-      "favoritePartners": [
-        {
-          "id": "714471",
-          "name": "Pat Adams",
-          "count": 8
-        },
-        {
-          "id": "714473",
-          "name": "Jeb Hartness",
-          "count": 7
-        },
-        {
-          "id": "714522",
-          "name": "Garrick Shannon",
-          "count": 6
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "714376",
@@ -58668,23 +57868,7 @@
         }
       ],
       "daysWorkedStreak": 5,
-      "favoritePartners": [
-        {
-          "id": "805174",
-          "name": "Bill Covington Jr.",
-          "count": 9
-        },
-        {
-          "id": "860900",
-          "name": "Tommy Morrissey",
-          "count": 6
-        },
-        {
-          "id": "75147",
-          "name": "Roger Ayers",
-          "count": 6
-        }
-      ]
+      "currentDaysWorkedStreak": 2
     },
     {
       "id": "859280",
@@ -59867,23 +59051,7 @@
         }
       ],
       "daysWorkedStreak": 6,
-      "favoritePartners": [
-        {
-          "id": "714305",
-          "name": "Brian O'Connell",
-          "count": 7
-        },
-        {
-          "id": "714374",
-          "name": "Pat Driscoll",
-          "count": 7
-        },
-        {
-          "id": "714424",
-          "name": "Tony Chiazza",
-          "count": 6
-        }
-      ]
+      "currentDaysWorkedStreak": 3
     },
     {
       "id": "714467",
@@ -60758,23 +59926,7 @@
         }
       ],
       "daysWorkedStreak": 5,
-      "favoritePartners": [
-        {
-          "id": "1090070",
-          "name": "Tommy Johnson",
-          "count": 7
-        },
-        {
-          "id": "714782",
-          "name": "Gregory Nixon",
-          "count": 6
-        },
-        {
-          "id": "714382",
-          "name": "Eric Curry",
-          "count": 5
-        }
-      ]
+      "currentDaysWorkedStreak": 2
     },
     {
       "id": "714465",
@@ -61775,23 +60927,7 @@
         }
       ],
       "daysWorkedStreak": 6,
-      "favoritePartners": [
-        {
-          "id": "714779",
-          "name": "Kevin Brill",
-          "count": 9
-        },
-        {
-          "id": "720669",
-          "name": "Nate Harris",
-          "count": 8
-        },
-        {
-          "id": "714740",
-          "name": "Mike Reed",
-          "count": 7
-        }
-      ]
+      "currentDaysWorkedStreak": 2
     },
     {
       "id": "714434",
@@ -62694,23 +61830,7 @@
         }
       ],
       "daysWorkedStreak": 4,
-      "favoritePartners": [
-        {
-          "id": "714740",
-          "name": "Mike Reed",
-          "count": 8
-        },
-        {
-          "id": "714779",
-          "name": "Kevin Brill",
-          "count": 6
-        },
-        {
-          "id": "714465",
-          "name": "Michael Irving",
-          "count": 6
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "714412",
@@ -63641,23 +62761,7 @@
         }
       ],
       "daysWorkedStreak": 5,
-      "favoritePartners": [
-        {
-          "id": "3600",
-          "name": "Jason Phillips",
-          "count": 9
-        },
-        {
-          "id": "714276",
-          "name": "Earl Walton",
-          "count": 8
-        },
-        {
-          "id": "714363",
-          "name": "Keith Kimble",
-          "count": 6
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "969046",
@@ -64616,23 +63720,7 @@
         }
       ],
       "daysWorkedStreak": 5,
-      "favoritePartners": [
-        {
-          "id": "714299",
-          "name": "Joe Lindsay",
-          "count": 10
-        },
-        {
-          "id": "719171",
-          "name": "Courtney Green",
-          "count": 7
-        },
-        {
-          "id": "714832",
-          "name": "Byron Jarrett",
-          "count": 6
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "714737",
@@ -65591,23 +64679,7 @@
         }
       ],
       "daysWorkedStreak": 5,
-      "favoritePartners": [
-        {
-          "id": "714840",
-          "name": "Kelly Pfeifer",
-          "count": 8
-        },
-        {
-          "id": "801322",
-          "name": "Edwin Young",
-          "count": 7
-        },
-        {
-          "id": "720669",
-          "name": "Nate Harris",
-          "count": 6
-        }
-      ]
+      "currentDaysWorkedStreak": 2
     },
     {
       "id": "801322",
@@ -66552,23 +65624,7 @@
         }
       ],
       "daysWorkedStreak": 4,
-      "favoritePartners": [
-        {
-          "id": "714737",
-          "name": "Mike Littlewood",
-          "count": 7
-        },
-        {
-          "id": "720669",
-          "name": "Nate Harris",
-          "count": 6
-        },
-        {
-          "id": "1258784",
-          "name": "Amy Bonner",
-          "count": 5
-        }
-      ]
+      "currentDaysWorkedStreak": 3
     },
     {
       "id": "720330",
@@ -67485,23 +66541,7 @@
         }
       ],
       "daysWorkedStreak": 6,
-      "favoritePartners": [
-        {
-          "id": "714338",
-          "name": "Bret Smith",
-          "count": 8
-        },
-        {
-          "id": "714330",
-          "name": "Rick Crawford",
-          "count": 5
-        },
-        {
-          "id": "720087",
-          "name": "Brooks Wells",
-          "count": 4
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "719508",
@@ -68586,23 +67626,7 @@
         }
       ],
       "daysWorkedStreak": 7,
-      "favoritePartners": [
-        {
-          "id": "719499",
-          "name": "Nathan Farrell",
-          "count": 7
-        },
-        {
-          "id": "859280",
-          "name": "Greg Evans",
-          "count": 6
-        },
-        {
-          "id": "1201930",
-          "name": "Vasili Mallios",
-          "count": 5
-        }
-      ]
+      "currentDaysWorkedStreak": 4
     },
     {
       "id": "714773",
@@ -69477,23 +68501,7 @@
         }
       ],
       "daysWorkedStreak": 3,
-      "favoritePartners": [
-        {
-          "id": "714832",
-          "name": "Byron Jarrett",
-          "count": 6
-        },
-        {
-          "id": "719171",
-          "name": "Courtney Green",
-          "count": 6
-        },
-        {
-          "id": "969046",
-          "name": "Lucas Santos",
-          "count": 6
-        }
-      ]
+      "currentDaysWorkedStreak": 3
     },
     {
       "id": "719499",
@@ -70592,23 +69600,7 @@
         }
       ],
       "daysWorkedStreak": 6,
-      "favoritePartners": [
-        {
-          "id": "714307",
-          "name": "John Cahill",
-          "count": 10
-        },
-        {
-          "id": "858895",
-          "name": "Adam Vandenburgh",
-          "count": 8
-        },
-        {
-          "id": "719508",
-          "name": "Evon Burroughs",
-          "count": 7
-        }
-      ]
+      "currentDaysWorkedStreak": 4
     },
     {
       "id": "720669",
@@ -71539,23 +70531,7 @@
         }
       ],
       "daysWorkedStreak": 4,
-      "favoritePartners": [
-        {
-          "id": "75118",
-          "name": "Verne Harris",
-          "count": 9
-        },
-        {
-          "id": "714465",
-          "name": "Michael Irving",
-          "count": 8
-        },
-        {
-          "id": "801322",
-          "name": "Edwin Young",
-          "count": 6
-        }
-      ]
+      "currentDaysWorkedStreak": 2
     },
     {
       "id": "714364",
@@ -72122,23 +71098,7 @@
         }
       ],
       "daysWorkedStreak": 4,
-      "favoritePartners": [
-        {
-          "id": "859526",
-          "name": "Owen Shortt",
-          "count": 6
-        },
-        {
-          "id": "719498",
-          "name": "Vladimir Voyard-Tadal",
-          "count": 5
-        },
-        {
-          "id": "714832",
-          "name": "Byron Jarrett",
-          "count": 4
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "714330",
@@ -72957,23 +71917,7 @@
         }
       ],
       "daysWorkedStreak": 6,
-      "favoritePartners": [
-        {
-          "id": "714782",
-          "name": "Gregory Nixon",
-          "count": 8
-        },
-        {
-          "id": "802209",
-          "name": "Chance Moore",
-          "count": 6
-        },
-        {
-          "id": "719172",
-          "name": "Marques Pettigrew",
-          "count": 5
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "1090582",
@@ -73876,23 +72820,7 @@
         }
       ],
       "daysWorkedStreak": 6,
-      "favoritePartners": [
-        {
-          "id": "719172",
-          "name": "Marques Pettigrew",
-          "count": 8
-        },
-        {
-          "id": "1090070",
-          "name": "Tommy Johnson",
-          "count": 7
-        },
-        {
-          "id": "714269",
-          "name": "Jeffrey Anderson",
-          "count": 5
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "714452",
@@ -74725,23 +73653,7 @@
         }
       ],
       "daysWorkedStreak": 4,
-      "favoritePartners": [
-        {
-          "id": "719498",
-          "name": "Vladimir Voyard-Tadal",
-          "count": 9
-        },
-        {
-          "id": "714379",
-          "name": "Doug Shows",
-          "count": 6
-        },
-        {
-          "id": "719543",
-          "name": "Landon Brandes",
-          "count": 6
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "3600",
@@ -75588,23 +74500,7 @@
         }
       ],
       "daysWorkedStreak": 5,
-      "favoritePartners": [
-        {
-          "id": "714412",
-          "name": "Tim Comer",
-          "count": 9
-        },
-        {
-          "id": "75118",
-          "name": "Verne Harris",
-          "count": 8
-        },
-        {
-          "id": "861589",
-          "name": "Randy Richardson",
-          "count": 8
-        }
-      ]
+      "currentDaysWorkedStreak": 2
     },
     {
       "id": "714347",
@@ -76493,23 +75389,7 @@
         }
       ],
       "daysWorkedStreak": 4,
-      "favoritePartners": [
-        {
-          "id": "714730",
-          "name": "Randy McCall",
-          "count": 6
-        },
-        {
-          "id": "714382",
-          "name": "Eric Curry",
-          "count": 5
-        },
-        {
-          "id": "714836",
-          "name": "Jeff Malham",
-          "count": 5
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "714382",
@@ -77412,23 +76292,7 @@
         }
       ],
       "daysWorkedStreak": 5,
-      "favoritePartners": [
-        {
-          "id": "714467",
-          "name": "Darron George",
-          "count": 5
-        },
-        {
-          "id": "719172",
-          "name": "Marques Pettigrew",
-          "count": 5
-        },
-        {
-          "id": "714347",
-          "name": "Antinio Petty",
-          "count": 5
-        }
-      ]
+      "currentDaysWorkedStreak": 3
     },
     {
       "id": "714769",
@@ -78387,23 +77251,7 @@
         }
       ],
       "daysWorkedStreak": 6,
-      "favoritePartners": [
-        {
-          "id": "719171",
-          "name": "Courtney Green",
-          "count": 8
-        },
-        {
-          "id": "714473",
-          "name": "Jeb Hartness",
-          "count": 6
-        },
-        {
-          "id": "714342",
-          "name": "Steve Anderson",
-          "count": 6
-        }
-      ]
+      "currentDaysWorkedStreak": 6
     },
     {
       "id": "714268",
@@ -79362,23 +78210,7 @@
         }
       ],
       "daysWorkedStreak": 5,
-      "favoritePartners": [
-        {
-          "id": "1150972",
-          "name": "Ed Corliss",
-          "count": 6
-        },
-        {
-          "id": "714376",
-          "name": "Tim Clougherty",
-          "count": 5
-        },
-        {
-          "id": "714374",
-          "name": "Pat Driscoll",
-          "count": 5
-        }
-      ]
+      "currentDaysWorkedStreak": 2
     },
     {
       "id": "714413",
@@ -80253,23 +79085,7 @@
         }
       ],
       "daysWorkedStreak": 4,
-      "favoritePartners": [
-        {
-          "id": "714341",
-          "name": "Jerry Heater",
-          "count": 9
-        },
-        {
-          "id": "860900",
-          "name": "Tommy Morrissey",
-          "count": 7
-        },
-        {
-          "id": "1625657",
-          "name": "Eric Lewis",
-          "count": 5
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "714448",
@@ -81116,23 +79932,7 @@
         }
       ],
       "daysWorkedStreak": 5,
-      "favoritePartners": [
-        {
-          "id": "714730",
-          "name": "Randy McCall",
-          "count": 7
-        },
-        {
-          "id": "1149793",
-          "name": "Jason Garretson",
-          "count": 6
-        },
-        {
-          "id": "1359649",
-          "name": "De Selle Dean",
-          "count": 6
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "75178",
@@ -81923,23 +80723,7 @@
         }
       ],
       "daysWorkedStreak": 3,
-      "favoritePartners": [
-        {
-          "id": "967961",
-          "name": "Tim Smith",
-          "count": 8
-        },
-        {
-          "id": "904338",
-          "name": "Michael Palau",
-          "count": 7
-        },
-        {
-          "id": "719499",
-          "name": "Nathan Farrell",
-          "count": 4
-        }
-      ]
+      "currentDaysWorkedStreak": 2
     },
     {
       "id": "904338",
@@ -82842,23 +81626,7 @@
         }
       ],
       "daysWorkedStreak": 4,
-      "favoritePartners": [
-        {
-          "id": "721970",
-          "name": "Nathan Hall",
-          "count": 7
-        },
-        {
-          "id": "75178",
-          "name": "Mike Roberts",
-          "count": 7
-        },
-        {
-          "id": "903896",
-          "name": "Mikerlange Fleury",
-          "count": 7
-        }
-      ]
+      "currentDaysWorkedStreak": 2
     },
     {
       "id": "804733",
@@ -83677,23 +82445,7 @@
         }
       ],
       "daysWorkedStreak": 3,
-      "favoritePartners": [
-        {
-          "id": "714294",
-          "name": "Brian Dorsey",
-          "count": 7
-        },
-        {
-          "id": "861589",
-          "name": "Randy Richardson",
-          "count": 6
-        },
-        {
-          "id": "714737",
-          "name": "Mike Littlewood",
-          "count": 5
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "967961",
@@ -84694,23 +83446,7 @@
         }
       ],
       "daysWorkedStreak": 5,
-      "favoritePartners": [
-        {
-          "id": "721970",
-          "name": "Nathan Hall",
-          "count": 11
-        },
-        {
-          "id": "75178",
-          "name": "Mike Roberts",
-          "count": 8
-        },
-        {
-          "id": "714374",
-          "name": "Pat Driscoll",
-          "count": 7
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "801935",
@@ -85431,23 +84167,7 @@
         }
       ],
       "daysWorkedStreak": 4,
-      "favoritePartners": [
-        {
-          "id": "714338",
-          "name": "Bret Smith",
-          "count": 5
-        },
-        {
-          "id": "714330",
-          "name": "Rick Crawford",
-          "count": 5
-        },
-        {
-          "id": "714359",
-          "name": "Kipp Kissinger",
-          "count": 5
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "714283",
@@ -86238,23 +84958,7 @@
         }
       ],
       "daysWorkedStreak": 10,
-      "favoritePartners": [
-        {
-          "id": "903094",
-          "name": "Ryan Sassano",
-          "count": 6
-        },
-        {
-          "id": "714796",
-          "name": "Ron Groover",
-          "count": 6
-        },
-        {
-          "id": "714414",
-          "name": "A.J. Desai",
-          "count": 6
-        }
-      ]
+      "currentDaysWorkedStreak": 2
     },
     {
       "id": "723154",
@@ -87059,23 +85763,7 @@
         }
       ],
       "daysWorkedStreak": 4,
-      "favoritePartners": [
-        {
-          "id": "714414",
-          "name": "A.J. Desai",
-          "count": 8
-        },
-        {
-          "id": "714381",
-          "name": "Clarence Armstrong",
-          "count": 7
-        },
-        {
-          "id": "714332",
-          "name": "Lee Cassell",
-          "count": 5
-        }
-      ]
+      "currentDaysWorkedStreak": 2
     },
     {
       "id": "1149793",
@@ -87838,23 +86526,7 @@
         }
       ],
       "daysWorkedStreak": 4,
-      "favoritePartners": [
-        {
-          "id": "714730",
-          "name": "Randy McCall",
-          "count": 6
-        },
-        {
-          "id": "714448",
-          "name": "Deron White",
-          "count": 6
-        },
-        {
-          "id": "714782",
-          "name": "Gregory Nixon",
-          "count": 5
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "714522",
@@ -88673,23 +87345,7 @@
         }
       ],
       "daysWorkedStreak": 4,
-      "favoritePartners": [
-        {
-          "id": "719498",
-          "name": "Vladimir Voyard-Tadal",
-          "count": 8
-        },
-        {
-          "id": "720662",
-          "name": "Will Howard",
-          "count": 6
-        },
-        {
-          "id": "75169",
-          "name": "Olandis Poole",
-          "count": 6
-        }
-      ]
+      "currentDaysWorkedStreak": 4
     },
     {
       "id": "75184",
@@ -89494,23 +88150,7 @@
         }
       ],
       "daysWorkedStreak": 3,
-      "favoritePartners": [
-        {
-          "id": "714342",
-          "name": "Steve Anderson",
-          "count": 6
-        },
-        {
-          "id": "720662",
-          "name": "Will Howard",
-          "count": 5
-        },
-        {
-          "id": "714769",
-          "name": "Jason Baker",
-          "count": 5
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "721493",
@@ -90231,23 +88871,7 @@
         }
       ],
       "daysWorkedStreak": 9,
-      "favoritePartners": [
-        {
-          "id": "720330",
-          "name": "Tyler Kumpf",
-          "count": 4
-        },
-        {
-          "id": "714782",
-          "name": "Gregory Nixon",
-          "count": 4
-        },
-        {
-          "id": "719172",
-          "name": "Marques Pettigrew",
-          "count": 3
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "859531",
@@ -91038,23 +89662,7 @@
         }
       ],
       "daysWorkedStreak": 3,
-      "favoritePartners": [
-        {
-          "id": "714342",
-          "name": "Steve Anderson",
-          "count": 5
-        },
-        {
-          "id": "859290",
-          "name": "Shaun Seales",
-          "count": 4
-        },
-        {
-          "id": "714773",
-          "name": "Todd Austin",
-          "count": 4
-        }
-      ]
+      "currentDaysWorkedStreak": 3
     },
     {
       "id": "1150972",
@@ -91999,23 +90607,7 @@
         }
       ],
       "daysWorkedStreak": 5,
-      "favoritePartners": [
-        {
-          "id": "722053",
-          "name": "Steven Perry",
-          "count": 8
-        },
-        {
-          "id": "714268",
-          "name": "Jeff Clark",
-          "count": 6
-        },
-        {
-          "id": "714367",
-          "name": "James Breeding",
-          "count": 5
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "714341",
@@ -92848,23 +91440,7 @@
         }
       ],
       "daysWorkedStreak": 5,
-      "favoritePartners": [
-        {
-          "id": "968711",
-          "name": "Anthony Eades",
-          "count": 10
-        },
-        {
-          "id": "714413",
-          "name": "Mark Schnur",
-          "count": 9
-        },
-        {
-          "id": "802179",
-          "name": "Jeff Pon",
-          "count": 6
-        }
-      ]
+      "currentDaysWorkedStreak": 2
     },
     {
       "id": "963472",
@@ -93641,23 +92217,7 @@
         }
       ],
       "daysWorkedStreak": 3,
-      "favoritePartners": [
-        {
-          "id": "721974",
-          "name": "Rob Kueneman",
-          "count": 6
-        },
-        {
-          "id": "714481",
-          "name": "Jim Bruno",
-          "count": 6
-        },
-        {
-          "id": "714492",
-          "name": "Bryan Anslinger",
-          "count": 4
-        }
-      ]
+      "currentDaysWorkedStreak": 3
     },
     {
       "id": "719478",
@@ -94462,23 +93022,7 @@
         }
       ],
       "daysWorkedStreak": 4,
-      "favoritePartners": [
-        {
-          "id": "75118",
-          "name": "Verne Harris",
-          "count": 5
-        },
-        {
-          "id": "723157",
-          "name": "John Floyd",
-          "count": 4
-        },
-        {
-          "id": "804733",
-          "name": "Andy O'Brien",
-          "count": 4
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "723157",
@@ -95311,23 +93855,7 @@
         }
       ],
       "daysWorkedStreak": 4,
-      "favoritePartners": [
-        {
-          "id": "714840",
-          "name": "Kelly Pfeifer",
-          "count": 6
-        },
-        {
-          "id": "1258784",
-          "name": "Amy Bonner",
-          "count": 5
-        },
-        {
-          "id": "719478",
-          "name": "Chad Barlow",
-          "count": 4
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "1258784",
@@ -96202,23 +94730,7 @@
         }
       ],
       "daysWorkedStreak": 4,
-      "favoritePartners": [
-        {
-          "id": "3600",
-          "name": "Jason Phillips",
-          "count": 7
-        },
-        {
-          "id": "861589",
-          "name": "Randy Richardson",
-          "count": 6
-        },
-        {
-          "id": "714278",
-          "name": "D.J. Carstensen",
-          "count": 5
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "714779",
@@ -96967,23 +95479,7 @@
         }
       ],
       "daysWorkedStreak": 3,
-      "favoritePartners": [
-        {
-          "id": "714465",
-          "name": "Michael Irving",
-          "count": 9
-        },
-        {
-          "id": "3600",
-          "name": "Jason Phillips",
-          "count": 6
-        },
-        {
-          "id": "714434",
-          "name": "Larry Scirotto",
-          "count": 6
-        }
-      ]
+      "currentDaysWorkedStreak": 2
     },
     {
       "id": "721970",
@@ -97956,23 +96452,7 @@
         }
       ],
       "daysWorkedStreak": 9,
-      "favoritePartners": [
-        {
-          "id": "967961",
-          "name": "Tim Smith",
-          "count": 11
-        },
-        {
-          "id": "904338",
-          "name": "Michael Palau",
-          "count": 7
-        },
-        {
-          "id": "714427",
-          "name": "Michael Luckie",
-          "count": 7
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "1090243",
@@ -98805,23 +97285,7 @@
         }
       ],
       "daysWorkedStreak": 4,
-      "favoritePartners": [
-        {
-          "id": "802179",
-          "name": "Jeff Pon",
-          "count": 5
-        },
-        {
-          "id": "714414",
-          "name": "A.J. Desai",
-          "count": 5
-        },
-        {
-          "id": "714332",
-          "name": "Lee Cassell",
-          "count": 5
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "524989",
@@ -99500,23 +97964,7 @@
         }
       ],
       "daysWorkedStreak": 5,
-      "favoritePartners": [
-        {
-          "id": "714730",
-          "name": "Randy McCall",
-          "count": 7
-        },
-        {
-          "id": "714467",
-          "name": "Darron George",
-          "count": 4
-        },
-        {
-          "id": "714338",
-          "name": "Bret Smith",
-          "count": 4
-        }
-      ]
+      "currentDaysWorkedStreak": 2
     },
     {
       "id": "802264",
@@ -100265,23 +98713,7 @@
         }
       ],
       "daysWorkedStreak": 6,
-      "favoritePartners": [
-        {
-          "id": "714381",
-          "name": "Clarence Armstrong",
-          "count": 5
-        },
-        {
-          "id": "1625657",
-          "name": "Eric Lewis",
-          "count": 5
-        },
-        {
-          "id": "714413",
-          "name": "Mark Schnur",
-          "count": 4
-        }
-      ]
+      "currentDaysWorkedStreak": 2
     },
     {
       "id": "714331",
@@ -101002,23 +99434,7 @@
         }
       ],
       "daysWorkedStreak": 5,
-      "favoritePartners": [
-        {
-          "id": "719493",
-          "name": "Ervin Wilson",
-          "count": 6
-        },
-        {
-          "id": "721202",
-          "name": "Chris Hudson",
-          "count": 4
-        },
-        {
-          "id": "1090582",
-          "name": "Chris Pacsi",
-          "count": 4
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "968711",
@@ -101893,23 +100309,7 @@
         }
       ],
       "daysWorkedStreak": 6,
-      "favoritePartners": [
-        {
-          "id": "714341",
-          "name": "Jerry Heater",
-          "count": 10
-        },
-        {
-          "id": "969046",
-          "name": "Lucas Santos",
-          "count": 5
-        },
-        {
-          "id": "714414",
-          "name": "A.J. Desai",
-          "count": 5
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "859290",
@@ -102700,23 +101100,7 @@
         }
       ],
       "daysWorkedStreak": 3,
-      "favoritePartners": [
-        {
-          "id": "1433848",
-          "name": "John Johnson",
-          "count": 6
-        },
-        {
-          "id": "714324",
-          "name": "Mike Nance",
-          "count": 5
-        },
-        {
-          "id": "714769",
-          "name": "Jason Baker",
-          "count": 5
-        }
-      ]
+      "currentDaysWorkedStreak": 2
     },
     {
       "id": "714288",
@@ -103465,23 +101849,7 @@
         }
       ],
       "daysWorkedStreak": 4,
-      "favoritePartners": [
-        {
-          "id": "714737",
-          "name": "Mike Littlewood",
-          "count": 5
-        },
-        {
-          "id": "723157",
-          "name": "John Floyd",
-          "count": 4
-        },
-        {
-          "id": "714465",
-          "name": "Michael Irving",
-          "count": 4
-        }
-      ]
+      "currentDaysWorkedStreak": 2
     },
     {
       "id": "801936",
@@ -104230,23 +102598,7 @@
         }
       ],
       "daysWorkedStreak": 4,
-      "favoritePartners": [
-        {
-          "id": "714832",
-          "name": "Byron Jarrett",
-          "count": 5
-        },
-        {
-          "id": "714773",
-          "name": "Todd Austin",
-          "count": 5
-        },
-        {
-          "id": "721296",
-          "name": "K.B. Burdett",
-          "count": 4
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "723179",
@@ -104827,23 +103179,7 @@
         }
       ],
       "daysWorkedStreak": 6,
-      "favoritePartners": [
-        {
-          "id": "802209",
-          "name": "Chance Moore",
-          "count": 5
-        },
-        {
-          "id": "714338",
-          "name": "Bret Smith",
-          "count": 4
-        },
-        {
-          "id": "720330",
-          "name": "Tyler Kumpf",
-          "count": 3
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "903111",
@@ -105564,23 +103900,7 @@
         }
       ],
       "daysWorkedStreak": 3,
-      "favoritePartners": [
-        {
-          "id": "805174",
-          "name": "Bill Covington Jr.",
-          "count": 5
-        },
-        {
-          "id": "860900",
-          "name": "Tommy Morrissey",
-          "count": 5
-        },
-        {
-          "id": "720880",
-          "name": "JW Lucas",
-          "count": 4
-        }
-      ]
+      "currentDaysWorkedStreak": 2
     },
     {
       "id": "714427",
@@ -106315,23 +104635,7 @@
         }
       ],
       "daysWorkedStreak": 4,
-      "favoritePartners": [
-        {
-          "id": "721970",
-          "name": "Nathan Hall",
-          "count": 7
-        },
-        {
-          "id": "714300",
-          "name": "Tim Kelly",
-          "count": 5
-        },
-        {
-          "id": "904338",
-          "name": "Michael Palau",
-          "count": 4
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "714307",
@@ -107332,23 +105636,7 @@
         }
       ],
       "daysWorkedStreak": 7,
-      "favoritePartners": [
-        {
-          "id": "858895",
-          "name": "Adam Vandenburgh",
-          "count": 13
-        },
-        {
-          "id": "719499",
-          "name": "Nathan Farrell",
-          "count": 10
-        },
-        {
-          "id": "967961",
-          "name": "Tim Smith",
-          "count": 6
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "903896",
@@ -108153,23 +106441,7 @@
         }
       ],
       "daysWorkedStreak": 5,
-      "favoritePartners": [
-        {
-          "id": "904338",
-          "name": "Michael Palau",
-          "count": 7
-        },
-        {
-          "id": "721970",
-          "name": "Nathan Hall",
-          "count": 7
-        },
-        {
-          "id": "714746",
-          "name": "Brandon Cruz",
-          "count": 6
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "714411",
@@ -108820,23 +107092,7 @@
         }
       ],
       "daysWorkedStreak": 3,
-      "favoritePartners": [
-        {
-          "id": "714414",
-          "name": "A.J. Desai",
-          "count": 8
-        },
-        {
-          "id": "802179",
-          "name": "Jeff Pon",
-          "count": 5
-        },
-        {
-          "id": "860900",
-          "name": "Tommy Morrissey",
-          "count": 5
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "714436",
@@ -109585,23 +107841,7 @@
         }
       ],
       "daysWorkedStreak": 5,
-      "favoritePartners": [
-        {
-          "id": "963472",
-          "name": "Luke Schumer",
-          "count": 4
-        },
-        {
-          "id": "714465",
-          "name": "Michael Irving",
-          "count": 4
-        },
-        {
-          "id": "1258784",
-          "name": "Amy Bonner",
-          "count": 4
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "1358854",
@@ -110336,23 +108576,7 @@
         }
       ],
       "daysWorkedStreak": 4,
-      "favoritePartners": [
-        {
-          "id": "860900",
-          "name": "Tommy Morrissey",
-          "count": 5
-        },
-        {
-          "id": "714307",
-          "name": "John Cahill",
-          "count": 4
-        },
-        {
-          "id": "714413",
-          "name": "Mark Schnur",
-          "count": 4
-        }
-      ]
+      "currentDaysWorkedStreak": 3
     },
     {
       "id": "1089865",
@@ -111087,23 +109311,7 @@
         }
       ],
       "daysWorkedStreak": 4,
-      "favoritePartners": [
-        {
-          "id": "714341",
-          "name": "Jerry Heater",
-          "count": 5
-        },
-        {
-          "id": "1202571",
-          "name": "Joe Switzer",
-          "count": 5
-        },
-        {
-          "id": "714332",
-          "name": "Lee Cassell",
-          "count": 4
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "1091719",
@@ -111978,23 +110186,7 @@
         }
       ],
       "daysWorkedStreak": 5,
-      "favoritePartners": [
-        {
-          "id": "1357862",
-          "name": "Mike Evans",
-          "count": 8
-        },
-        {
-          "id": "721970",
-          "name": "Nathan Hall",
-          "count": 7
-        },
-        {
-          "id": "714307",
-          "name": "John Cahill",
-          "count": 5
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "1359649",
@@ -112645,23 +110837,7 @@
         }
       ],
       "daysWorkedStreak": 4,
-      "favoritePartners": [
-        {
-          "id": "714448",
-          "name": "Deron White",
-          "count": 6
-        },
-        {
-          "id": "859480",
-          "name": "Keith Patterson",
-          "count": 4
-        },
-        {
-          "id": "714739",
-          "name": "Shawn Lehigh",
-          "count": 3
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "903094",
@@ -113438,23 +111614,7 @@
         }
       ],
       "daysWorkedStreak": 4,
-      "favoritePartners": [
-        {
-          "id": "714283",
-          "name": "Sean Hull",
-          "count": 6
-        },
-        {
-          "id": "719474",
-          "name": "Mike Millione",
-          "count": 6
-        },
-        {
-          "id": "75147",
-          "name": "Roger Ayers",
-          "count": 5
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "1625657",
@@ -114049,23 +112209,7 @@
         }
       ],
       "daysWorkedStreak": 3,
-      "favoritePartners": [
-        {
-          "id": "714413",
-          "name": "Mark Schnur",
-          "count": 5
-        },
-        {
-          "id": "802264",
-          "name": "Isaac Barnett",
-          "count": 5
-        },
-        {
-          "id": "805174",
-          "name": "Bill Covington Jr.",
-          "count": 5
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "720614",
@@ -114786,23 +112930,7 @@
         }
       ],
       "daysWorkedStreak": 3,
-      "favoritePartners": [
-        {
-          "id": "3595",
-          "name": "Tommy Nunez",
-          "count": 5
-        },
-        {
-          "id": "714434",
-          "name": "Larry Scirotto",
-          "count": 5
-        },
-        {
-          "id": "714492",
-          "name": "Bryan Anslinger",
-          "count": 4
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "858895",
@@ -115621,23 +113749,7 @@
         }
       ],
       "daysWorkedStreak": 5,
-      "favoritePartners": [
-        {
-          "id": "714307",
-          "name": "John Cahill",
-          "count": 13
-        },
-        {
-          "id": "719499",
-          "name": "Nathan Farrell",
-          "count": 8
-        },
-        {
-          "id": "721629",
-          "name": "Carl Luciano",
-          "count": 6
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "1357862",
@@ -116484,23 +114596,7 @@
         }
       ],
       "daysWorkedStreak": 6,
-      "favoritePartners": [
-        {
-          "id": "1091719",
-          "name": "Michael Nardone",
-          "count": 8
-        },
-        {
-          "id": "721970",
-          "name": "Nathan Hall",
-          "count": 7
-        },
-        {
-          "id": "967961",
-          "name": "Tim Smith",
-          "count": 6
-        }
-      ]
+      "currentDaysWorkedStreak": 4
     },
     {
       "id": "714321",
@@ -117207,23 +115303,7 @@
         }
       ],
       "daysWorkedStreak": 3,
-      "favoritePartners": [
-        {
-          "id": "968832",
-          "name": "Mike Wallace",
-          "count": 5
-        },
-        {
-          "id": "859526",
-          "name": "Owen Shortt",
-          "count": 4
-        },
-        {
-          "id": "714471",
-          "name": "Pat Adams",
-          "count": 4
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "1201930",
@@ -118084,23 +116164,7 @@
         }
       ],
       "daysWorkedStreak": 6,
-      "favoritePartners": [
-        {
-          "id": "967961",
-          "name": "Tim Smith",
-          "count": 6
-        },
-        {
-          "id": "719508",
-          "name": "Evon Burroughs",
-          "count": 5
-        },
-        {
-          "id": "806523",
-          "name": "Jason Bradwell",
-          "count": 4
-        }
-      ]
+      "currentDaysWorkedStreak": 3
     },
     {
       "id": "714792",
@@ -118807,23 +116871,7 @@
         }
       ],
       "daysWorkedStreak": 4,
-      "favoritePartners": [
-        {
-          "id": "719474",
-          "name": "Mike Millione",
-          "count": 6
-        },
-        {
-          "id": "714300",
-          "name": "Tim Kelly",
-          "count": 6
-        },
-        {
-          "id": "1202571",
-          "name": "Joe Switzer",
-          "count": 6
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "719493",
@@ -119446,23 +117494,7 @@
         }
       ],
       "daysWorkedStreak": 3,
-      "favoritePartners": [
-        {
-          "id": "714732",
-          "name": "Jeff Campbell",
-          "count": 9
-        },
-        {
-          "id": "714331",
-          "name": "John Hampton",
-          "count": 6
-        },
-        {
-          "id": "714836",
-          "name": "Jeff Malham",
-          "count": 5
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "859480",
@@ -120071,23 +118103,7 @@
         }
       ],
       "daysWorkedStreak": 9,
-      "favoritePartners": [
-        {
-          "id": "714306",
-          "name": "Doug Sirmons",
-          "count": 8
-        },
-        {
-          "id": "802209",
-          "name": "Chance Moore",
-          "count": 5
-        },
-        {
-          "id": "1359649",
-          "name": "De Selle Dean",
-          "count": 4
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "719581",
@@ -120752,23 +118768,7 @@
         }
       ],
       "daysWorkedStreak": 3,
-      "favoritePartners": [
-        {
-          "id": "714462",
-          "name": "Michael Greenstein",
-          "count": 5
-        },
-        {
-          "id": "714742",
-          "name": "Tony Padilla",
-          "count": 4
-        },
-        {
-          "id": "721202",
-          "name": "Chris Hudson",
-          "count": 3
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "968832",
@@ -121489,23 +119489,7 @@
         }
       ],
       "daysWorkedStreak": 4,
-      "favoritePartners": [
-        {
-          "id": "714321",
-          "name": "Patrick Evans",
-          "count": 5
-        },
-        {
-          "id": "719543",
-          "name": "Landon Brandes",
-          "count": 5
-        },
-        {
-          "id": "1151657",
-          "name": "Jason Deering",
-          "count": 4
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "719543",
@@ -122170,23 +120154,7 @@
         }
       ],
       "daysWorkedStreak": 3,
-      "favoritePartners": [
-        {
-          "id": "714452",
-          "name": "Rob Rorke",
-          "count": 6
-        },
-        {
-          "id": "968832",
-          "name": "Mike Wallace",
-          "count": 5
-        },
-        {
-          "id": "1090243",
-          "name": "Chase Shaw",
-          "count": 3
-        }
-      ]
+      "currentDaysWorkedStreak": 2
     },
     {
       "id": "714739",
@@ -122753,23 +120721,7 @@
         }
       ],
       "daysWorkedStreak": 5,
-      "favoritePartners": [
-        {
-          "id": "1359649",
-          "name": "De Selle Dean",
-          "count": 3
-        },
-        {
-          "id": "714445",
-          "name": "Bill Vinovich",
-          "count": 3
-        },
-        {
-          "id": "714730",
-          "name": "Randy McCall",
-          "count": 3
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "1201938",
@@ -123448,23 +121400,7 @@
         }
       ],
       "daysWorkedStreak": 3,
-      "favoritePartners": [
-        {
-          "id": "714746",
-          "name": "Brandon Cruz",
-          "count": 5
-        },
-        {
-          "id": "903647",
-          "name": "Ed Corbett, Jr.",
-          "count": 4
-        },
-        {
-          "id": "1091719",
-          "name": "Michael Nardone",
-          "count": 4
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "714385",
@@ -123933,23 +121869,7 @@
         }
       ],
       "daysWorkedStreak": 3,
-      "favoritePartners": [
-        {
-          "id": "720614",
-          "name": "Brian McNutt",
-          "count": 3
-        },
-        {
-          "id": "714521",
-          "name": "Jose Carrion",
-          "count": 3
-        },
-        {
-          "id": "723157",
-          "name": "John Floyd",
-          "count": 3
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "721974",
@@ -124628,23 +122548,7 @@
         }
       ],
       "daysWorkedStreak": 6,
-      "favoritePartners": [
-        {
-          "id": "963472",
-          "name": "Luke Schumer",
-          "count": 6
-        },
-        {
-          "id": "714465",
-          "name": "Michael Irving",
-          "count": 6
-        },
-        {
-          "id": "714412",
-          "name": "Tim Comer",
-          "count": 4
-        }
-      ]
+      "currentDaysWorkedStreak": 2
     },
     {
       "id": "970347",
@@ -125351,23 +123255,7 @@
         }
       ],
       "daysWorkedStreak": 4,
-      "favoritePartners": [
-        {
-          "id": "714764",
-          "name": "Stephen Divine",
-          "count": 5
-        },
-        {
-          "id": "719504",
-          "name": "Chris Ford",
-          "count": 3
-        },
-        {
-          "id": "719543",
-          "name": "Landon Brandes",
-          "count": 2
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "714324",
@@ -125934,23 +123822,7 @@
         }
       ],
       "daysWorkedStreak": 2,
-      "favoritePartners": [
-        {
-          "id": "1090055",
-          "name": "Michael Swoboda",
-          "count": 6
-        },
-        {
-          "id": "859290",
-          "name": "Shaun Seales",
-          "count": 5
-        },
-        {
-          "id": "714321",
-          "name": "Patrick Evans",
-          "count": 4
-        }
-      ]
+      "currentDaysWorkedStreak": 2
     },
     {
       "id": "722053",
@@ -126671,23 +124543,7 @@
         }
       ],
       "daysWorkedStreak": 4,
-      "favoritePartners": [
-        {
-          "id": "1150972",
-          "name": "Ed Corliss",
-          "count": 8
-        },
-        {
-          "id": "859280",
-          "name": "Greg Evans",
-          "count": 5
-        },
-        {
-          "id": "904338",
-          "name": "Michael Palau",
-          "count": 4
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "1433988",
@@ -127226,23 +125082,7 @@
         }
       ],
       "daysWorkedStreak": 4,
-      "favoritePartners": [
-        {
-          "id": "524989",
-          "name": "Deldre Carr",
-          "count": 4
-        },
-        {
-          "id": "719172",
-          "name": "Marques Pettigrew",
-          "count": 3
-        },
-        {
-          "id": "859480",
-          "name": "Keith Patterson",
-          "count": 2
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "714481",
@@ -127809,23 +125649,7 @@
         }
       ],
       "daysWorkedStreak": 2,
-      "favoritePartners": [
-        {
-          "id": "963472",
-          "name": "Luke Schumer",
-          "count": 6
-        },
-        {
-          "id": "75118",
-          "name": "Verne Harris",
-          "count": 3
-        },
-        {
-          "id": "714507",
-          "name": "Todd Von Sossan",
-          "count": 3
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "909907",
@@ -128434,23 +126258,7 @@
         }
       ],
       "daysWorkedStreak": 2,
-      "favoritePartners": [
-        {
-          "id": "719498",
-          "name": "Vladimir Voyard-Tadal",
-          "count": 3
-        },
-        {
-          "id": "1378709",
-          "name": "James Curran",
-          "count": 3
-        },
-        {
-          "id": "714452",
-          "name": "Rob Rorke",
-          "count": 2
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "714314",
@@ -129031,23 +126839,7 @@
         }
       ],
       "daysWorkedStreak": 5,
-      "favoritePartners": [
-        {
-          "id": "967961",
-          "name": "Tim Smith",
-          "count": 5
-        },
-        {
-          "id": "714792",
-          "name": "Tony Crisp",
-          "count": 5
-        },
-        {
-          "id": "1201946",
-          "name": "Tyler Sandmann",
-          "count": 4
-        }
-      ]
+      "currentDaysWorkedStreak": 3
     },
     {
       "id": "714488",
@@ -129572,23 +127364,7 @@
         }
       ],
       "daysWorkedStreak": 5,
-      "favoritePartners": [
-        {
-          "id": "721202",
-          "name": "Chris Hudson",
-          "count": 3
-        },
-        {
-          "id": "714836",
-          "name": "Jeff Malham",
-          "count": 2
-        },
-        {
-          "id": "714331",
-          "name": "John Hampton",
-          "count": 2
-        }
-      ]
+      "currentDaysWorkedStreak": 2
     },
     {
       "id": "1090064",
@@ -130127,23 +127903,7 @@
         }
       ],
       "daysWorkedStreak": 3,
-      "favoritePartners": [
-        {
-          "id": "723154",
-          "name": "Jemel Spearman",
-          "count": 3
-        },
-        {
-          "id": "714414",
-          "name": "A.J. Desai",
-          "count": 3
-        },
-        {
-          "id": "802264",
-          "name": "Isaac Barnett",
-          "count": 2
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "1202571",
@@ -130850,23 +128610,7 @@
         }
       ],
       "daysWorkedStreak": 2,
-      "favoritePartners": [
-        {
-          "id": "714792",
-          "name": "Tony Crisp",
-          "count": 6
-        },
-        {
-          "id": "1089865",
-          "name": "Kellen Miliner",
-          "count": 5
-        },
-        {
-          "id": "719474",
-          "name": "Mike Millione",
-          "count": 4
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "719572",
@@ -131433,23 +129177,7 @@
         }
       ],
       "daysWorkedStreak": 3,
-      "favoritePartners": [
-        {
-          "id": "969046",
-          "name": "Lucas Santos",
-          "count": 4
-        },
-        {
-          "id": "714452",
-          "name": "Rob Rorke",
-          "count": 3
-        },
-        {
-          "id": "719503",
-          "name": "Blake Harris",
-          "count": 3
-        }
-      ]
+      "currentDaysWorkedStreak": 2
     },
     {
       "id": "719503",
@@ -132016,23 +129744,7 @@
         }
       ],
       "daysWorkedStreak": 3,
-      "favoritePartners": [
-        {
-          "id": "1378709",
-          "name": "James Curran",
-          "count": 4
-        },
-        {
-          "id": "1151657",
-          "name": "Jason Deering",
-          "count": 4
-        },
-        {
-          "id": "859531",
-          "name": "Bharat Ramnanan",
-          "count": 3
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "719474",
@@ -132641,23 +130353,7 @@
         }
       ],
       "daysWorkedStreak": 4,
-      "favoritePartners": [
-        {
-          "id": "903094",
-          "name": "Ryan Sassano",
-          "count": 6
-        },
-        {
-          "id": "714792",
-          "name": "Tony Crisp",
-          "count": 6
-        },
-        {
-          "id": "714283",
-          "name": "Sean Hull",
-          "count": 6
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "714508",
@@ -133238,23 +130934,7 @@
         }
       ],
       "daysWorkedStreak": 2,
-      "favoritePartners": [
-        {
-          "id": "1151632",
-          "name": "Kevin Raher",
-          "count": 7
-        },
-        {
-          "id": "720624",
-          "name": "Mark Riggs",
-          "count": 4
-        },
-        {
-          "id": "804733",
-          "name": "Andy O'Brien",
-          "count": 3
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "714521",
@@ -133765,23 +131445,7 @@
         }
       ],
       "daysWorkedStreak": 2,
-      "favoritePartners": [
-        {
-          "id": "719478",
-          "name": "Chad Barlow",
-          "count": 3
-        },
-        {
-          "id": "714385",
-          "name": "Scott Brown",
-          "count": 3
-        },
-        {
-          "id": "714412",
-          "name": "Tim Comer",
-          "count": 3
-        }
-      ]
+      "currentDaysWorkedStreak": 2
     },
     {
       "id": "714746",
@@ -134362,23 +132026,7 @@
         }
       ],
       "daysWorkedStreak": 4,
-      "favoritePartners": [
-        {
-          "id": "903896",
-          "name": "Mikerlange Fleury",
-          "count": 6
-        },
-        {
-          "id": "1201938",
-          "name": "Daniel Basile",
-          "count": 5
-        },
-        {
-          "id": "904338",
-          "name": "Michael Palau",
-          "count": 4
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "720554",
@@ -134973,23 +132621,7 @@
         }
       ],
       "daysWorkedStreak": 3,
-      "favoritePartners": [
-        {
-          "id": "714836",
-          "name": "Jeff Malham",
-          "count": 5
-        },
-        {
-          "id": "719493",
-          "name": "Ervin Wilson",
-          "count": 5
-        },
-        {
-          "id": "714732",
-          "name": "Jeff Campbell",
-          "count": 4
-        }
-      ]
+      "currentDaysWorkedStreak": 2
     },
     {
       "id": "714732",
@@ -135528,23 +133160,7 @@
         }
       ],
       "daysWorkedStreak": 3,
-      "favoritePartners": [
-        {
-          "id": "719493",
-          "name": "Ervin Wilson",
-          "count": 9
-        },
-        {
-          "id": "714836",
-          "name": "Jeff Malham",
-          "count": 6
-        },
-        {
-          "id": "720554",
-          "name": "Ed Crenshaw",
-          "count": 4
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "806523",
@@ -136125,23 +133741,7 @@
         }
       ],
       "daysWorkedStreak": 3,
-      "favoritePartners": [
-        {
-          "id": "1091490",
-          "name": "Ryan Corbett",
-          "count": 7
-        },
-        {
-          "id": "1150972",
-          "name": "Ed Corliss",
-          "count": 5
-        },
-        {
-          "id": "1201930",
-          "name": "Vasili Mallios",
-          "count": 4
-        }
-      ]
+      "currentDaysWorkedStreak": 3
     },
     {
       "id": "3595",
@@ -136554,23 +134154,7 @@
         }
       ],
       "daysWorkedStreak": 2,
-      "favoritePartners": [
-        {
-          "id": "720614",
-          "name": "Brian McNutt",
-          "count": 5
-        },
-        {
-          "id": "714465",
-          "name": "Michael Irving",
-          "count": 3
-        },
-        {
-          "id": "714288",
-          "name": "Alfred Smith",
-          "count": 3
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "714300",
@@ -137095,23 +134679,7 @@
         }
       ],
       "daysWorkedStreak": 3,
-      "favoritePartners": [
-        {
-          "id": "714792",
-          "name": "Tony Crisp",
-          "count": 6
-        },
-        {
-          "id": "714427",
-          "name": "Michael Luckie",
-          "count": 5
-        },
-        {
-          "id": "1150972",
-          "name": "Ed Corliss",
-          "count": 5
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "903647",
@@ -137734,23 +135302,7 @@
         }
       ],
       "daysWorkedStreak": 3,
-      "favoritePartners": [
-        {
-          "id": "1201938",
-          "name": "Daniel Basile",
-          "count": 4
-        },
-        {
-          "id": "903100",
-          "name": "William Flowers Jr.",
-          "count": 4
-        },
-        {
-          "id": "722053",
-          "name": "Steven Perry",
-          "count": 4
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "963451",
@@ -138373,23 +135925,7 @@
         }
       ],
       "daysWorkedStreak": 3,
-      "favoritePartners": [
-        {
-          "id": "714779",
-          "name": "Kevin Brill",
-          "count": 4
-        },
-        {
-          "id": "963472",
-          "name": "Luke Schumer",
-          "count": 3
-        },
-        {
-          "id": "721974",
-          "name": "Rob Kueneman",
-          "count": 3
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "714291",
@@ -138984,23 +136520,7 @@
         }
       ],
       "daysWorkedStreak": 3,
-      "favoritePartners": [
-        {
-          "id": "968711",
-          "name": "Anthony Eades",
-          "count": 5
-        },
-        {
-          "id": "714413",
-          "name": "Mark Schnur",
-          "count": 3
-        },
-        {
-          "id": "1089865",
-          "name": "Kellen Miliner",
-          "count": 3
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "1090055",
@@ -139581,23 +137101,7 @@
         }
       ],
       "daysWorkedStreak": 2,
-      "favoritePartners": [
-        {
-          "id": "714324",
-          "name": "Mike Nance",
-          "count": 6
-        },
-        {
-          "id": "714321",
-          "name": "Patrick Evans",
-          "count": 4
-        },
-        {
-          "id": "714769",
-          "name": "Jason Baker",
-          "count": 4
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "714836",
@@ -140108,23 +137612,7 @@
         }
       ],
       "daysWorkedStreak": 2,
-      "favoritePartners": [
-        {
-          "id": "714732",
-          "name": "Jeff Campbell",
-          "count": 6
-        },
-        {
-          "id": "719493",
-          "name": "Ervin Wilson",
-          "count": 5
-        },
-        {
-          "id": "714365",
-          "name": "Randy Heimerman",
-          "count": 5
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "1090779",
@@ -140719,23 +138207,7 @@
         }
       ],
       "daysWorkedStreak": 4,
-      "favoritePartners": [
-        {
-          "id": "714792",
-          "name": "Tony Crisp",
-          "count": 3
-        },
-        {
-          "id": "1091719",
-          "name": "Michael Nardone",
-          "count": 3
-        },
-        {
-          "id": "714427",
-          "name": "Michael Luckie",
-          "count": 3
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "714794",
@@ -141148,23 +138620,7 @@
         }
       ],
       "daysWorkedStreak": 3,
-      "favoritePartners": [
-        {
-          "id": "859480",
-          "name": "Keith Patterson",
-          "count": 3
-        },
-        {
-          "id": "719493",
-          "name": "Ervin Wilson",
-          "count": 2
-        },
-        {
-          "id": "719172",
-          "name": "Marques Pettigrew",
-          "count": 2
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "964094",
@@ -141731,23 +139187,7 @@
         }
       ],
       "daysWorkedStreak": 2,
-      "favoritePartners": [
-        {
-          "id": "714324",
-          "name": "Mike Nance",
-          "count": 3
-        },
-        {
-          "id": "801936",
-          "name": "Josue Nieves",
-          "count": 3
-        },
-        {
-          "id": "714452",
-          "name": "Rob Rorke",
-          "count": 3
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "720624",
@@ -142244,23 +139684,7 @@
         }
       ],
       "daysWorkedStreak": 7,
-      "favoritePartners": [
-        {
-          "id": "714508",
-          "name": "Tim Stewart",
-          "count": 4
-        },
-        {
-          "id": "714507",
-          "name": "Todd Von Sossan",
-          "count": 4
-        },
-        {
-          "id": "720614",
-          "name": "Brian McNutt",
-          "count": 2
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "714507",
@@ -142757,23 +140181,7 @@
         }
       ],
       "daysWorkedStreak": 4,
-      "favoritePartners": [
-        {
-          "id": "723157",
-          "name": "John Floyd",
-          "count": 4
-        },
-        {
-          "id": "720624",
-          "name": "Mark Riggs",
-          "count": 4
-        },
-        {
-          "id": "1093403",
-          "name": "Kenneth Moreland",
-          "count": 4
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "714764",
@@ -143256,23 +140664,7 @@
         }
       ],
       "daysWorkedStreak": 2,
-      "favoritePartners": [
-        {
-          "id": "903862",
-          "name": "Eric Lowe",
-          "count": 7
-        },
-        {
-          "id": "970347",
-          "name": "Erroll Lewis",
-          "count": 5
-        },
-        {
-          "id": "1433848",
-          "name": "John Johnson",
-          "count": 2
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "1093403",
@@ -143769,23 +141161,7 @@
         }
       ],
       "daysWorkedStreak": 2,
-      "favoritePartners": [
-        {
-          "id": "714492",
-          "name": "Bryan Anslinger",
-          "count": 5
-        },
-        {
-          "id": "714507",
-          "name": "Todd Von Sossan",
-          "count": 4
-        },
-        {
-          "id": "1092119",
-          "name": "Jourdan Love",
-          "count": 3
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "903100",
@@ -144324,23 +141700,7 @@
         }
       ],
       "daysWorkedStreak": 4,
-      "favoritePartners": [
-        {
-          "id": "721629",
-          "name": "Carl Luciano",
-          "count": 4
-        },
-        {
-          "id": "903647",
-          "name": "Ed Corbett, Jr.",
-          "count": 4
-        },
-        {
-          "id": "1201938",
-          "name": "Daniel Basile",
-          "count": 4
-        }
-      ]
+      "currentDaysWorkedStreak": 3
     },
     {
       "id": "1433848",
@@ -144879,23 +142239,7 @@
         }
       ],
       "daysWorkedStreak": 3,
-      "favoritePartners": [
-        {
-          "id": "859290",
-          "name": "Shaun Seales",
-          "count": 6
-        },
-        {
-          "id": "714362",
-          "name": "Rodrick Dixon",
-          "count": 3
-        },
-        {
-          "id": "859526",
-          "name": "Owen Shortt",
-          "count": 2
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "1201946",
@@ -145448,23 +142792,7 @@
         }
       ],
       "daysWorkedStreak": 4,
-      "favoritePartners": [
-        {
-          "id": "858895",
-          "name": "Adam Vandenburgh",
-          "count": 5
-        },
-        {
-          "id": "714314",
-          "name": "Robert Riley",
-          "count": 4
-        },
-        {
-          "id": "1201930",
-          "name": "Vasili Mallios",
-          "count": 4
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "1378718",
@@ -145919,23 +143247,7 @@
         }
       ],
       "daysWorkedStreak": 3,
-      "favoritePartners": [
-        {
-          "id": "714448",
-          "name": "Deron White",
-          "count": 4
-        },
-        {
-          "id": "714331",
-          "name": "John Hampton",
-          "count": 3
-        },
-        {
-          "id": "714445",
-          "name": "Bill Vinovich",
-          "count": 3
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "1378709",
@@ -146460,23 +143772,7 @@
         }
       ],
       "daysWorkedStreak": 3,
-      "favoritePartners": [
-        {
-          "id": "719503",
-          "name": "Blake Harris",
-          "count": 4
-        },
-        {
-          "id": "968832",
-          "name": "Mike Wallace",
-          "count": 3
-        },
-        {
-          "id": "909907",
-          "name": "Shane Land",
-          "count": 3
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "721202",
@@ -146945,23 +144241,7 @@
         }
       ],
       "daysWorkedStreak": 3,
-      "favoritePartners": [
-        {
-          "id": "714331",
-          "name": "John Hampton",
-          "count": 4
-        },
-        {
-          "id": "719581",
-          "name": "Matthew Rukasin",
-          "count": 3
-        },
-        {
-          "id": "714388",
-          "name": "Ryan Holmes",
-          "count": 3
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "801934",
@@ -147486,23 +144766,7 @@
         }
       ],
       "daysWorkedStreak": 2,
-      "favoritePartners": [
-        {
-          "id": "966377",
-          "name": "Matt Jarman",
-          "count": 4
-        },
-        {
-          "id": "964543",
-          "name": "Donta Carter",
-          "count": 3
-        },
-        {
-          "id": "75184",
-          "name": "Anthony Jordan",
-          "count": 2
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "1090781",
@@ -147943,23 +145207,7 @@
         }
       ],
       "daysWorkedStreak": 3,
-      "favoritePartners": [
-        {
-          "id": "714347",
-          "name": "Antinio Petty",
-          "count": 4
-        },
-        {
-          "id": "714359",
-          "name": "Kipp Kissinger",
-          "count": 3
-        },
-        {
-          "id": "714330",
-          "name": "Rick Crawford",
-          "count": 3
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "714388",
@@ -148386,23 +145634,7 @@
         }
       ],
       "daysWorkedStreak": 2,
-      "favoritePartners": [
-        {
-          "id": "719584",
-          "name": "D.G. Nelson",
-          "count": 3
-        },
-        {
-          "id": "721202",
-          "name": "Chris Hudson",
-          "count": 3
-        },
-        {
-          "id": "714462",
-          "name": "Michael Greenstein",
-          "count": 2
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "714492",
@@ -148899,23 +146131,7 @@
         }
       ],
       "daysWorkedStreak": 2,
-      "favoritePartners": [
-        {
-          "id": "1093403",
-          "name": "Kenneth Moreland",
-          "count": 5
-        },
-        {
-          "id": "720614",
-          "name": "Brian McNutt",
-          "count": 4
-        },
-        {
-          "id": "963472",
-          "name": "Luke Schumer",
-          "count": 4
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "966377",
@@ -149426,23 +146642,7 @@
         }
       ],
       "daysWorkedStreak": 2,
-      "favoritePartners": [
-        {
-          "id": "801934",
-          "name": "Ryan Christian",
-          "count": 4
-        },
-        {
-          "id": "714452",
-          "name": "Rob Rorke",
-          "count": 3
-        },
-        {
-          "id": "801368",
-          "name": "Luke Chittum",
-          "count": 2
-        }
-      ]
+      "currentDaysWorkedStreak": 2
     },
     {
       "id": "1092119",
@@ -149981,23 +147181,7 @@
         }
       ],
       "daysWorkedStreak": 3,
-      "favoritePartners": [
-        {
-          "id": "1258784",
-          "name": "Amy Bonner",
-          "count": 4
-        },
-        {
-          "id": "963472",
-          "name": "Luke Schumer",
-          "count": 4
-        },
-        {
-          "id": "714288",
-          "name": "Alfred Smith",
-          "count": 3
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "1363926",
@@ -150536,23 +147720,7 @@
         }
       ],
       "daysWorkedStreak": 2,
-      "favoritePartners": [
-        {
-          "id": "714436",
-          "name": "Steve McJunkins",
-          "count": 3
-        },
-        {
-          "id": "714740",
-          "name": "Mike Reed",
-          "count": 3
-        },
-        {
-          "id": "1150259",
-          "name": "Crystal Hogan",
-          "count": 3
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "964234",
@@ -150951,23 +148119,7 @@
         }
       ],
       "daysWorkedStreak": 5,
-      "favoritePartners": [
-        {
-          "id": "720330",
-          "name": "Tyler Kumpf",
-          "count": 3
-        },
-        {
-          "id": "1378718",
-          "name": "Michael Mojica",
-          "count": 2
-        },
-        {
-          "id": "719172",
-          "name": "Marques Pettigrew",
-          "count": 2
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "802179",
@@ -151548,23 +148700,7 @@
         }
       ],
       "daysWorkedStreak": 2,
-      "favoritePartners": [
-        {
-          "id": "714341",
-          "name": "Jerry Heater",
-          "count": 6
-        },
-        {
-          "id": "1090243",
-          "name": "Chase Shaw",
-          "count": 5
-        },
-        {
-          "id": "714411",
-          "name": "Justin Porterfield",
-          "count": 5
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "720791",
@@ -152075,23 +149211,7 @@
         }
       ],
       "daysWorkedStreak": 3,
-      "favoritePartners": [
-        {
-          "id": "721629",
-          "name": "Carl Luciano",
-          "count": 6
-        },
-        {
-          "id": "1091719",
-          "name": "Michael Nardone",
-          "count": 4
-        },
-        {
-          "id": "1201930",
-          "name": "Vasili Mallios",
-          "count": 4
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "903862",
@@ -152602,23 +149722,7 @@
         }
       ],
       "daysWorkedStreak": 3,
-      "favoritePartners": [
-        {
-          "id": "714764",
-          "name": "Stephen Divine",
-          "count": 7
-        },
-        {
-          "id": "719504",
-          "name": "Chris Ford",
-          "count": 2
-        },
-        {
-          "id": "1093403",
-          "name": "Kenneth Moreland",
-          "count": 2
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "966376",
@@ -153171,23 +150275,7 @@
         }
       ],
       "daysWorkedStreak": 3,
-      "favoritePartners": [
-        {
-          "id": "75184",
-          "name": "Anthony Jordan",
-          "count": 4
-        },
-        {
-          "id": "714324",
-          "name": "Mike Nance",
-          "count": 3
-        },
-        {
-          "id": "714362",
-          "name": "Rodrick Dixon",
-          "count": 2
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "714362",
@@ -153656,23 +150744,7 @@
         }
       ],
       "daysWorkedStreak": 3,
-      "favoritePartners": [
-        {
-          "id": "1433848",
-          "name": "John Johnson",
-          "count": 3
-        },
-        {
-          "id": "714522",
-          "name": "Garrick Shannon",
-          "count": 3
-        },
-        {
-          "id": "969046",
-          "name": "Lucas Santos",
-          "count": 3
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "801368",
@@ -154141,23 +151213,7 @@
         }
       ],
       "daysWorkedStreak": 2,
-      "favoritePartners": [
-        {
-          "id": "1090055",
-          "name": "Michael Swoboda",
-          "count": 3
-        },
-        {
-          "id": "966377",
-          "name": "Matt Jarman",
-          "count": 2
-        },
-        {
-          "id": "1150259",
-          "name": "Crystal Hogan",
-          "count": 2
-        }
-      ]
+      "currentDaysWorkedStreak": 2
     },
     {
       "id": "721629",
@@ -154640,23 +151696,7 @@
         }
       ],
       "daysWorkedStreak": 4,
-      "favoritePartners": [
-        {
-          "id": "858895",
-          "name": "Adam Vandenburgh",
-          "count": 6
-        },
-        {
-          "id": "720791",
-          "name": "Brian Zink",
-          "count": 6
-        },
-        {
-          "id": "903100",
-          "name": "William Flowers Jr.",
-          "count": 4
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "1150259",
@@ -155139,23 +152179,7 @@
         }
       ],
       "daysWorkedStreak": 2,
-      "favoritePartners": [
-        {
-          "id": "1363926",
-          "name": "Mason Siler",
-          "count": 3
-        },
-        {
-          "id": "714779",
-          "name": "Kevin Brill",
-          "count": 3
-        },
-        {
-          "id": "804733",
-          "name": "Andy O'Brien",
-          "count": 3
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "1492189",
@@ -155638,23 +152662,7 @@
         }
       ],
       "daysWorkedStreak": 3,
-      "favoritePartners": [
-        {
-          "id": "720087",
-          "name": "Brooks Wells",
-          "count": 3
-        },
-        {
-          "id": "719493",
-          "name": "Ervin Wilson",
-          "count": 2
-        },
-        {
-          "id": "714365",
-          "name": "Randy Heimerman",
-          "count": 2
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "714445",
@@ -156081,23 +153089,7 @@
         }
       ],
       "daysWorkedStreak": 3,
-      "favoritePartners": [
-        {
-          "id": "1149793",
-          "name": "Jason Garretson",
-          "count": 4
-        },
-        {
-          "id": "714448",
-          "name": "Deron White",
-          "count": 3
-        },
-        {
-          "id": "714739",
-          "name": "Shawn Lehigh",
-          "count": 3
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "719584",
@@ -156594,23 +153586,7 @@
         }
       ],
       "daysWorkedStreak": 3,
-      "favoritePartners": [
-        {
-          "id": "1090070",
-          "name": "Tommy Johnson",
-          "count": 3
-        },
-        {
-          "id": "714467",
-          "name": "Darron George",
-          "count": 3
-        },
-        {
-          "id": "1359649",
-          "name": "De Selle Dean",
-          "count": 3
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "714254",
@@ -157009,23 +153985,7 @@
         }
       ],
       "daysWorkedStreak": 6,
-      "favoritePartners": [
-        {
-          "id": "859280",
-          "name": "Greg Evans",
-          "count": 4
-        },
-        {
-          "id": "714376",
-          "name": "Tim Clougherty",
-          "count": 4
-        },
-        {
-          "id": "75187",
-          "name": "Bert Smith",
-          "count": 3
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "1151657",
@@ -157536,23 +154496,7 @@
         }
       ],
       "daysWorkedStreak": 2,
-      "favoritePartners": [
-        {
-          "id": "719503",
-          "name": "Blake Harris",
-          "count": 4
-        },
-        {
-          "id": "968832",
-          "name": "Mike Wallace",
-          "count": 4
-        },
-        {
-          "id": "719504",
-          "name": "Chris Ford",
-          "count": 2
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "719504",
@@ -158077,23 +155021,7 @@
         }
       ],
       "daysWorkedStreak": 2,
-      "favoritePartners": [
-        {
-          "id": "970347",
-          "name": "Erroll Lewis",
-          "count": 3
-        },
-        {
-          "id": "714473",
-          "name": "Jeb Hartness",
-          "count": 3
-        },
-        {
-          "id": "75169",
-          "name": "Olandis Poole",
-          "count": 2
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "714365",
@@ -158506,23 +155434,7 @@
         }
       ],
       "daysWorkedStreak": 2,
-      "favoritePartners": [
-        {
-          "id": "714836",
-          "name": "Jeff Malham",
-          "count": 5
-        },
-        {
-          "id": "719493",
-          "name": "Ervin Wilson",
-          "count": 3
-        },
-        {
-          "id": "714730",
-          "name": "Randy McCall",
-          "count": 3
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "1152873",
@@ -159061,23 +155973,7 @@
         }
       ],
       "daysWorkedStreak": 3,
-      "favoritePartners": [
-        {
-          "id": "721974",
-          "name": "Rob Kueneman",
-          "count": 3
-        },
-        {
-          "id": "719478",
-          "name": "Chad Barlow",
-          "count": 3
-        },
-        {
-          "id": "1258784",
-          "name": "Amy Bonner",
-          "count": 3
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "1091490",
@@ -159588,23 +156484,7 @@
         }
       ],
       "daysWorkedStreak": 3,
-      "favoritePartners": [
-        {
-          "id": "806523",
-          "name": "Jason Bradwell",
-          "count": 7
-        },
-        {
-          "id": "1201930",
-          "name": "Vasili Mallios",
-          "count": 4
-        },
-        {
-          "id": "1201946",
-          "name": "Tyler Sandmann",
-          "count": 4
-        }
-      ]
+      "currentDaysWorkedStreak": 2
     },
     {
       "id": "1151632",
@@ -160059,23 +156939,7 @@
         }
       ],
       "daysWorkedStreak": 3,
-      "favoritePartners": [
-        {
-          "id": "714508",
-          "name": "Tim Stewart",
-          "count": 7
-        },
-        {
-          "id": "1092119",
-          "name": "Jourdan Love",
-          "count": 3
-        },
-        {
-          "id": "721974",
-          "name": "Rob Kueneman",
-          "count": 2
-        }
-      ]
+      "currentDaysWorkedStreak": 2
     },
     {
       "id": "964543",
@@ -160572,23 +157436,7 @@
         }
       ],
       "daysWorkedStreak": 2,
-      "favoritePartners": [
-        {
-          "id": "801934",
-          "name": "Ryan Christian",
-          "count": 3
-        },
-        {
-          "id": "801368",
-          "name": "Luke Chittum",
-          "count": 2
-        },
-        {
-          "id": "719572",
-          "name": "Stephen Orkus",
-          "count": 1
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "719520",
@@ -161043,23 +157891,7 @@
         }
       ],
       "daysWorkedStreak": 4,
-      "favoritePartners": [
-        {
-          "id": "714462",
-          "name": "Michael Greenstein",
-          "count": 4
-        },
-        {
-          "id": "714338",
-          "name": "Bret Smith",
-          "count": 3
-        },
-        {
-          "id": "1359649",
-          "name": "De Selle Dean",
-          "count": 3
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "719464",
@@ -161514,23 +158346,7 @@
         }
       ],
       "daysWorkedStreak": 2,
-      "favoritePartners": [
-        {
-          "id": "1152873",
-          "name": "Tariq Lucas",
-          "count": 2
-        },
-        {
-          "id": "714278",
-          "name": "D.J. Carstensen",
-          "count": 1
-        },
-        {
-          "id": "714481",
-          "name": "Jim Bruno",
-          "count": 1
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     },
     {
       "id": "720880",
@@ -162055,23 +158871,7 @@
         }
       ],
       "daysWorkedStreak": 3,
-      "favoritePartners": [
-        {
-          "id": "802264",
-          "name": "Isaac Barnett",
-          "count": 4
-        },
-        {
-          "id": "714341",
-          "name": "Jerry Heater",
-          "count": 4
-        },
-        {
-          "id": "903111",
-          "name": "Trey Styons",
-          "count": 4
-        }
-      ]
+      "currentDaysWorkedStreak": 1
     }
   ]
 }

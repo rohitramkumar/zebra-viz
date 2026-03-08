@@ -28,6 +28,7 @@ export interface Referee {
   totalMilesTravelled: number;
   mostCommonTeams: TeamCount[];
   daysWorkedStreak: number;
+  currentDaysWorkedStreak: number;
   favoritePartners: RefereePartner[];
 }
 
