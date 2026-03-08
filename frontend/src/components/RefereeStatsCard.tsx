@@ -12,14 +12,18 @@ export default function RefereeStatsCard({ referee }: RefereeStatsCardProps) {
       </div>
       <div style={styles.body}>
         <div style={styles.statBlock}>
-          <div style={styles.statIcon}>✈️</div>
-          <div style={styles.statLabel}>Total Miles Travelled</div>
+          <div style={styles.statHeader}>
+            <div style={styles.statIcon}>✈️</div>
+            <div style={styles.statLabel}>Total Miles Travelled</div>
+          </div>
           <div style={styles.statValue}>{referee.totalMilesTravelled.toLocaleString()} mi</div>
         </div>
         <div style={styles.divider} />
         <div style={styles.statBlock}>
-          <div style={styles.statIcon}>🏀</div>
-          <div style={styles.statLabel}>Most Common Teams</div>
+          <div style={styles.statHeader}>
+            <div style={styles.statIcon}>🏀</div>
+            <div style={styles.statLabel}>Most Common Teams</div>
+          </div>
           <div style={styles.teamList}>
             {referee.mostCommonTeams.map((t) => (
               <div key={t.name} style={styles.teamRow}>
@@ -33,8 +37,10 @@ export default function RefereeStatsCard({ referee }: RefereeStatsCardProps) {
         </div>
         <div style={styles.divider} />
         <div style={styles.statBlock}>
-          <div style={styles.statIcon}>🔥</div>
-          <div style={styles.streakSectionLabel}>Working Streak</div>
+          <div style={styles.statHeader}>
+            <div style={styles.statIcon}>🔥</div>
+            <div style={styles.streakSectionLabel}>Working Streak</div>
+          </div>
           <div style={styles.streakRow}>
             <div style={styles.streakItem}>
               <div style={styles.streakItemLabel}>Longest</div>
@@ -50,8 +56,10 @@ export default function RefereeStatsCard({ referee }: RefereeStatsCardProps) {
           <>
             <div style={styles.divider} />
             <div style={styles.statBlock}>
-              <div style={styles.statIcon}>🤝</div>
-              <div style={styles.statLabel}>Favorite Partners</div>
+              <div style={styles.statHeader}>
+                <div style={styles.statIcon}>🤝</div>
+                <div style={styles.statLabel}>Favorite Partners</div>
+              </div>
               <div style={styles.teamList}>
                 {referee.favoritePartners.map((p) => (
                   <div key={p.id} style={styles.teamRow}>
@@ -105,6 +113,12 @@ const styles: Record<string, React.CSSProperties> = {
     display: 'flex',
     flexDirection: 'column',
     gap: '4px',
+  },
+  statHeader: {
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: '5px',
   },
   statIcon: {
     fontSize: '1rem',
