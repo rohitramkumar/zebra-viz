@@ -46,6 +46,25 @@ export default function RefereeStatsCard({ referee }: RefereeStatsCardProps) {
             </div>
           </div>
         </div>
+        {referee.favoritePartners.length > 0 && (
+          <>
+            <div style={styles.divider} />
+            <div style={styles.statBlock}>
+              <div style={styles.statIcon}>🤝</div>
+              <div style={styles.statLabel}>Favorite Partners</div>
+              <div style={styles.teamList}>
+                {referee.favoritePartners.map((p) => (
+                  <div key={p.id} style={styles.teamRow}>
+                    <span style={styles.teamName}>{p.name}</span>
+                    <span style={styles.teamCount}>
+                      {p.count} {p.count === 1 ? 'game' : 'games'} together
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </>
+        )}
       </div>
     </div>
   );
@@ -60,6 +79,7 @@ const styles: Record<string, React.CSSProperties> = {
     flex: 1,
     display: 'flex',
     flexDirection: 'column',
+    minHeight: 0,
   },
   cardHeader: {
     padding: '10px 12px',
@@ -76,6 +96,8 @@ const styles: Record<string, React.CSSProperties> = {
     display: 'flex',
     flexDirection: 'column',
     gap: '0',
+    overflowY: 'auto',
+    flex: 1,
   },
   statBlock: {
     paddingTop: '8px',

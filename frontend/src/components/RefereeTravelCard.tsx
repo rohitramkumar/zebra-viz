@@ -89,17 +89,17 @@ const styles: Record<string, React.CSSProperties> = {
   gameList: {
     display: 'flex',
     flexDirection: 'column',
-    gap: '6px',
+    gap: '4px',
     padding: '10px',
     overflowY: 'scroll',
     scrollbarGutter: 'stable',
-    maxHeight: 'min(280px, 34vh)',
+    maxHeight: 'min(240px, 28vh)',
   },
   gameItem: {
     display: 'flex',
     alignItems: 'flex-start',
     gap: '8px',
-    padding: '8px 10px',
+    padding: '6px 10px',
     backgroundColor: 'var(--bg-surface-alt)',
     borderRadius: '6px',
     border: '1px solid var(--border-color)',
@@ -117,17 +117,17 @@ const styles: Record<string, React.CSSProperties> = {
     flexWrap: 'wrap',
   },
   homeTeam: {
-    fontSize: '0.8rem',
+    fontSize: '0.75rem',
     fontWeight: 600,
     color: 'var(--text-primary)',
   },
   vs: {
-    fontSize: '0.7rem',
+    fontSize: '0.65rem',
     color: 'var(--text-very-muted)',
     fontStyle: 'italic',
   },
   awayTeam: {
-    fontSize: '0.8rem',
+    fontSize: '0.75rem',
     fontWeight: 600,
     color: 'var(--text-secondary)',
   },
@@ -137,11 +137,11 @@ const styles: Record<string, React.CSSProperties> = {
     flexWrap: 'wrap',
   },
   gameDate: {
-    fontSize: '0.7rem',
+    fontSize: '0.65rem',
     color: 'var(--text-muted)',
   },
   gameLocation: {
-    fontSize: '0.7rem',
+    fontSize: '0.65rem',
     color: 'var(--text-muted)',
   },
 };

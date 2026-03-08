@@ -21,6 +21,12 @@ export interface TeamCount {
   record: TeamRecord;
 }
 
+export interface RefereePartner {
+  id: string;
+  name: string;
+  count: number;
+}
+
 export interface Referee {
   id: string;
   name: string;
@@ -29,6 +35,7 @@ export interface Referee {
   mostCommonTeams: TeamCount[];
   daysWorkedStreak: number;
   currentDaysWorkedStreak: number;
+  favoritePartners: RefereePartner[];
 }
 
 export interface RefereeListItem {

@@ -1,6 +1,6 @@
 import express, { type Request, Response, NextFunction } from "express";
 import { createServer } from "http";
-import { type RefereeListItem, type TeamCount } from "./types";
+import { type RefereeListItem, type TeamCount, type RefereePartner } from "./types";
 import { setupVite, serveStatic, log } from "./vite";
 import { readFileSync } from "node:fs";
 
@@ -10,6 +10,7 @@ type RefereeSource = {
   totalMilesTravelled: number;
   mostCommonTeams: TeamCount[];
   daysWorkedStreak: number;
+  favoritePartners?: RefereePartner[];
   games: {
     date: string;
     location: string;
@@ -23,7 +24,68 @@ const refereeData = JSON.parse(
   readFileSync(new URL("../data/referees.json", import.meta.url), "utf-8"),
 ) as { lastUpdated: string; referees: RefereeSource[] };
 
-const { lastUpdated, referees } = refereeData;
+const { lastUpdated, referees: rawReferees } = refereeData;
+
+/**
+ * Computes the top 3 co-officiating partners for each referee.
+ *
+ * Algorithm (O(total_games)):
+ * 1. Build a reverse index mapping each unique game key to the list of referee
+ *    IDs who officiated it.
+ * 2. For each referee, walk their games, accumulate co-ref counts from the
+ *    index, and keep the top 3 by count.
+ */
+function computeFavoritePartners(referees: RefereeSource[]): Map<string, RefereePartner[]> {
+  // Step 1: build game key → [refereeId, ...] index.
+  const gameToRefs = new Map<string, string[]>();
+  for (const referee of referees) {
+    for (const game of referee.games) {
+      const key = `${game.date}|${game.homeTeam.name}|${game.awayTeam.name}`;
+      const ids = gameToRefs.get(key);
+      if (ids) {
+        ids.push(referee.id);
+      } else {
+        gameToRefs.set(key, [referee.id]);
+      }
+    }
+  }
+
+  // Build id → name lookup for fast resolution.
+  const idToName = new Map<string, string>(referees.map((r) => [r.id, r.name]));
+
+  // Step 2: for each referee, count co-refs and take the top 3.
+  const result = new Map<string, RefereePartner[]>();
+  for (const referee of referees) {
+    const coRefCounts = new Map<string, number>();
+    for (const game of referee.games) {
+      const key = `${game.date}|${game.homeTeam.name}|${game.awayTeam.name}`;
+      const ids = gameToRefs.get(key);
+      if (!ids) continue;
+      for (const coRefId of ids) {
+        if (coRefId === referee.id) continue;
+        coRefCounts.set(coRefId, (coRefCounts.get(coRefId) ?? 0) + 1);
+      }
+    }
+
+    const top3: RefereePartner[] = Array.from(coRefCounts.entries())
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, 3)
+      .map(([id, count]) => ({ id, name: idToName.get(id) ?? id, count }));
+
+    result.set(referee.id, top3);
+  }
+
+  return result;
+}
+
+const favoritePartnersMap = computeFavoritePartners(rawReferees);
+
+// Attach pre-computed favoritePartners to each referee (only if not already
+// present in the JSON, to support future data refreshes that include it).
+const referees: RefereeSource[] = rawReferees.map((r) => ({
+  ...r,
+  favoritePartners: r.favoritePartners ?? favoritePartnersMap.get(r.id) ?? [],
+}));
 
 const app = express();
 

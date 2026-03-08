@@ -145,6 +145,52 @@ def compute_current_days_worked_streak(games: list[dict[str, Any]]) -> int:
     return current_streak
 
 
+def compute_favorite_partners(
+    referees: list[dict[str, Any]], top_n: int = 3
+) -> None:
+    """Compute and attach the top ``top_n`` co-officiating partners for each
+    referee.
+
+    Algorithm (O(total_games)):
+
+    1. Build a reverse index mapping each unique game key (date + home team +
+       away team) to the list of referee IDs that officiated it.
+    2. For each referee, walk their games, accumulate co-ref counts via the
+       index, and keep the top ``top_n`` entries.
+    """
+    # Step 1: build game key → [referee_id, ...] index.
+    game_to_refs: dict[str, list[str]] = {}
+    for referee in referees:
+        ref_id = referee["id"]
+        for game in referee.get("games", []):
+            date = game.get("date", "")
+            home = game.get("homeTeam", {}).get("name", "")
+            away = game.get("awayTeam", {}).get("name", "")
+            key = f"{date}|{home}|{away}"
+            game_to_refs.setdefault(key, []).append(ref_id)
+
+    # Build id → name lookup for fast resolution.
+    id_to_name = {ref["id"]: ref["name"] for ref in referees}
+
+    # Step 2: for each referee, count co-refs and keep the top ``top_n``.
+    for referee in referees:
+        ref_id = referee["id"]
+        co_ref_counts: collections.Counter[str] = collections.Counter()
+        for game in referee.get("games", []):
+            date = game.get("date", "")
+            home = game.get("homeTeam", {}).get("name", "")
+            away = game.get("awayTeam", {}).get("name", "")
+            key = f"{date}|{home}|{away}"
+            for co_ref_id in game_to_refs.get(key, []):
+                if co_ref_id != ref_id:
+                    co_ref_counts[co_ref_id] += 1
+
+        referee["favoritePartners"] = [
+            {"id": co_id, "name": id_to_name.get(co_id, co_id), "count": count}
+            for co_id, count in co_ref_counts.most_common(top_n)
+        ]
+
+
 def geocode_location(
     location: str,
     api_key: str,
@@ -392,6 +438,7 @@ def main() -> None:
         referees = parse_all_referees(args.input_dir)
 
     enrich_referees_with_mileage(referees, args.google_api_key)
+    compute_favorite_partners(referees)
 
     output_dir = os.path.dirname(args.output)
     if output_dir:
