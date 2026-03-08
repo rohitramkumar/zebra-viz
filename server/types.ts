@@ -22,6 +22,7 @@ export interface Referee {
   totalMilesTravelled: number;
   mostCommonTeams: TeamCount[];
   daysWorkedStreak: number;
+  currentDaysWorkedStreak: number;
 }
 
 export interface RefereeListItem {

@@ -79,6 +79,7 @@ app.get("/api/referees/:id", (req, res) => {
     totalMilesTravelled: referee.totalMilesTravelled,
     mostCommonTeams: referee.mostCommonTeams,
     daysWorkedStreak: referee.daysWorkedStreak,
+    currentDaysWorkedStreak: referee.currentDaysWorkedStreak,
   });
 });
 

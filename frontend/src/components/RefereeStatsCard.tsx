@@ -34,8 +34,17 @@ export default function RefereeStatsCard({ referee }: RefereeStatsCardProps) {
         <div style={styles.divider} />
         <div style={styles.statBlock}>
           <div style={styles.statIcon}>🔥</div>
-          <div style={styles.statLabel}>Longest Working Streak</div>
-          <div style={styles.statValue}>{referee.daysWorkedStreak} {referee.daysWorkedStreak === 1 ? 'day' : 'days'}</div>
+          <div style={styles.streakSectionLabel}>Working Streak</div>
+          <div style={styles.streakRow}>
+            <div style={styles.streakItem}>
+              <div style={styles.streakItemLabel}>Longest</div>
+              <div style={styles.statValue}>{referee.daysWorkedStreak} {referee.daysWorkedStreak === 1 ? 'day' : 'days'}</div>
+            </div>
+            <div style={styles.streakItem}>
+              <div style={styles.streakItemLabel}>Current</div>
+              <div style={styles.statValue}>{referee.currentDaysWorkedStreak} {referee.currentDaysWorkedStreak === 1 ? 'day' : 'days'}</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -115,5 +124,32 @@ const styles: Record<string, React.CSSProperties> = {
     fontSize: '0.65rem',
     color: 'var(--text-muted)',
     whiteSpace: 'nowrap',
+  },
+  streakSectionLabel: {
+    fontSize: '0.65rem',
+    fontWeight: 600,
+    color: 'var(--text-muted)',
+    textTransform: 'uppercase' as const,
+    letterSpacing: '0.05em',
+  },
+  streakRow: {
+    display: 'flex',
+    flexDirection: 'row',
+    gap: '16px',
+    marginTop: '2px',
+  },
+  streakItem: {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '2px',
+  },
+  streakItemLabel: {
+    fontSize: '0.6rem',
+    fontWeight: 500,
+    fontStyle: 'italic',
+    color: 'var(--text-muted)',
+    textTransform: 'uppercase' as const,
+    letterSpacing: '0.04em',
+    opacity: 0.75,
   },
 };
