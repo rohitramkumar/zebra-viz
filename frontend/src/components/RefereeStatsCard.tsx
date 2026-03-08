@@ -70,6 +70,7 @@ const styles: Record<string, React.CSSProperties> = {
     flex: 1,
     display: 'flex',
     flexDirection: 'column',
+    minHeight: 0,
   },
   cardHeader: {
     padding: '10px 12px',
@@ -86,6 +87,8 @@ const styles: Record<string, React.CSSProperties> = {
     display: 'flex',
     flexDirection: 'column',
     gap: '0',
+    overflowY: 'auto',
+    flex: 1,
   },
   statBlock: {
     paddingTop: '8px',

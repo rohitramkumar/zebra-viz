@@ -93,7 +93,7 @@ const styles: Record<string, React.CSSProperties> = {
     padding: '10px',
     overflowY: 'scroll',
     scrollbarGutter: 'stable',
-    maxHeight: 'min(280px, 34vh)',
+    maxHeight: 'min(200px, 24vh)',
   },
   gameItem: {
     display: 'flex',
