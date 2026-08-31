@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-28",
+  "lastUpdated": "2026-08-31",
   "referees": [
     {
       "id": "714306",
@@ -32210,9 +32210,23 @@
             38.0389091,
             -84.5152662
           ]
+        },
+        {
+          "date": "2025-11-03",
+          "location": "Washington, DC",
+          "homeTeam": {
+            "name": "Missouri"
+          },
+          "awayTeam": {
+            "name": "Howard"
+          },
+          "coordinates": [
+            38.9072873,
+            -77.0369274
+          ]
         }
       ],
-      "totalMilesTravelled": 42862,
+      "totalMilesTravelled": 43271,
       "mostCommonTeams": [
         {
           "name": "Kentucky",
@@ -158891,6 +158905,20 @@
           "coordinates": [
             33.5185892,
             -86.8103567
+          ]
+        },
+        {
+          "date": "2025-11-03",
+          "location": "Washington, DC",
+          "homeTeam": {
+            "name": "Missouri"
+          },
+          "awayTeam": {
+            "name": "Howard"
+          },
+          "coordinates": [
+            38.9072873,
+            -77.0369274
           ]
         }
       ],
